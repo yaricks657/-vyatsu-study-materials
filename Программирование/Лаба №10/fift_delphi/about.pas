@@ -1,0 +1,49 @@
+unit about;
+
+interface
+
+uses
+  Windows, Messages, SysUtils,
+  Variants, Classes, Graphics,
+  Controls, Forms, ShellApi,
+  Dialogs, StdCtrls, Menus, ExtCtrls, Buttons;
+
+type
+  TForm2 = class(TForm)
+    Image1: TImage;
+    PopupMenu1: TPopupMenu;
+    N1: TMenuItem;
+    N2: TMenuItem;
+    Label1: TLabel;
+    ProductName: TLabel;
+    Version: TLabel;
+    Copyright: TLabel;
+    Label2: TLabel;
+    Label4: TLabel;
+    Label3: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    BitBtn1: TBitBtn;
+    procedure BitBtn1Click(Sender: TObject);
+ 
+
+  
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.BitBtn1Click(Sender: TObject);
+begin
+  close;
+end;
+
+end.
