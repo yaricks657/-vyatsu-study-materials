@@ -1,0 +1,259 @@
+<div className="news">
+            <div className="container">
+                                   <div className="partition-title" style=" width: 200px;margin: auto;">Курсы</div>
+                <div className="row flex-block flex-wrap flex-center">
+                    <a href="#" className="news-wrapper col-lg-4 col-sm-6 col-xs-12">
+                        <div className="news-block type-1">
+                            <span className="image">
+                                <img src="img/fit_390_248_false_crop_784_596_0_0_q90_35552_2032e33fd9e420576790d7527.webp" alt="Корректировка выкроек плечевых изделий. Часть 2"/>
+                            </span>
+                            <div className="description">
+                                <div className="title">Корректировка выкроек плечевых изделий. Часть 2</div>
+                                <p className="text">
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" className="news-wrapper col-lg-4 col-sm-6 col-xs-12">
+                        <div className="news-block type-1">
+                            
+                            <span className="image">
+                                <img src="img/fit_390_248_false_crop_1078_603_0_0_q90_35592_73a977c93a90deea3a0f15641.webp" alt="Большинство курсов по корректировке выкроек за полцены!"/>
+                            </span>
+
+
+                            <div className="description">
+                                <div className="title">Большинство курсов по корректировке выкроек за полцены!</div>
+                                <p className="text">
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" className="news-wrapper col-lg-4 col-sm-6 col-xs-12">
+                        <div className="news-block type-1">
+                            <span className="image">
+                                <img src="./Курсы кройки и шитья в Москве - Академия шитья Burda_files/fit_390_248_false_crop_640_428_0_0_q90_35632_02fc032decd540a02b2d3fb82.webp" alt="До 31 августа самые популярные курсы со скидкой 40%!"/>
+                            </span>
+
+
+                            <div className="description">
+                                <div className="title">До 31 августа самые популярные курсы со скидкой 40%!</div>
+                                <p className="text">
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div className="reviews special">
+            <div className="container">
+                <div className="partition-title">Отзывы учеников</div>
+                <div className="gallery-widget">
+                    <div className="lSSlideOuter">
+                        <ul className="lSPager lSpg" style="margin-top: 5px;">
+                            <li className="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                        </ul>
+                        <div className="lSSlideWrapper usingCss">
+                            <div id="articleCarousel_5f67520eee0ff" className="article-carousel flex-block flex-xs lightSlider lsGrab lSSlide" data-rows="1" data-dots="true" data-margin="0" data-controls="true" data-autocontrols="false" data-loop="false" data-autoheight="false" data-drag="true" data-response-item="[&quot;1&quot;, &quot;1&quot;, &quot;1&quot;]" style="width: 9840px; height: 476px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
+                                <div className="lslide active" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-0">
+                                        <div className="reviews__author"><b>Мария Прокудина</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_1">
+                                            <div id="mCSB_1" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
+                                                <div id="mCSB_1_container" className="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    Мне посчастливилось учиться на курсе по шитью жакета у Алевтины Борисовны Золотовой. И от курса я в полном восторге! У меня есть 8-летний опыт пошива, в моем гардеробе есть и жакеты, сшитые своими руками, поэтому мои родные и близкие были удивлены моим желанием учиться на курсах Академии Burda. «Зачем тебе учиться, если ты и так все умеешь?» — вопрошали они. Но я ни разу не пожалела о своем выборе. Более полный курс по технологии пошива жакета трудно себе представить! Информация на занятиях дается очень концентрированно, но в доступной форме, есть возможность отработать узлы на образце и на своем изделии. Очень много нюансов, не упомянутых ни в одной из встреченных мной книг по технологии пошива, затрагивается на курсах. Думаю, занятия будут полезны не только новичкам, впервые осваивающим швейные азы, но и швеям со стажем, желающим и дальше совершенствовать свое мастерство. </div>
+                                                <div id="mCSB_1_scrollbar_vertical" className="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_1_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 334px; max-height: 326px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-1">
+                                        <div className="reviews__author"><b>Вера, Катя, Гаянэ, Оксана, Динара, Лена</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_2">
+                                            <div id="mCSB_2" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
+                                                <div id="mCSB_2_container" className="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    Добрый день, в этом письме наша группа хотела бы поблагодарить Академию Бурда за прекрасно организованные курсы по кройке и шитью в Москве, за отлично оборудованные, удобные, светлые классы и дружелюбных сотрудников. И конечно же, выразить отдельную огромную благодарность нашей замечательной преподавательнице Оксане Тимофеевой! Было очень приятно заниматься под ее чутким руководством! Она терпеливо объясняла каждой из нас премудрости швейного дела, была строга – заставляла переделывать до тех пор, пока мы не будем близки к совершенству или хотя бы не поймем, как оно (это совершенство) должно выглядеть! Она щедро делилась с нами секретами, которых не найдешь в обычных книгах! Это волшебно, когда в результате получается вещь «как в магазине» (в лучшем смысле этого слова) и эта вещь сделана моими собственными руками! Так приятно учиться у профессионала, который не только знает и любит свое дело, но еще и обладает учительским даром. Это очень важно, потому что можно владеть каким-то навыком самому, но не уметь доступно объяснить, научить этому других. Оксана сочетает в себе эти замечательные способности. И кроме всего прочего, она просто добрый, легкий и веселый человек, с которым очень приятно общаться. Поэтому каждую субботу с утра мы радостно бежали на занятия, хотя, как вы сами понимаете, это суббота, когда вставать в 7 утра совсем не хочется (некоторые из нас живут в Подмосковье), а хочется хорошенько выспаться после трудовой недели, но несмотря ни на что очень хотелось приехать на занятие! Еще раз выражаем глубокую признательность Оксане и очень надеемся на новые встречи и новые швейные подвиги под ее руководством! </div>
+                                                <div id="mCSB_2_scrollbar_vertical" className="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_2_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 181px; max-height: 326px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-2">
+                                        <div className="reviews__author"><b>Бессонова Мария</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_3">
+                                            <div id="mCSB_3" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
+                                                <div id="mCSB_3_container" className="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    'ОГРОМНОЕ СПАСИБО Академии за чудесных преподавателей!!!
+                                                    Я уже и не помню свой первый курс, но точно помню, как с уровнем «домашний любитель» попала в группу по пошиву жакета Шанель. Кто бы знал тогда, что знакомство со Светланой Анатольевной перейдет в любовь к преподавателю на года. Безумно рада такому знакомству! Преподает не просто сухую теорию, но и на практике показывает все участки и техники обработок, рассказывает секреты. Светлана Анатольевна чудесный человек, живчик, в душе ей всегда 18, с ней не скучно, время пролетает незаметно. С этим преподавателем не страшно браться за сложную работу, всегда поддерживает и помогает, не бросает на полпути. И так «любитель» с легкостью сможет пошить любое изделие, начиная с рубашки и заканчивая жакетом Шанель, тренчем и пальто МaxМara. Спасибо Академии за новые, светлые и просторные классы, там хочется творить. Главное, не бояться и верить в себя!!!
+                                                    P.S.
+                                                    Шеф, я Ваша на веки</div>
+                                                <div id="mCSB_3_scrollbar_vertical" className="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_3_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 310px; max-height: 326px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-3">
+                                        <div className="reviews__author"><b>Новикова Наталия </b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_4 mCS_no_scrollbar">
+                                            <div id="mCSB_4" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
+                                                <div id="mCSB_4_container" className="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    Преподаватели супер! Объясняли и работали с каждым участником группы, материал рассказывали понятно! Уже рекомендовала курсы своим подругам, про себя решила, что хочу пройти еще некоторые из предлагаемых Burda курсов (по мере наличия свободного времени :)
+                                                    Отдельное спасибо замечательно внимательным администраторам!!! </div>
+                                                <div id="mCSB_4_scrollbar_vertical" className="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_4_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-4">
+                                        <div className="reviews__author"><b>Новикова Наталия</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_5 mCS_no_scrollbar">
+                                            <div id="mCSB_5" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
+                                                <div id="mCSB_5_container" className="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    11 марта закончила курс «Пошив изделий из дабл ткани» у замечательного преподавателя — Светланы Анатольевны Хацкевич! Хотела попасть на этот курс с прошлого года, вот наконец звезды удачно сложились, и удивительный курс пройден Я бы назвала его эксклюзивным! Светлана Анатольевна рассказывала, показывала, советовала, как и в какой последовательности работать с дабл тканью, какие выкройки лучше подходят, досконально разбирала технологию пошива всех узлов и деталей для каждого участника группы! Для меня курс получился уникальным, насыщенным, интересным и познавательным. Пальто для дочери почти дошито, дочь в восторге, огромное спасибо Светлане Анатольевне. </div>
+                                                <div id="mCSB_5_scrollbar_vertical" className="mCSB_scrollTools mCSB_5_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_5_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-5">
+                                        <div className="reviews__author"><b>Василиса</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_6 mCS_no_scrollbar">
+                                            <div id="mCSB_6" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0">
+                                                <div id="mCSB_6_container" className="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    На каждом курсе мы отшиваем одно изделие по вашим индивидуальным меркам, а это значит, что сидеть на вас оно будет идеально.
+                                                    Вы закончите курс не просто с готовой вещью, а с глубокими знаниями, которые позволят вам шить самостоятельно.
+                                                    Обучающие программы разбиты на уровни сложности, но вы можете выбрать только те курсы, которые интересны именно вам. Не переплачивайте за то, что вам не нужно!
+                                                </div>
+                                                <div id="mCSB_6_scrollbar_vertical" className="mCSB_scrollTools mCSB_6_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_6_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-6">
+                                        <div className="reviews__author"><b>Вахромеева Светлана</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_7">
+                                            <div id="mCSB_7" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
+                                                <div id="mCSB_7_container" className="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    Я училась на курсах «Юбка», «Брюки», «Платье».
+                                                    На свой первый курс «Юбка» я пришла, не имея навыков шитья. Я боялась подойти к машинке, даже ткань резать боялась! Я попала в группу к Ирине Ивановне Киндсфатер. Это удивительный лучезарный человек, очень терпеливый и внимательный преподаватель. Каждому она будет объяснять снова и снова все, что непонятно: каждый узел, каждую строчку... Каждому она уделяет огромное количество времени.
+                                                    Ирина Ивановна подробно рассказывает и показывает, как работать с тканью, инструментами, машинками, оверлоком, с выкройками. Все становится доступным и понятным. Под ее руководством я научилась работать с швейной техникой, подгонять выкройки, а самое главное, я сшила вещи, которые с удовольствием ношу на работу.
+
+                                                    Особенностью курсов под руководством Ирины Ивановны является то, что с каким бы уровнем ни пришли девочки, каждая находила то, что ей нужно. Более опытные мастерицы шили более сложные изделия или несколько изделий за один курс. Мы, отшивая каждая свое, могли видеть работу друг друга, учились технологии выполнения тех или иных швейных операций, отшивали макеты изделий на память. Тот опыт, который я получила у Ирины Ивановны, те нюансы и тонкости работы, которыми она делилась с нами, я не получила ни из одной книги. И я рада, что есть и другие курсы. Я видела, какие чудесные жакеты и пальто шьют ее ученицы. Я знаю, что впереди меня ждут еще новые и новые открытия на следующих курсах. И новая радость общения с самым прекрасным, опытным и очень щедрым преподавателем — Ириной Ивановной Киндсфатер. </div>
+                                                <div id="mCSB_7_scrollbar_vertical" className="mCSB_scrollTools mCSB_7_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_7_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 189px; max-height: 326px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="lslide" style="width: 1230px; margin-right: 0px;">
+                                    <div className="reviews__item type-0">
+                                        <div className="reviews__author"><b>Анна Иванова</b></div>
+                                        <div className="reviews__text custom-scrollbar mCustomScrollbar _mCS_8">
+                                            <div id="mCSB_8" className="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;">
+                                                <div id="mCSB_8_container" className="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+                                                    Здравствуйте, Академия Burda! Делюсь, с каким удовольствием побывала на открытом уроке 8 февраля.
+                                                    Вся масса позитивных впечатлений вместилась в чудесное слово «кутюрненько» (с) – именно оно, произнесенное Алевтиной Борисовной Золотовой, убедило меня, что Академия – это классно! Экспресс-презентация всех курсов, хоть и насыщенная информацией, на удивление хорошо улеглась в голове. Мне было важно, что предлагались разные форматы занятий, в разное время и разной длительности – те же «Юбки» идут и по будням, и в выходные: остается только сказать себе «Хочу!».
+                                                    Время на уроке пролетело незаметно. Для меня это был чудесный день, когда получилось радостно смешать знакомое и новое. Мои инсайты:
+                                                    1. Курс может быть отличным подарком себе или начинающей шить подружке-самоучке;
+                                                    2. Можно записаться на интенсив – творческий курс или МК и сшить что-то к празднику, сделав подарок родным или знакомым. </div>
+                                                <div id="mCSB_8_scrollbar_vertical" className="mCSB_scrollTools mCSB_8_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                                    <div className="mCSB_draggerContainer">
+                                                        <div id="mCSB_8_dragger_vertical" className="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 334px; max-height: 326px; top: 0px;">
+                                                            <div className="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                                                        </div>
+                                                        <div className="mCSB_draggerRail"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lSAction"><a className="lSPrev"></a><a className="lSNext"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="special-form type-3 js-email-subscribe-block">
+            <div className="container">
+                <div className="flex-block flex-gap">
+                    <div className="info">
+                        <div className="title">Хочу получать уведомления!</div>
+                        <p>У нас бывают огромные скидки, но действуют они недолго. Вы хотите узнать о них первыми? Оставьте свой E-mail.</p>
+                    </div>
+                    <form className="subscribe-form form-default form-theme__default" action="#" method="get">
+                        <div className="form-row field-email">
+                            <input className="text-field" type="text" name="email" placeholder="E mail" required=""/>
+                        </div>
+                        <div className="btn-wrapper">
+                            <input type="hidden" name="_csrf-frontend" value="SnRITpq1FlPDsGjwYjFyYj5ovJM2WkOpYwGzZpvBoroPRXB53-NOOqD4KcgXAioAZjDEpUwDLt5aV-YAqoPx_g=="/>
+                            <button type="submit" className="btn btn-dark dashed large">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>

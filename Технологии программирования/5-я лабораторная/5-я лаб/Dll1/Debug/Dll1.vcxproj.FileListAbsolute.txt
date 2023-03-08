@@ -1,0 +1,2 @@
+C:\Users\user\OneDrive\Рабочий стол\3-я лабораторная\Dll1\Debug\Dll1.dll
+C:\Users\user\OneDrive\Рабочий стол\3-я лабораторная\Dll1\Debug\Dll1.pdb

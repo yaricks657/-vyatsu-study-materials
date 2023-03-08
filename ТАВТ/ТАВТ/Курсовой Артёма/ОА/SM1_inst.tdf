@@ -1,0 +1,10 @@
+(
+	result_sig[]
+) = SM1	(
+	.cin = cin_sig,
+	.dataa[] = dataa_sig[],
+	.datab[] = datab_sig[]
+)
+RETURNS (
+	.result[]
+);

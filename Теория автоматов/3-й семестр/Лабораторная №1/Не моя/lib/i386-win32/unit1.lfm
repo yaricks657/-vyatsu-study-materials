@@ -1,0 +1,498 @@
+object Form1: TForm1
+  Left = 99
+  Height = 962
+  Top = 4
+  Width = 1802
+  Caption = 'Form1'
+  ClientHeight = 937
+  ClientWidth = 1802
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object Image2: TImage
+    Left = 750
+    Height = 88
+    Top = 190
+    Width = 73
+  end
+  object Image3: TImage
+    Left = 860
+    Height = 88
+    Top = 300
+    Width = 73
+  end
+  object Image4: TImage
+    Left = 900
+    Height = 88
+    Top = 450
+    Width = 73
+  end
+  object Image5: TImage
+    Left = 860
+    Height = 88
+    Top = 600
+    Width = 73
+  end
+  object Image6: TImage
+    Left = 750
+    Height = 88
+    Top = 710
+    Width = 73
+  end
+  object Image7: TImage
+    Left = 600
+    Height = 88
+    Top = 750
+    Width = 73
+  end
+  object Image8: TImage
+    Left = 450
+    Height = 88
+    Top = 710
+    Width = 73
+  end
+  object Image9: TImage
+    Left = 340
+    Height = 88
+    Top = 600
+    Width = 73
+  end
+  object Image10: TImage
+    Left = 300
+    Height = 88
+    Top = 450
+    Width = 73
+  end
+  object Image11: TImage
+    Left = 340
+    Height = 88
+    Top = 300
+    Width = 73
+  end
+  object Image12: TImage
+    Left = 450
+    Height = 88
+    Top = 190
+    Width = 73
+  end
+  object Image1: TImage
+    Left = 600
+    Height = 88
+    Top = 150
+    Width = 73
+  end
+  object StartStop: TToggleBox
+    Left = 1344
+    Height = 31
+    Top = 104
+    Width = 94
+    Caption = 'Старт'
+    OnChange = StartStopChange
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 632
+    Height = 25
+    Top = 120
+    Width = 10
+    Caption = '1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 784
+    Height = 25
+    Top = 160
+    Width = 10
+    Caption = '2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 888
+    Height = 25
+    Top = 272
+    Width = 10
+    Caption = '3'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 928
+    Height = 25
+    Top = 416
+    Width = 10
+    Caption = '4'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 888
+    Height = 25
+    Top = 568
+    Width = 10
+    Caption = '5'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 784
+    Height = 25
+    Top = 680
+    Width = 10
+    Caption = '6'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 632
+    Height = 25
+    Top = 720
+    Width = 10
+    Caption = '7'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 480
+    Height = 25
+    Top = 680
+    Width = 10
+    Caption = '8'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 368
+    Height = 25
+    Top = 568
+    Width = 10
+    Caption = '9'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 328
+    Height = 25
+    Top = 421
+    Width = 20
+    Caption = '10'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 368
+    Height = 25
+    Top = 272
+    Width = 20
+    Caption = '11'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 480
+    Height = 25
+    Top = 160
+    Width = 20
+    Caption = '12'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -18
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 1184
+    Height = 41
+    Top = 400
+    Width = 411
+    OnChange = TrackBar1Change
+    Position = 1
+    TabOrder = 1
+  end
+  object Label13: TLabel
+    Left = 1160
+    Height = 28
+    Top = 400
+    Width = 11
+    Caption = '0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 1608
+    Height = 28
+    Top = 400
+    Width = 33
+    Caption = '100'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object verPromax: TEdit
+    Left = 1672
+    Height = 28
+    Top = 400
+    Width = 100
+    OnChange = verPromaxChange
+    TabOrder = 2
+  end
+  object Image13: TImage
+    Left = 199
+    Height = 26
+    Top = 286
+    Width = 25
+    Visible = False
+  end
+  object Edit1: TEdit
+    Left = 600
+    Height = 28
+    Top = 240
+    Width = 73
+    TabOrder = 3
+    Text = '100'
+  end
+  object Edit2: TEdit
+    Left = 750
+    Height = 28
+    Top = 280
+    Width = 73
+    TabOrder = 4
+    Text = '100'
+  end
+  object Edit3: TEdit
+    Left = 860
+    Height = 28
+    Top = 392
+    Width = 73
+    TabOrder = 5
+    Text = '100'
+  end
+  object Edit4: TEdit
+    Left = 900
+    Height = 28
+    Top = 544
+    Width = 73
+    OnChange = Edit4Change
+    TabOrder = 6
+    Text = '100'
+  end
+  object Edit5: TEdit
+    Left = 860
+    Height = 28
+    Top = 696
+    Width = 73
+    TabOrder = 7
+    Text = '100'
+  end
+  object Edit6: TEdit
+    Left = 750
+    Height = 28
+    Top = 800
+    Width = 73
+    TabOrder = 8
+    Text = '100'
+  end
+  object Edit7: TEdit
+    Left = 600
+    Height = 28
+    Top = 840
+    Width = 73
+    TabOrder = 9
+    Text = '100'
+  end
+  object Edit8: TEdit
+    Left = 450
+    Height = 28
+    Top = 800
+    Width = 73
+    TabOrder = 10
+    Text = '100'
+  end
+  object Edit9: TEdit
+    Left = 340
+    Height = 28
+    Top = 696
+    Width = 73
+    TabOrder = 11
+    Text = '100'
+  end
+  object Edit10: TEdit
+    Left = 300
+    Height = 28
+    Top = 544
+    Width = 73
+    TabOrder = 12
+    Text = '100'
+  end
+  object Edit11: TEdit
+    Left = 340
+    Height = 28
+    Top = 392
+    Width = 73
+    TabOrder = 13
+    Text = '100'
+  end
+  object Edit12: TEdit
+    Left = 450
+    Height = 28
+    Top = 280
+    Width = 73
+    TabOrder = 14
+    Text = '100'
+  end
+  object Pause: TToggleBox
+    Left = 1344
+    Height = 31
+    Top = 160
+    Width = 94
+    Caption = 'Пауза'
+    OnChange = PauseChange
+    TabOrder = 15
+  end
+  object Vyxod: TButton
+    Left = 1435
+    Height = 31
+    Top = 552
+    Width = 94
+    Caption = 'Выход'
+    OnClick = VyxodClick
+    TabOrder = 16
+  end
+  object MainMenu1: TMainMenu
+    left = 60
+    top = 64
+    object Faiil: TMenuItem
+      Caption = 'Файл'
+      object Openn: TMenuItem
+        Caption = 'Открыть'
+        OnClick = OpennClick
+      end
+      object Keep: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = KeepClick
+      end
+      object Ext: TMenuItem
+        Caption = 'Выход'
+        OnClick = ExtClick
+      end
+    end
+    object Settings: TMenuItem
+      Caption = 'Настройки'
+      OnClick = SettingsClick
+    end
+    object Dannye: TMenuItem
+      Caption = 'Сведения'
+      object Aboutprog: TMenuItem
+        Caption = 'О программе'
+        OnClick = AboutprogClick
+      end
+      object AboutAuthor: TMenuItem
+        Caption = 'Об авторе'
+        OnClick = AboutAuthorClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 184
+    top = 24
+  end
+  object SaveDialog1: TSaveDialog
+    left = 440
+    top = 64
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    left = 1123
+    top = 593
+  end
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer2Timer
+    left = 193
+    top = 524
+  end
+end

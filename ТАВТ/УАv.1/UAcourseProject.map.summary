@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Mon May 31 16:32:47 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : UAcourseProject
+Top-level Entity Name : UAcourseProject
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 15
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 26
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

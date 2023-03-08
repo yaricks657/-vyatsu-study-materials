@@ -1,0 +1,9 @@
+(
+	q_sig[]
+) = CT2	(
+	.clock = clock_sig,
+	.sset = sset_sig
+)
+RETURNS (
+	.q[]
+);

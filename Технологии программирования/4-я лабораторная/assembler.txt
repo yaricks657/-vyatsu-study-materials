@@ -1,0 +1,47 @@
+.data
+h dq ?	
+a dq verh
+b dq niz
+c dq arg
+n dq razb
+two dq 2.0 
+one dq 1.0
+sum dq 0.0 
+.code
+mov ecx, n
+
+sin proc far
+fld a	//Заносим в st(0) верхний предел
+fsin	//Вычисление sin(a) и запись в st(0)
+fld b	//Заносим в st(0) ниэний предел, в st(1) теперь sin(a)
+fsin	//Вычисление sin(b) и запись в st(0)
+fadd	//Сложение st(0) и st(1)
+fdiv two	// (sin(a)+sin(b)) / 2
+fstp sum	//Запись st(0) в sum
+fldz st(0)	//Обнуление st(0)
+fldz st(1)	//Обнуление st(1)
+
+fld a	//Заносим в st(0) верхний предел
+fsub b	//a-b
+fdiv n	//(a-b)/n
+fstp h	//Сохранение вершины стека в h
+
+metka: fld h	//Запись в вершину стека h
+fmul n	// i*h
+fadd b	// i*h+b
+fsin	//sin(i*h+b)
+fadd sum	//sum + sin(i*h+b)
+fstp sum	//Запись в sum st(0)
+fld n	//Запись в st(0) n
+fsub one	//Вычитание n-1
+fstp n	//Запись st(0) в n
+fldz st(0)	//Обнуление st(0)
+loop metka
+fld sum	//Запись в st(0) sum
+fmul h	// sum*h
+fmul c	//Умножаем на аргумент
+
+
+ret
+sin endp
+

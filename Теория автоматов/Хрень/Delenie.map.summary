@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 09 15:27:49 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : Delenie
+Top-level Entity Name : Delenie
+Family : Cyclone III
+Total logic elements : 43
+    Total combinational functions : 33
+    Dedicated logic registers : 28
+Total registers : 28
+Total pins : 61
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

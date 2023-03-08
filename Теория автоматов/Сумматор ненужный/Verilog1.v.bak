@@ -1,0 +1,16 @@
+module four_bit_adder( 
+    input [3:0] a,
+    input [3:0] b,
+    input c_in,
+    output [3:0] sum,
+    output c_out
+    );
+    wire C1,C2,C3;
+
+    my_full_summator fa0 (a[0],b[0],c_in,sum[0],C1);
+    my_full_summator fa1 (a[1],b[1],C1,sum[1],C2);
+    my_full_summator fa2 (a[2],b[2],C2,sum[2],C3);
+    my_full_summator fa3 (a[3],b[3],C3,sum[3],c_out);
+
+
+endmodule

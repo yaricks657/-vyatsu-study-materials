@@ -1,0 +1,73 @@
+.386
+.MODEL flat,C
+;.STACK
+.DATA
+h dq ?
+i dq ?
+b dq ?
+a dq ?
+s dq ?
+n dd ?
+two dq 2.0
+one dq 1.0
+.CODE
+PUBLIC sinn 
+sinn PROC C b:qword
+mov ecx,[ebp+16]
+mov eax,[ebp+12]
+mov ebx,[ebp+8]
+push ebx
+push eax
+push ecx
+mov ebp,esp
+fld dword ptr [ebp+4]
+fld dword ptr [ebp+8]
+fsin
+fxch
+fsin
+fadd
+fdiv two ;(sin(a) + sin(b)) / 2
+fst s
+fld dword ptr [ebp]
+fst n
+fld dword ptr [ebp+8]
+fst b
+fld dword ptr [ebp+4]
+fst a
+fsub
+fxch
+fdiv ;(b - a) / n
+fst h
+fld one
+fst i
+metka:
+fxch
+fmul i
+fadd a
+fsin
+fadd s
+fst s; s=sin(a+i*h)
+fld i
+fadd one
+fst i
+finit
+fld h
+fld i
+loop metka
+finit
+fld h
+fld s
+fmul
+fst dword ptr [ebp]; записываю значение по адресу ebp
+ 
+mov eax, ebp;
+;mov ebx, ebp
+;mov ecx, ebp ;присваиваю eax адрес значения, может, не правильно делаю
+;pop ecx
+;pop eax
+;pop ebx
+;mov esp, ebp
+;pop ebp
+ret 
+sinn ENDP
+END

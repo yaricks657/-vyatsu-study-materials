@@ -1,0 +1,874 @@
+Simulator report for Delenie
+Sun May 09 14:56:11 2021
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 380 nodes    ;
+; Simulation Coverage         ;      10.79 % ;
+; Total Number of Transitions ; 329          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      10.79 % ;
+; Total nodes checked                                 ; 380          ;
+; Total output ports checked                          ; 380          ;
+; Total output ports with complete 1/0-value coverage ; 41           ;
+; Total output ports with no 1/0-value coverage       ; 330          ;
+; Total output ports with no 1-value coverage         ; 334          ;
+; Total output ports with no 0-value coverage         ; 335          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                  ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                           ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |Delenie|y[8]                                                                                       ; |Delenie|y[8]                                                                                       ; pin_out          ;
+; |Delenie|y[6]                                                                                       ; |Delenie|y[6]                                                                                       ; pin_out          ;
+; |Delenie|y[5]                                                                                       ; |Delenie|y[5]                                                                                       ; pin_out          ;
+; |Delenie|y[4]                                                                                       ; |Delenie|y[4]                                                                                       ; pin_out          ;
+; |Delenie|y[2]                                                                                       ; |Delenie|y[2]                                                                                       ; pin_out          ;
+; |Delenie|y[1]                                                                                       ; |Delenie|y[1]                                                                                       ; pin_out          ;
+; |Delenie|y[0]                                                                                       ; |Delenie|y[0]                                                                                       ; pin_out          ;
+; |Delenie|clk                                                                                        ; |Delenie|clk                                                                                        ; out              ;
+; |Delenie|inst16                                                                                     ; |Delenie|inst16                                                                                     ; out0             ;
+; |Delenie|inst5                                                                                      ; |Delenie|inst5                                                                                      ; out0             ;
+; |Delenie|inst11                                                                                     ; |Delenie|inst11                                                                                     ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|_~21                  ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|_~21                  ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~8  ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~8  ; out0             ;
+; |Delenie|block_name:inst4|pc[0]                                                                     ; |Delenie|block_name:inst4|pc[0]                                                                     ; regout           ;
+; |Delenie|block_name:inst4|y~22                                                                      ; |Delenie|block_name:inst4|y~22                                                                      ; out0             ;
+; |Delenie|block_name:inst4|pc~225                                                                    ; |Delenie|block_name:inst4|pc~225                                                                    ; out0             ;
+; |Delenie|block_name:inst4|pc~226                                                                    ; |Delenie|block_name:inst4|pc~226                                                                    ; out0             ;
+; |Delenie|block_name:inst4|pc[1]                                                                     ; |Delenie|block_name:inst4|pc[1]                                                                     ; regout           ;
+; |Delenie|block_name:inst4|pc[2]                                                                     ; |Delenie|block_name:inst4|pc[2]                                                                     ; regout           ;
+; |Delenie|block_name:inst4|y[0]                                                                      ; |Delenie|block_name:inst4|y[0]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[1]                                                                      ; |Delenie|block_name:inst4|y[1]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[2]                                                                      ; |Delenie|block_name:inst4|y[2]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[4]                                                                      ; |Delenie|block_name:inst4|y[4]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[5]                                                                      ; |Delenie|block_name:inst4|y[5]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[6]                                                                      ; |Delenie|block_name:inst4|y[6]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[8]                                                                      ; |Delenie|block_name:inst4|y[8]                                                                      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~9  ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~9  ; out              ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~10 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~10 ; out              ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~11 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~11 ; out              ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~12 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~12 ; out              ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~13 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~13 ; out              ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~14 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~14 ; out              ;
+; |Delenie|block_name:inst4|Selector3~0                                                               ; |Delenie|block_name:inst4|Selector3~0                                                               ; out0             ;
+; |Delenie|block_name:inst4|Selector33~0                                                              ; |Delenie|block_name:inst4|Selector33~0                                                              ; out0             ;
+; |Delenie|block_name:inst4|Selector34~0                                                              ; |Delenie|block_name:inst4|Selector34~0                                                              ; out0             ;
+; |Delenie|block_name:inst4|Selector36~0                                                              ; |Delenie|block_name:inst4|Selector36~0                                                              ; out0             ;
+; |Delenie|block_name:inst4|Selector37~0                                                              ; |Delenie|block_name:inst4|Selector37~0                                                              ; out0             ;
+; |Delenie|block_name:inst4|Selector38~0                                                              ; |Delenie|block_name:inst4|Selector38~0                                                              ; out0             ;
+; |Delenie|block_name:inst4|Equal1~0                                                                  ; |Delenie|block_name:inst4|Equal1~0                                                                  ; out0             ;
+; |Delenie|block_name:inst4|Equal2~0                                                                  ; |Delenie|block_name:inst4|Equal2~0                                                                  ; out0             ;
+; |Delenie|block_name:inst4|Equal3~0                                                                  ; |Delenie|block_name:inst4|Equal3~0                                                                  ; out0             ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                          ; Output Port Name                                                                                      ; Output Port Type ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |Delenie|PRS                                                                                       ; |Delenie|PRS                                                                                          ; pin_out          ;
+; |Delenie|y[14]                                                                                     ; |Delenie|y[14]                                                                                        ; pin_out          ;
+; |Delenie|y[13]                                                                                     ; |Delenie|y[13]                                                                                        ; pin_out          ;
+; |Delenie|y[12]                                                                                     ; |Delenie|y[12]                                                                                        ; pin_out          ;
+; |Delenie|y[11]                                                                                     ; |Delenie|y[11]                                                                                        ; pin_out          ;
+; |Delenie|y[10]                                                                                     ; |Delenie|y[10]                                                                                        ; pin_out          ;
+; |Delenie|y[9]                                                                                      ; |Delenie|y[9]                                                                                         ; pin_out          ;
+; |Delenie|y[7]                                                                                      ; |Delenie|y[7]                                                                                         ; pin_out          ;
+; |Delenie|y[3]                                                                                      ; |Delenie|y[3]                                                                                         ; pin_out          ;
+; |Delenie|p[8]                                                                                      ; |Delenie|p[8]                                                                                         ; pin_out          ;
+; |Delenie|p[7]                                                                                      ; |Delenie|p[7]                                                                                         ; pin_out          ;
+; |Delenie|p[6]                                                                                      ; |Delenie|p[6]                                                                                         ; pin_out          ;
+; |Delenie|p[5]                                                                                      ; |Delenie|p[5]                                                                                         ; pin_out          ;
+; |Delenie|p[4]                                                                                      ; |Delenie|p[4]                                                                                         ; pin_out          ;
+; |Delenie|p[3]                                                                                      ; |Delenie|p[3]                                                                                         ; pin_out          ;
+; |Delenie|p[2]                                                                                      ; |Delenie|p[2]                                                                                         ; pin_out          ;
+; |Delenie|p[1]                                                                                      ; |Delenie|p[1]                                                                                         ; pin_out          ;
+; |Delenie|p[0]                                                                                      ; |Delenie|p[0]                                                                                         ; pin_out          ;
+; |Delenie|inst32                                                                                    ; |Delenie|inst32                                                                                       ; out0             ;
+; |Delenie|inst33                                                                                    ; |Delenie|inst33                                                                                       ; out0             ;
+; |Delenie|x[15]                                                                                     ; |Delenie|x[15]                                                                                        ; out              ;
+; |Delenie|x[9]                                                                                      ; |Delenie|x[9]                                                                                         ; out              ;
+; |Delenie|x[8]                                                                                      ; |Delenie|x[8]                                                                                         ; out              ;
+; |Delenie|x[7]                                                                                      ; |Delenie|x[7]                                                                                         ; out              ;
+; |Delenie|x[6]                                                                                      ; |Delenie|x[6]                                                                                         ; out              ;
+; |Delenie|x[5]                                                                                      ; |Delenie|x[5]                                                                                         ; out              ;
+; |Delenie|x[4]                                                                                      ; |Delenie|x[4]                                                                                         ; out              ;
+; |Delenie|x[3]                                                                                      ; |Delenie|x[3]                                                                                         ; out              ;
+; |Delenie|x[2]                                                                                      ; |Delenie|x[2]                                                                                         ; out              ;
+; |Delenie|x[1]                                                                                      ; |Delenie|x[1]                                                                                         ; out              ;
+; |Delenie|x[0]                                                                                      ; |Delenie|x[0]                                                                                         ; out              ;
+; |Delenie|inst25                                                                                    ; |Delenie|inst25                                                                                       ; regout           ;
+; |Delenie|inst29                                                                                    ; |Delenie|inst29                                                                                       ; out0             ;
+; |Delenie|inst27                                                                                    ; |Delenie|inst27                                                                                       ; out0             ;
+; |Delenie|DNN                                                                                       ; |Delenie|DNN                                                                                          ; pin_out          ;
+; |Delenie|PMR                                                                                       ; |Delenie|PMR                                                                                          ; pin_out          ;
+; |Delenie|inst31                                                                                    ; |Delenie|inst31                                                                                       ; out0             ;
+; |Delenie|Z                                                                                         ; |Delenie|Z                                                                                            ; pin_out          ;
+; |Delenie|result[15]                                                                                ; |Delenie|result[15]                                                                                   ; pin_out          ;
+; |Delenie|result[14]                                                                                ; |Delenie|result[14]                                                                                   ; pin_out          ;
+; |Delenie|result[13]                                                                                ; |Delenie|result[13]                                                                                   ; pin_out          ;
+; |Delenie|result[12]                                                                                ; |Delenie|result[12]                                                                                   ; pin_out          ;
+; |Delenie|result[11]                                                                                ; |Delenie|result[11]                                                                                   ; pin_out          ;
+; |Delenie|result[10]                                                                                ; |Delenie|result[10]                                                                                   ; pin_out          ;
+; |Delenie|result[9]                                                                                 ; |Delenie|result[9]                                                                                    ; pin_out          ;
+; |Delenie|result[8]                                                                                 ; |Delenie|result[8]                                                                                    ; pin_out          ;
+; |Delenie|result[7]                                                                                 ; |Delenie|result[7]                                                                                    ; pin_out          ;
+; |Delenie|result[6]                                                                                 ; |Delenie|result[6]                                                                                    ; pin_out          ;
+; |Delenie|result[5]                                                                                 ; |Delenie|result[5]                                                                                    ; pin_out          ;
+; |Delenie|result[4]                                                                                 ; |Delenie|result[4]                                                                                    ; pin_out          ;
+; |Delenie|result[3]                                                                                 ; |Delenie|result[3]                                                                                    ; pin_out          ;
+; |Delenie|result[2]                                                                                 ; |Delenie|result[2]                                                                                    ; pin_out          ;
+; |Delenie|result[1]                                                                                 ; |Delenie|result[1]                                                                                    ; pin_out          ;
+; |Delenie|result[0]                                                                                 ; |Delenie|result[0]                                                                                    ; pin_out          ;
+; |Delenie|inst20                                                                                    ; |Delenie|inst20                                                                                       ; out0             ;
+; |Delenie|inst14                                                                                    ; |Delenie|inst14                                                                                       ; regout           ;
+; |Delenie|inst15                                                                                    ; |Delenie|inst15                                                                                       ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~14                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~14                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~15                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~15                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~16                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~16                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~17                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~17                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~18                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~18                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~19                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~19                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~20                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~20                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~21                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~21                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~22                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~22                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~23                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~23                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~24                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~24                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~25                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~25                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~26                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~26                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~27                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~27                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~28                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~28                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~29                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~29                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~30                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~30                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                        ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[9]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[9]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[8]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[8]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[7]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[7]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[3]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[3]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[2]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[2]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[1]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[1]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[0]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[0]                                                     ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~2                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~3                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~4                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~6                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~7                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~8                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~9                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~9                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~11                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~11                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~12                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~12                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~13                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~13                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~14                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~14                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~15                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~15                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~16                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~16                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~17                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~17                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~18                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~18                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~19                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~19                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~20                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~20                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~21                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~21                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~22                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~22                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~23                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~23                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~24                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~24                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~25                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~25                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~26                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~26                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~27                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~27                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~0                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~0                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~1                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~1                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~2                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~2                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~3                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~3                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~5                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~5                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~6                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~6                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~7                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~7                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~8                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~8                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                        ; regout           ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][1]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][1]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][2]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][2]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][3]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][3]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][4]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][4]                                          ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~1 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~1    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~2 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~2    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~3 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~3    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~4 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~4    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~5 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~5    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[5]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[5]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[4]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[4]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[3]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[3]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[2]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[2]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[1]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[1]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[0]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[0]                                                    ; regout           ;
+; |Delenie|block_name:inst4|always0~10                                                               ; |Delenie|block_name:inst4|always0~10                                                                  ; out0             ;
+; |Delenie|block_name:inst4|y~16                                                                     ; |Delenie|block_name:inst4|y~16                                                                        ; out              ;
+; |Delenie|block_name:inst4|y~17                                                                     ; |Delenie|block_name:inst4|y~17                                                                        ; out              ;
+; |Delenie|block_name:inst4|Z~8                                                                      ; |Delenie|block_name:inst4|Z~8                                                                         ; out              ;
+; |Delenie|block_name:inst4|WideNor0                                                                 ; |Delenie|block_name:inst4|WideNor0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|y~19                                                                     ; |Delenie|block_name:inst4|y~19                                                                        ; out              ;
+; |Delenie|block_name:inst4|WideOr1                                                                  ; |Delenie|block_name:inst4|WideOr1                                                                     ; out0             ;
+; |Delenie|block_name:inst4|Z                                                                        ; |Delenie|block_name:inst4|Z                                                                           ; regout           ;
+; |Delenie|block_name:inst4|WideOr9                                                                  ; |Delenie|block_name:inst4|WideOr9                                                                     ; out0             ;
+; |Delenie|block_name:inst4|pc[3]                                                                    ; |Delenie|block_name:inst4|pc[3]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[6]                                                                    ; |Delenie|block_name:inst4|pc[6]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[7]                                                                    ; |Delenie|block_name:inst4|pc[7]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[8]                                                                    ; |Delenie|block_name:inst4|pc[8]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[9]                                                                    ; |Delenie|block_name:inst4|pc[9]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[10]                                                                   ; |Delenie|block_name:inst4|pc[10]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[11]                                                                   ; |Delenie|block_name:inst4|pc[11]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[12]                                                                   ; |Delenie|block_name:inst4|pc[12]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[13]                                                                   ; |Delenie|block_name:inst4|pc[13]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[14]                                                                   ; |Delenie|block_name:inst4|pc[14]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[15]                                                                   ; |Delenie|block_name:inst4|pc[15]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[16]                                                                   ; |Delenie|block_name:inst4|pc[16]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[17]                                                                   ; |Delenie|block_name:inst4|pc[17]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[18]                                                                   ; |Delenie|block_name:inst4|pc[18]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[19]                                                                   ; |Delenie|block_name:inst4|pc[19]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[20]                                                                   ; |Delenie|block_name:inst4|pc[20]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[21]                                                                   ; |Delenie|block_name:inst4|pc[21]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[22]                                                                   ; |Delenie|block_name:inst4|pc[22]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[23]                                                                   ; |Delenie|block_name:inst4|pc[23]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[24]                                                                   ; |Delenie|block_name:inst4|pc[24]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[25]                                                                   ; |Delenie|block_name:inst4|pc[25]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[26]                                                                   ; |Delenie|block_name:inst4|pc[26]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[27]                                                                   ; |Delenie|block_name:inst4|pc[27]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[28]                                                                   ; |Delenie|block_name:inst4|pc[28]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[29]                                                                   ; |Delenie|block_name:inst4|pc[29]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[30]                                                                   ; |Delenie|block_name:inst4|pc[30]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[31]                                                                   ; |Delenie|block_name:inst4|pc[31]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[7]                                                                     ; |Delenie|block_name:inst4|y[7]                                                                        ; regout           ;
+; |Delenie|block_name:inst4|y[10]                                                                    ; |Delenie|block_name:inst4|y[10]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[12]                                                                    ; |Delenie|block_name:inst4|y[12]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[13]                                                                    ; |Delenie|block_name:inst4|y[13]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[14]                                                                    ; |Delenie|block_name:inst4|y[14]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|Selector0~0                                                              ; |Delenie|block_name:inst4|Selector0~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector1~0                                                              ; |Delenie|block_name:inst4|Selector1~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector2~0                                                              ; |Delenie|block_name:inst4|Selector2~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector3~1                                                              ; |Delenie|block_name:inst4|Selector3~1                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector6~0                                                              ; |Delenie|block_name:inst4|Selector6~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector6~1                                                              ; |Delenie|block_name:inst4|Selector6~1                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector7~0                                                              ; |Delenie|block_name:inst4|Selector7~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector8~0                                                              ; |Delenie|block_name:inst4|Selector8~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector9~0                                                              ; |Delenie|block_name:inst4|Selector9~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector10~0                                                             ; |Delenie|block_name:inst4|Selector10~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector11~0                                                             ; |Delenie|block_name:inst4|Selector11~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector12~0                                                             ; |Delenie|block_name:inst4|Selector12~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector13~0                                                             ; |Delenie|block_name:inst4|Selector13~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector14~0                                                             ; |Delenie|block_name:inst4|Selector14~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector15~0                                                             ; |Delenie|block_name:inst4|Selector15~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector16~0                                                             ; |Delenie|block_name:inst4|Selector16~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector17~0                                                             ; |Delenie|block_name:inst4|Selector17~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector18~0                                                             ; |Delenie|block_name:inst4|Selector18~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector19~0                                                             ; |Delenie|block_name:inst4|Selector19~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector20~0                                                             ; |Delenie|block_name:inst4|Selector20~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector21~0                                                             ; |Delenie|block_name:inst4|Selector21~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector22~0                                                             ; |Delenie|block_name:inst4|Selector22~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector23~0                                                             ; |Delenie|block_name:inst4|Selector23~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector24~0                                                             ; |Delenie|block_name:inst4|Selector24~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector25~0                                                             ; |Delenie|block_name:inst4|Selector25~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector26~0                                                             ; |Delenie|block_name:inst4|Selector26~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector27~0                                                             ; |Delenie|block_name:inst4|Selector27~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector28~0                                                             ; |Delenie|block_name:inst4|Selector28~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector29~0                                                             ; |Delenie|block_name:inst4|Selector29~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector30~0                                                             ; |Delenie|block_name:inst4|Selector30~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector31~0                                                             ; |Delenie|block_name:inst4|Selector31~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector32~0                                                             ; |Delenie|block_name:inst4|Selector32~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector33~2                                                             ; |Delenie|block_name:inst4|Selector33~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector34~2                                                             ; |Delenie|block_name:inst4|Selector34~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector35~0                                                             ; |Delenie|block_name:inst4|Selector35~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector36~1                                                             ; |Delenie|block_name:inst4|Selector36~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector36~2                                                             ; |Delenie|block_name:inst4|Selector36~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector38~1                                                             ; |Delenie|block_name:inst4|Selector38~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector39~0                                                             ; |Delenie|block_name:inst4|Selector39~0                                                                ; out              ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~0             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~0                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~1             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~1                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~2             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~2                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~3             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~3                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~4             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~4                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~5             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~5                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~6             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~6                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~7             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~7                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~8             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~8                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~9             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~9                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~10            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~10               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~11            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~11               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~12            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~12               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~13            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~13               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~14            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~14               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~15            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~15               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~16            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~16               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~17            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~17               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~18            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~18               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~19            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~19               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~20            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~20               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~21            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~21               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~22            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~22               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~23            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~23               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~24            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~24               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~25            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~25               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~26            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~26               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~27            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~27               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~28            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~28               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~29            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~29               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~30            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~30               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~31            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~31               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~32            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~32               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~33            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~33               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~34            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~34               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~35            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~35               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~36            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~36               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~37            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~37               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~38            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~38               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~39            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~39               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~40            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~40               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~41            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~41               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~42            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~42               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~0            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~0               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~1            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~1               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~2            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~2               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~3            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~3               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~4            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~4               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~5            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~5               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~6            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~6               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~7            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~7               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~8            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~8               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~9            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~9               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~10           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~10              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~11           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~11              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~12           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~12              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~13           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~13              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~14           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~14              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~15           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~15              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~16           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~16              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~17           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~17              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~18           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~18              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~19           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~19              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~20           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~20              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~21           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~21              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~22           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~22              ; out0             ;
+; |Delenie|block_name:inst4|Equal0~0                                                                 ; |Delenie|block_name:inst4|Equal0~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal4~0                                                                 ; |Delenie|block_name:inst4|Equal4~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal5~0                                                                 ; |Delenie|block_name:inst4|Equal5~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal6~0                                                                 ; |Delenie|block_name:inst4|Equal6~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal7~0                                                                 ; |Delenie|block_name:inst4|Equal7~0                                                                    ; out0             ;
+; |Delenie|~DEV_CLRn~                                                                                ; |Delenie|~DEV_CLRn~                                                                                   ; dev_clr_out      ;
+; |Delenie|~DEV_OE~                                                                                  ; |Delenie|~DEV_OE~                                                                                     ; dev_oe_out       ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                          ; Output Port Name                                                                                      ; Output Port Type ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |Delenie|PRS                                                                                       ; |Delenie|PRS                                                                                          ; pin_out          ;
+; |Delenie|y[14]                                                                                     ; |Delenie|y[14]                                                                                        ; pin_out          ;
+; |Delenie|y[13]                                                                                     ; |Delenie|y[13]                                                                                        ; pin_out          ;
+; |Delenie|y[12]                                                                                     ; |Delenie|y[12]                                                                                        ; pin_out          ;
+; |Delenie|y[11]                                                                                     ; |Delenie|y[11]                                                                                        ; pin_out          ;
+; |Delenie|y[10]                                                                                     ; |Delenie|y[10]                                                                                        ; pin_out          ;
+; |Delenie|y[9]                                                                                      ; |Delenie|y[9]                                                                                         ; pin_out          ;
+; |Delenie|y[7]                                                                                      ; |Delenie|y[7]                                                                                         ; pin_out          ;
+; |Delenie|y[3]                                                                                      ; |Delenie|y[3]                                                                                         ; pin_out          ;
+; |Delenie|p[8]                                                                                      ; |Delenie|p[8]                                                                                         ; pin_out          ;
+; |Delenie|p[7]                                                                                      ; |Delenie|p[7]                                                                                         ; pin_out          ;
+; |Delenie|p[6]                                                                                      ; |Delenie|p[6]                                                                                         ; pin_out          ;
+; |Delenie|p[5]                                                                                      ; |Delenie|p[5]                                                                                         ; pin_out          ;
+; |Delenie|p[4]                                                                                      ; |Delenie|p[4]                                                                                         ; pin_out          ;
+; |Delenie|p[3]                                                                                      ; |Delenie|p[3]                                                                                         ; pin_out          ;
+; |Delenie|p[2]                                                                                      ; |Delenie|p[2]                                                                                         ; pin_out          ;
+; |Delenie|p[1]                                                                                      ; |Delenie|p[1]                                                                                         ; pin_out          ;
+; |Delenie|p[0]                                                                                      ; |Delenie|p[0]                                                                                         ; pin_out          ;
+; |Delenie|inst32                                                                                    ; |Delenie|inst32                                                                                       ; out0             ;
+; |Delenie|inst33                                                                                    ; |Delenie|inst33                                                                                       ; out0             ;
+; |Delenie|x[15]                                                                                     ; |Delenie|x[15]                                                                                        ; out              ;
+; |Delenie|x[9]                                                                                      ; |Delenie|x[9]                                                                                         ; out              ;
+; |Delenie|x[8]                                                                                      ; |Delenie|x[8]                                                                                         ; out              ;
+; |Delenie|x[7]                                                                                      ; |Delenie|x[7]                                                                                         ; out              ;
+; |Delenie|x[6]                                                                                      ; |Delenie|x[6]                                                                                         ; out              ;
+; |Delenie|x[5]                                                                                      ; |Delenie|x[5]                                                                                         ; out              ;
+; |Delenie|x[4]                                                                                      ; |Delenie|x[4]                                                                                         ; out              ;
+; |Delenie|x[3]                                                                                      ; |Delenie|x[3]                                                                                         ; out              ;
+; |Delenie|x[2]                                                                                      ; |Delenie|x[2]                                                                                         ; out              ;
+; |Delenie|x[1]                                                                                      ; |Delenie|x[1]                                                                                         ; out              ;
+; |Delenie|x[0]                                                                                      ; |Delenie|x[0]                                                                                         ; out              ;
+; |Delenie|inst25                                                                                    ; |Delenie|inst25                                                                                       ; regout           ;
+; |Delenie|inst29                                                                                    ; |Delenie|inst29                                                                                       ; out0             ;
+; |Delenie|inst27                                                                                    ; |Delenie|inst27                                                                                       ; out0             ;
+; |Delenie|DNN                                                                                       ; |Delenie|DNN                                                                                          ; pin_out          ;
+; |Delenie|PMR                                                                                       ; |Delenie|PMR                                                                                          ; pin_out          ;
+; |Delenie|inst31                                                                                    ; |Delenie|inst31                                                                                       ; out0             ;
+; |Delenie|Z                                                                                         ; |Delenie|Z                                                                                            ; pin_out          ;
+; |Delenie|result[15]                                                                                ; |Delenie|result[15]                                                                                   ; pin_out          ;
+; |Delenie|result[14]                                                                                ; |Delenie|result[14]                                                                                   ; pin_out          ;
+; |Delenie|result[13]                                                                                ; |Delenie|result[13]                                                                                   ; pin_out          ;
+; |Delenie|result[12]                                                                                ; |Delenie|result[12]                                                                                   ; pin_out          ;
+; |Delenie|result[11]                                                                                ; |Delenie|result[11]                                                                                   ; pin_out          ;
+; |Delenie|result[10]                                                                                ; |Delenie|result[10]                                                                                   ; pin_out          ;
+; |Delenie|result[9]                                                                                 ; |Delenie|result[9]                                                                                    ; pin_out          ;
+; |Delenie|result[8]                                                                                 ; |Delenie|result[8]                                                                                    ; pin_out          ;
+; |Delenie|result[7]                                                                                 ; |Delenie|result[7]                                                                                    ; pin_out          ;
+; |Delenie|result[6]                                                                                 ; |Delenie|result[6]                                                                                    ; pin_out          ;
+; |Delenie|result[5]                                                                                 ; |Delenie|result[5]                                                                                    ; pin_out          ;
+; |Delenie|result[4]                                                                                 ; |Delenie|result[4]                                                                                    ; pin_out          ;
+; |Delenie|result[3]                                                                                 ; |Delenie|result[3]                                                                                    ; pin_out          ;
+; |Delenie|result[2]                                                                                 ; |Delenie|result[2]                                                                                    ; pin_out          ;
+; |Delenie|result[1]                                                                                 ; |Delenie|result[1]                                                                                    ; pin_out          ;
+; |Delenie|result[0]                                                                                 ; |Delenie|result[0]                                                                                    ; pin_out          ;
+; |Delenie|inst20                                                                                    ; |Delenie|inst20                                                                                       ; out0             ;
+; |Delenie|inst14                                                                                    ; |Delenie|inst14                                                                                       ; regout           ;
+; |Delenie|inst15                                                                                    ; |Delenie|inst15                                                                                       ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                         ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~9                                            ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~10                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~12                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~13                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~14                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~14                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~15                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~15                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~16                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~16                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~17                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~17                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~18                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~18                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~19                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~19                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~20                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~20                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~21                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~21                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~22                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~22                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~23                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~23                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~24                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~24                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~25                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~25                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~26                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~26                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~27                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~27                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~28                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~28                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~29                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~29                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~30                                        ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|_~30                                           ; out0             ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                        ; regout           ;
+; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                     ; |Delenie|rg2:inst1|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                        ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[9]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[9]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[8]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[8]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[7]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[7]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[6]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[5]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[4]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[3]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[3]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[2]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[2]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[1]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[1]                                                     ; regout           ;
+; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[0]                                                  ; |Delenie|rg1:inst|lpm_ff:lpm_ff_component|dffs[0]                                                     ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~2                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~3                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~4                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~6                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~7                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~8                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~9                                         ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~9                                            ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~11                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~11                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~12                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~12                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~13                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~13                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~14                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~14                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~15                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~15                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~16                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~16                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~17                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~17                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~18                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~18                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~19                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~19                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~20                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~20                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~21                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~21                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~22                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~22                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~23                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~23                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~24                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~24                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~25                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~25                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~26                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~26                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~27                                        ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|_~27                                           ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~0                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~0                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~1                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~1                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~2                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~2                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~3                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~3                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~5                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~5                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~6                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~6                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~7                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~7                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~8                                   ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~8                                      ; out0             ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                        ; regout           ;
+; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                     ; |Delenie|rg3:inst2|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                        ; regout           ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][1]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][1]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][2]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][2]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][3]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][3]                                          ; out0             ;
+; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][4]                                       ; |Delenie|OR_CT1:inst35|lpm_or:lpm_or_component|or_node[0][4]                                          ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~1 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]~1    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~2 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]~2    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~3 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]~3    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~4 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]~4    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~5 ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]~5    ; out0             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5      ; combout          ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]   ; |Delenie|CT1:inst24|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[5]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[5]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[4]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[4]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[3]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[3]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[2]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[2]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[1]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[1]                                                    ; regout           ;
+; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[0]                                                 ; |Delenie|rg4:inst3|lpm_ff:lpm_ff_component|dffs[0]                                                    ; regout           ;
+; |Delenie|block_name:inst4|always0~10                                                               ; |Delenie|block_name:inst4|always0~10                                                                  ; out0             ;
+; |Delenie|block_name:inst4|y~16                                                                     ; |Delenie|block_name:inst4|y~16                                                                        ; out              ;
+; |Delenie|block_name:inst4|y~17                                                                     ; |Delenie|block_name:inst4|y~17                                                                        ; out              ;
+; |Delenie|block_name:inst4|Z~8                                                                      ; |Delenie|block_name:inst4|Z~8                                                                         ; out              ;
+; |Delenie|block_name:inst4|y~19                                                                     ; |Delenie|block_name:inst4|y~19                                                                        ; out              ;
+; |Delenie|block_name:inst4|WideOr1                                                                  ; |Delenie|block_name:inst4|WideOr1                                                                     ; out0             ;
+; |Delenie|block_name:inst4|Z                                                                        ; |Delenie|block_name:inst4|Z                                                                           ; regout           ;
+; |Delenie|block_name:inst4|pc[3]                                                                    ; |Delenie|block_name:inst4|pc[3]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[4]                                                                    ; |Delenie|block_name:inst4|pc[4]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[5]                                                                    ; |Delenie|block_name:inst4|pc[5]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[6]                                                                    ; |Delenie|block_name:inst4|pc[6]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[7]                                                                    ; |Delenie|block_name:inst4|pc[7]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[8]                                                                    ; |Delenie|block_name:inst4|pc[8]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[9]                                                                    ; |Delenie|block_name:inst4|pc[9]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|pc[10]                                                                   ; |Delenie|block_name:inst4|pc[10]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[11]                                                                   ; |Delenie|block_name:inst4|pc[11]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[12]                                                                   ; |Delenie|block_name:inst4|pc[12]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[13]                                                                   ; |Delenie|block_name:inst4|pc[13]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[14]                                                                   ; |Delenie|block_name:inst4|pc[14]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[15]                                                                   ; |Delenie|block_name:inst4|pc[15]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[16]                                                                   ; |Delenie|block_name:inst4|pc[16]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[17]                                                                   ; |Delenie|block_name:inst4|pc[17]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[18]                                                                   ; |Delenie|block_name:inst4|pc[18]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[19]                                                                   ; |Delenie|block_name:inst4|pc[19]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[20]                                                                   ; |Delenie|block_name:inst4|pc[20]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[21]                                                                   ; |Delenie|block_name:inst4|pc[21]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[22]                                                                   ; |Delenie|block_name:inst4|pc[22]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[23]                                                                   ; |Delenie|block_name:inst4|pc[23]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[24]                                                                   ; |Delenie|block_name:inst4|pc[24]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[25]                                                                   ; |Delenie|block_name:inst4|pc[25]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[26]                                                                   ; |Delenie|block_name:inst4|pc[26]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[27]                                                                   ; |Delenie|block_name:inst4|pc[27]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[28]                                                                   ; |Delenie|block_name:inst4|pc[28]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[29]                                                                   ; |Delenie|block_name:inst4|pc[29]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[30]                                                                   ; |Delenie|block_name:inst4|pc[30]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|pc[31]                                                                   ; |Delenie|block_name:inst4|pc[31]                                                                      ; regout           ;
+; |Delenie|block_name:inst4|y[7]                                                                     ; |Delenie|block_name:inst4|y[7]                                                                        ; regout           ;
+; |Delenie|block_name:inst4|y[10]                                                                    ; |Delenie|block_name:inst4|y[10]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[12]                                                                    ; |Delenie|block_name:inst4|y[12]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[13]                                                                    ; |Delenie|block_name:inst4|y[13]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|y[14]                                                                    ; |Delenie|block_name:inst4|y[14]                                                                       ; regout           ;
+; |Delenie|block_name:inst4|Selector0~0                                                              ; |Delenie|block_name:inst4|Selector0~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector1~0                                                              ; |Delenie|block_name:inst4|Selector1~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector2~0                                                              ; |Delenie|block_name:inst4|Selector2~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector3~1                                                              ; |Delenie|block_name:inst4|Selector3~1                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector6~1                                                              ; |Delenie|block_name:inst4|Selector6~1                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector7~0                                                              ; |Delenie|block_name:inst4|Selector7~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector8~0                                                              ; |Delenie|block_name:inst4|Selector8~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector9~0                                                              ; |Delenie|block_name:inst4|Selector9~0                                                                 ; out0             ;
+; |Delenie|block_name:inst4|Selector10~0                                                             ; |Delenie|block_name:inst4|Selector10~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector11~0                                                             ; |Delenie|block_name:inst4|Selector11~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector12~0                                                             ; |Delenie|block_name:inst4|Selector12~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector13~0                                                             ; |Delenie|block_name:inst4|Selector13~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector14~0                                                             ; |Delenie|block_name:inst4|Selector14~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector15~0                                                             ; |Delenie|block_name:inst4|Selector15~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector16~0                                                             ; |Delenie|block_name:inst4|Selector16~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector17~0                                                             ; |Delenie|block_name:inst4|Selector17~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector18~0                                                             ; |Delenie|block_name:inst4|Selector18~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector19~0                                                             ; |Delenie|block_name:inst4|Selector19~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector20~0                                                             ; |Delenie|block_name:inst4|Selector20~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector21~0                                                             ; |Delenie|block_name:inst4|Selector21~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector22~0                                                             ; |Delenie|block_name:inst4|Selector22~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector23~0                                                             ; |Delenie|block_name:inst4|Selector23~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector24~0                                                             ; |Delenie|block_name:inst4|Selector24~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector25~0                                                             ; |Delenie|block_name:inst4|Selector25~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector26~0                                                             ; |Delenie|block_name:inst4|Selector26~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector27~0                                                             ; |Delenie|block_name:inst4|Selector27~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector28~0                                                             ; |Delenie|block_name:inst4|Selector28~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector29~0                                                             ; |Delenie|block_name:inst4|Selector29~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector30~0                                                             ; |Delenie|block_name:inst4|Selector30~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector31~0                                                             ; |Delenie|block_name:inst4|Selector31~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector32~0                                                             ; |Delenie|block_name:inst4|Selector32~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector33~1                                                             ; |Delenie|block_name:inst4|Selector33~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector33~2                                                             ; |Delenie|block_name:inst4|Selector33~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector34~1                                                             ; |Delenie|block_name:inst4|Selector34~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector34~2                                                             ; |Delenie|block_name:inst4|Selector34~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector35~0                                                             ; |Delenie|block_name:inst4|Selector35~0                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector36~1                                                             ; |Delenie|block_name:inst4|Selector36~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector36~2                                                             ; |Delenie|block_name:inst4|Selector36~2                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector37~1                                                             ; |Delenie|block_name:inst4|Selector37~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector38~1                                                             ; |Delenie|block_name:inst4|Selector38~1                                                                ; out0             ;
+; |Delenie|block_name:inst4|Selector39~0                                                             ; |Delenie|block_name:inst4|Selector39~0                                                                ; out              ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~0             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~0                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~1             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~1                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~2             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~2                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~3             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~3                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~4             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~4                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~5             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~5                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~6             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~6                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~7             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~7                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~8             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~8                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~9             ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~9                ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~10            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~10               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~11            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~11               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~12            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~12               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~13            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~13               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~14            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~14               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~15            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~15               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~16            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~16               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~17            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~17               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~18            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~18               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~19            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~19               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~20            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~20               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~21            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~21               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~22            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~22               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~23            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~23               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~24            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~24               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~25            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~25               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~26            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~26               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~27            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~27               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~28            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~28               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~29            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~29               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~30            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~30               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~31            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~31               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~32            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~32               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~33            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~33               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~34            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~34               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~35            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~35               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~36            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~36               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~37            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~37               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~38            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~38               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~39            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~39               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~40            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~40               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~41            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~41               ; out0             ;
+; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~42            ; |Delenie|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_o3i:auto_generated|op_1~42               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~0            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~0               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~1            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~1               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~2            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~2               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~3            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~3               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~4            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~4               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~5            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~5               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~6            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~6               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~7            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~7               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~8            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~8               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~9            ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~9               ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~10           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~10              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~11           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~11              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~12           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~12              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~13           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~13              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~14           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~14              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~15           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~15              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~16           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~16              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~17           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~17              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~18           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~18              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~19           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~19              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~20           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~20              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~21           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~21              ; out0             ;
+; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~22           ; |Delenie|SM2:inst23|lpm_add_sub:lpm_add_sub_component|add_sub_d2i:auto_generated|op_1~22              ; out0             ;
+; |Delenie|block_name:inst4|Equal4~0                                                                 ; |Delenie|block_name:inst4|Equal4~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal5~0                                                                 ; |Delenie|block_name:inst4|Equal5~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal6~0                                                                 ; |Delenie|block_name:inst4|Equal6~0                                                                    ; out0             ;
+; |Delenie|block_name:inst4|Equal7~0                                                                 ; |Delenie|block_name:inst4|Equal7~0                                                                    ; out0             ;
+; |Delenie|~DEV_CLRn~                                                                                ; |Delenie|~DEV_CLRn~                                                                                   ; dev_clr_out      ;
+; |Delenie|~DEV_OE~                                                                                  ; |Delenie|~DEV_OE~                                                                                     ; dev_oe_out       ;
++----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Sun May 09 14:56:11 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Delenie -c Delenie
+Info: Using vector source file "C:/Users/user/OneDrive/Рабочий стол/Хрень/Delenie.vwf"
+Warning: Can't find signal in vector source file for input pin "|Delenie|~DEV_CLRn~"
+Warning: Can't find signal in vector source file for input pin "|Delenie|~DEV_OE~"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      10.79 %
+Info: Number of transitions in simulation is 329
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Sun May 09 14:56:11 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,508 @@
+Unit RPSBotImpl;
+
+{$mode objfpc}{$H+}
+
+interface
+
+const
+
+	UNKNOWN = 0;
+	
+	ROCK = 1;
+	
+	SCISSORS = 2;
+
+	PAPER = 3;
+
+procedure setParams(setCount, winsPerSet: integer);
+function choice(previousRivalChoice: integer): integer;
+procedure onCurrentGameEnd;
+
+implementation
+
+var m:array of integer;
+mm: array of integer;
+i,iii:integer;
+
+procedure setParams(setCount, winsPerSet: integer);
+begin
+setlength(m,4);	
+setlength(mm,4);	
+i:=3;
+iii:=4;
+end;
+
+function choice(previousRivalChoice: integer): integer;
+var j,jj:integer;
+a,b,c:integer;
+aa,bb,cc,dd,ee,ff,gg:integer;						
+begin
+a:=0;
+b:=0;
+c:=0;
+gg:=0;
+aa:=0;
+bb:=0;
+cc:=0;
+dd:=0;
+ee:=0;
+ff:=0;
+m[i]:=previousRivalChoice;
+choice:=PAPER;
+if (m[i]=ROCK) and (mm[i-1]=ROCK) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=ROCK) and (mm[jj-1]=ROCK) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=ROCK) and (mm[j-1]=ROCK) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=ROCK;
+end;
+end else
+if  (m[i]=SCISSORS) and (mm[i-1]=SCISSORS) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=SCISSORS) and (mm[jj-1]=SCISSORS) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=SCISSORS) and (mm[j-1]=SCISSORS) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=SCISSORS;
+end;
+end else
+if (m[i]=PAPER) and (mm[i-1]=PAPER) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=PAPER) and (mm[jj-1]=PAPER) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=PAPER) and (mm[j-1]=PAPER) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=PAPER;
+end;
+end else
+if (m[i]=ROCK) and (mm[i-1]=PAPER) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=ROCK) and (mm[jj-1]=PAPER) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=ROCK) and (mm[j-1]=PAPER) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=ROCK;
+end;
+end else
+if (m[i]=SCISSORS) and (mm[i-1]=ROCK) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=SCISSORS) and (mm[jj-1]=ROCK) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+ for j:=i-1 downto 4 do
+if (m[j]=SCISSORS) and (mm[j-1]=ROCK) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=SCISSORS;
+end;
+end else
+if (m[i]=PAPER) and (mm[i-1]=SCISSORS) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=PAPER) and (mm[jj-1]=SCISSORS) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then 
+begin
+for j:=i-1 downto 4 do
+if (m[j]=PAPER) and (mm[j-1]=SCISSORS) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=PAPER;
+end;
+end else
+if (m[i]=ROCK) and (mm[i-1]=SCISSORS) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=ROCK) and (mm[jj-1]=SCISSORS) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=ROCK) and (mm[j-1]=SCISSORS) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=SCISSORS;
+end;
+end else
+if (m[i]=SCISSORS) and (mm[i-1]=PAPER) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=SCISSORS) and (mm[jj-1]=PAPER) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then
+begin
+for j:=i-1 downto 4 do
+if (m[j]=SCISSORS) and (mm[j-1]=PAPER) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=PAPER;
+end;
+end else
+if (m[i]=PAPER) and (mm[i-1]=ROCK) then
+begin
+for jj:=i-1 downto 4 do
+if (m[jj]=PAPER) and (mm[jj-1]=ROCK) then 
+begin
+gg:=gg+1;
+if gg=1 then
+begin 
+aa:=m[jj+1];
+bb:=mm[jj];
+end;
+if gg=2 then
+begin 
+cc:=m[jj+1];
+dd:=mm[jj];
+end;
+if gg=3 then
+begin 
+ee:=m[jj+1];
+ff:=mm[jj];
+break;
+end;
+end;
+if gg=3 then 
+if ((ff=ROCK) and (cc=PAPER) and (dd=ROCK) and (aa=PAPER)) or 
+((ff=PAPER) and (cc=SCISSORS) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=ROCK) and (cc=PAPER) and (dd=PAPER) and (aa=SCISSORS)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=ROCK) and (aa=PAPER)) or
+((ff=PAPER) and (cc=SCISSORS) and (dd=SCISSORS) and (aa=ROCK)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=ROCK) and (aa=PAPER)) or
+((ff=SCISSORS) and (cc=ROCK) and (dd=PAPER) and (aa=SCISSORS)) then
+if bb=ROCK then choice:=SCISSORS else
+	if bb=PAPER then choice:=ROCK else
+		if bb=SCISSORS then choice:=PAPER;
+if (choice<>PAPER) or (choice<>SCISSORS) or (choice<>ROCK) then 
+begin
+for j:=i-1 downto 4 do
+if (m[j]=PAPER) and (mm[j-1]=ROCK) then
+begin
+if m[j+1]=ROCK then choice:=PAPER;
+if m[j+1]=SCISSORS then choice:=ROCK;
+if m[j+1]=PAPER then choice:=SCISSORS;
+break;
+end else
+choice:=ROCK;
+end;
+end;
+mm[i]:=choice;
+i:=i+1;
+iii:=iii+1;
+setlength(m,iii);
+setlength(mm,iii);
+end;
+
+procedure onCurrentGameEnd;
+begin
+setlength(m,4);
+setlength(mm,4);
+i:=3;
+iii:=4;
+end;
+
+end. 

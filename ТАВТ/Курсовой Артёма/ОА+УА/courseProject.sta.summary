@@ -1,0 +1,137 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -5.160
+TNS   : -294.956
+
+Type  : Slow 1200mV 85C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -5.031
+TNS   : -5.031
+
+Type  : Slow 1200mV 85C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -1.167
+TNS   : -4.481
+
+Type  : Slow 1200mV 85C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -0.222
+TNS   : -1.110
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.096
+TNS   : -1.270
+
+Type  : Slow 1200mV 85C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 3.735
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -123.447
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.818
+TNS   : -275.915
+
+Type  : Slow 1200mV 0C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -4.576
+TNS   : -4.576
+
+Type  : Slow 1200mV 0C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -0.943
+TNS   : -3.568
+
+Type  : Slow 1200mV 0C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -0.182
+TNS   : -0.910
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.174
+TNS   : -2.573
+
+Type  : Slow 1200mV 0C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 3.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -123.447
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -1.487
+TNS   : -8.520
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Fast 1200mV 0C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -2.235
+TNS   : -2.235
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.064
+TNS   : -87.671
+
+Type  : Fast 1200mV 0C Model Setup 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -0.032
+TNS   : -0.087
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.473
+TNS   : -7.160
+
+Type  : Fast 1200mV 0C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -0.083
+TNS   : -0.415
+
+Type  : Fast 1200mV 0C Model Hold 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 1.607
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -91.673
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[0]'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UAcourseProject:inst3|reg:inst31|lpm_ff:lpm_ff_component|dffs[3]'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

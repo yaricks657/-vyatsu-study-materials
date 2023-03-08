@@ -1,0 +1,156 @@
+object Form2: TForm2
+  Left = 976
+  Height = 413
+  Top = 270
+  Width = 380
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Выбор цвета'
+  ClientHeight = 413
+  ClientWidth = 380
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object Button1: TButton
+    Left = 24
+    Height = 55
+    Top = 336
+    Width = 140
+    Caption = 'Ок'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 216
+    Height = 55
+    Top = 336
+    Width = 140
+    Caption = 'Отмена'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object ColorBox1: TColorBox
+    Left = 24
+    Height = 26
+    Top = 72
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 2
+  end
+  object ColorBox2: TColorBox
+    Left = 24
+    Height = 26
+    Top = 160
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 3
+  end
+  object ColorBox3: TColorBox
+    Left = 24
+    Height = 26
+    Top = 248
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 4
+  end
+  object ColorBox4: TColorBox
+    Left = 224
+    Height = 26
+    Top = 72
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 5
+  end
+  object ColorBox5: TColorBox
+    Left = 224
+    Height = 26
+    Top = 160
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 6
+  end
+  object ColorBox6: TColorBox
+    Left = 224
+    Height = 26
+    Top = 248
+    Width = 125
+    DefaultColorColor = 4259584
+    Style = [cbStandardColors]
+    OnGetColors = ColorBox1GetColors
+    ItemHeight = 20
+    OnChange = ColorBox1Change
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 20
+    Top = 48
+    Width = 77
+    Caption = '1-я люлька'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 248
+    Height = 20
+    Top = 48
+    Width = 77
+    Caption = '2-я люлька'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 20
+    Top = 136
+    Width = 77
+    Caption = '3-я люлька'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 248
+    Height = 20
+    Top = 136
+    Width = 77
+    Caption = '4-я люлька'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 48
+    Height = 20
+    Top = 224
+    Width = 77
+    Caption = '5-я люлька'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 248
+    Height = 20
+    Top = 224
+    Width = 77
+    Caption = '6-я люлька'
+    ParentColor = False
+  end
+  object OpenDialog1: TOpenDialog
+    left = 128
+    top = 288
+  end
+end

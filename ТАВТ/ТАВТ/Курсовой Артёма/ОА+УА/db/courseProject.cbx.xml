@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="courseProject">
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|CT2:inst34|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_bdj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|SM2:inst17|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_d2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|UAcourseProject:inst3|dc4:UAinst|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_lbf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|CT1:inst18|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_qqj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|SM1:inst6|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_q3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|UAcourseProject:inst3|ct4pm:UAinst2|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_60j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

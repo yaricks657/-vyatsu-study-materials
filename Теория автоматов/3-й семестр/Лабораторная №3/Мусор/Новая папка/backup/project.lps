@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="project.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="268"/>
+        <CursorPos X="7" Y="281"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="seafightbotrandomimpl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SeaFightBotRandomImpl"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="4" Y="25"/>
+        <UsageCount Value="26"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="538"/>
+        <CursorPos X="56" Y="558"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="198" Column="66" TopLine="174"/>
+      </Position1>
+      <Position2>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="268" Column="60" TopLine="249"/>
+      </Position2>
+      <Position3>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="271" Column="2" TopLine="248"/>
+      </Position3>
+      <Position4>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="170" Column="6" TopLine="147"/>
+      </Position4>
+      <Position5>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="284" Column="19" TopLine="248"/>
+      </Position5>
+      <Position6>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="285" Column="59" TopLine="264"/>
+      </Position6>
+      <Position7>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="292" Column="64" TopLine="269"/>
+      </Position7>
+      <Position8>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="269" Column="66" TopLine="247"/>
+      </Position8>
+      <Position9>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="559" Column="58" TopLine="516"/>
+      </Position9>
+      <Position10>
+        <Filename Value="project.lpr"/>
+        <Caret Line="272" Column="45" TopLine="244"/>
+      </Position10>
+      <Position11>
+        <Filename Value="project.lpr"/>
+        <Caret Line="274" TopLine="238"/>
+      </Position11>
+      <Position12>
+        <Filename Value="project.lpr"/>
+        <Caret Line="269" Column="32" TopLine="269"/>
+      </Position12>
+      <Position13>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="559" Column="58" TopLine="559"/>
+      </Position13>
+      <Position14>
+        <Filename Value="project.lpr"/>
+        <Caret Line="284" Column="65" TopLine="254"/>
+      </Position14>
+      <Position15>
+        <Filename Value="project.lpr"/>
+        <Caret Line="275" Column="73" TopLine="254"/>
+      </Position15>
+      <Position16>
+        <Filename Value="project.lpr"/>
+        <Caret Line="270" Column="53" TopLine="254"/>
+      </Position16>
+      <Position17>
+        <Filename Value="project.lpr"/>
+        <Caret Line="276" Column="65" TopLine="253"/>
+      </Position17>
+      <Position18>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="566" Column="8" TopLine="520"/>
+      </Position18>
+      <Position19>
+        <Filename Value="project.lpr"/>
+        <Caret Line="267" Column="15" TopLine="253"/>
+      </Position19>
+      <Position20>
+        <Filename Value="project.lpr"/>
+        <Caret Line="262" Column="25" TopLine="250"/>
+      </Position20>
+      <Position21>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="536" Column="3" TopLine="521"/>
+      </Position21>
+      <Position22>
+        <Filename Value="project.lpr"/>
+        <Caret Line="273" Column="5" TopLine="250"/>
+      </Position22>
+      <Position23>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="565" Column="2" TopLine="520"/>
+      </Position23>
+      <Position24>
+        <Filename Value="project.lpr"/>
+        <Caret Line="268" Column="70" TopLine="250"/>
+      </Position24>
+      <Position25>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="565" Column="2" TopLine="520"/>
+      </Position25>
+      <Position26>
+        <Filename Value="project.lpr"/>
+        <Caret Line="304" Column="41" TopLine="267"/>
+      </Position26>
+      <Position27>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="565" Column="2" TopLine="520"/>
+      </Position27>
+      <Position28>
+        <Filename Value="SeaFightBotImpl.pas"/>
+        <Caret Line="558" Column="56" TopLine="538"/>
+      </Position28>
+      <Position29>
+        <Filename Value="project.lpr"/>
+        <Caret Line="179" Column="38" TopLine="166"/>
+      </Position29>
+      <Position30>
+        <Filename Value="project.lpr"/>
+        <Caret Line="275" Column="5" TopLine="261"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="project.lpr"/>
+        <Line Value="289"/>
+      </Item1>
+    </BreakPoints>
+    <Watches Count="6">
+      <Item1>
+        <Expression Value="bCell"/>
+      </Item1>
+      <Item2>
+        <Expression Value="shootInfo"/>
+      </Item2>
+      <Item3>
+        <Expression Value="iw"/>
+      </Item3>
+      <Item4>
+        <Expression Value="weight"/>
+      </Item4>
+      <Item5>
+        <Expression Value="_lastShot"/>
+      </Item5>
+      <Item6>
+        <Expression Value="isFirst"/>
+      </Item6>
+    </Watches>
+  </Debugging>
+</CONFIG>

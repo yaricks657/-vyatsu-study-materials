@@ -1,0 +1,447 @@
+Microsoft (R) Macro Assembler Version 14.28.29336.0	    05/09/21 18:56:50
+..\..\..\..\OneDrive\Рабочий стол\ww.asm		     Page 1 - 1
+
+
+				.386
+				.MODEL flat,C
+				;.STACK
+ 00000000			.DATA
+ 00000000			h dq ?
+	   0000000000000000
+ 00000008			i dq ?
+	   0000000000000000
+				;b dq ?
+				;a dq ?
+ 00000010			s dq ?
+	   0000000000000000
+ 00000018			tga dq ?
+	   0000000000000000
+ 00000020			tgb dq ?
+	   0000000000000000
+ 00000028			sum dq ?
+	   0000000000000000
+				;n dd ?
+ 00000030			two dq 2.0
+	   4000000000000000
+ 00000038			one dq 1.0
+	   3FF0000000000000
+ 00000040			log2e dq 1.442695041
+	   3FF715476533245E
+ 00000000			.CODE
+				PUBLIC sinn 
+ 00000000			sinn PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 00000003  DD 45 08		fld b
+ 00000006  DD 45 10		fld a
+ 00000009  D9 FE		fsin
+ 0000000B  D9 C9		fxch
+ 0000000D  D9 FE		fsin
+ 0000000F  DE C1		fadd
+ 00000011  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 00000017  DD 15 00000010 R	fst s
+ 0000001D  9B DB E3		finit
+ 00000020  DD 45 08		fld b
+ 00000023  DD 45 10		fld a
+ 00000026  DE E9		fsub
+ 00000028  DD 45 18		fld n
+ 0000002B  DE F9		fdiv ;(b - a) / n
+ 0000002D  DD 15 00000000 R	fst h
+ 00000033  8B 4D 20		mov ecx,nn
+ 00000036  DD 05 00000038 R	fld one
+ 0000003C  DD 15 00000008 R	fst i
+ 00000042			metka:
+ 00000042  D9 C9		fxch
+ 00000044  DC 0D 00000008 R	fmul i
+ 0000004A  DC 45 10		fadd a
+ 0000004D  D9 FE		fsin
+ 0000004F  DC 05 00000010 R	fadd s
+ 00000055  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 0000005B  DD 05 00000008 R	fld i
+ 00000061  DC 05 00000038 R	fadd one
+ 00000067  DD 15 00000008 R	fst i
+ 0000006D  9B DB E3		finit
+ 00000070  DD 05 00000000 R	fld h
+ 00000076  DD 05 00000008 R	fld i
+ 0000007C  E2 C4		loop metka
+ 0000007E  9B DB E3		finit
+ 00000081  DD 05 00000000 R	fld h
+ 00000087  DD 05 00000010 R	fld s
+ 0000008D  DE C9		fmul
+ 0000008F  DD 45 24		fld arg
+ 00000092  DE C9		fmul
+				ret 
+ 00000096			sinn ENDP
+
+ 00000096			coss PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 00000099  DD 45 08		fld b
+ 0000009C  DD 45 10		fld a
+ 0000009F  D9 FF		fcos
+ 000000A1  D9 C9		fxch
+ 000000A3  D9 FF		fcos
+ 000000A5  DE C1		fadd
+ 000000A7  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 000000AD  DD 15 00000010 R	fst s
+ 000000B3  9B DB E3		finit
+ 000000B6  DD 45 08		fld b
+ 000000B9  DD 45 10		fld a
+ 000000BC  DE E9		fsub
+ 000000BE  DD 45 18		fld n
+ 000000C1  DE F9		fdiv ;(b - a) / n
+ 000000C3  DD 15 00000000 R	fst h
+ 000000C9  8B 4D 20		mov ecx,nn
+ 000000CC  DD 05 00000038 R	fld one
+ 000000D2  DD 15 00000008 R	fst i
+ 000000D8			metka:
+ 000000D8  D9 C9		fxch
+ 000000DA  DC 0D 00000008 R	fmul i
+ 000000E0  DC 45 10		fadd a
+ 000000E3  D9 FF		fcos
+ 000000E5  DC 05 00000010 R	fadd s
+ 000000EB  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 000000F1  DD 05 00000008 R	fld i
+ 000000F7  DC 05 00000038 R	fadd one
+ 000000FD  DD 15 00000008 R	fst i
+ 00000103  9B DB E3		finit
+ 00000106  DD 05 00000000 R	fld h
+ 0000010C  DD 05 00000008 R	fld i
+ 00000112  E2 C4		loop metka
+ 00000114  9B DB E3		finit
+ 00000117  DD 05 00000000 R	fld h
+ 0000011D  DD 05 00000010 R	fld s
+ 00000123  DE C9		fmul
+ 00000125  DD 45 24		fld arg
+ 00000128  DE C9		fmul
+				ret 
+ 0000012C			coss ENDP
+
+ 0000012C			tgg PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+				;fld b
+ 0000012F  DD 45 10		fld a
+ 00000132  D9 F2		fptan
+ 00000134  D9 C9		fxch
+ 00000136  DD 15 00000018 R	fst tga
+ 0000013C  DD 45 08		fld b
+ 0000013F  D9 F2		fptan
+ 00000141  D9 C9		fxch
+ 00000143  DD 15 00000020 R	fst tgb
+				;fxch
+				;fcos
+ 00000149  DD 05 00000018 R	fld tga
+ 0000014F  DD 05 00000020 R	fld tgb
+ 00000155  DE C1		fadd
+ 00000157  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 0000015D  DD 15 00000010 R	fst s
+ 00000163  9B DB E3		finit
+ 00000166  DD 45 08		fld b
+ 00000169  DD 45 10		fld a
+ 0000016C  DE E9		fsub
+ 0000016E  DD 45 18		fld n
+ 00000171  DE F9		fdiv ;(b - a) / n
+ 00000173  DD 15 00000000 R	fst h
+ 00000179  8B 4D 20		mov ecx,nn
+ 0000017C  DD 05 00000038 R	fld one
+ 00000182  DD 15 00000008 R	fst i
+ 00000188			metka:
+ 00000188  D9 C9		fxch
+ 0000018A  DC 0D 00000008 R	fmul i
+ 00000190  DC 45 10		fadd a
+ 00000193  D9 F2		fptan
+ 00000195  D9 C9		fxch
+ 00000197  DC 05 00000010 R	fadd s
+ 0000019D  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 000001A3  DD 05 00000008 R	fld i
+ 000001A9  DC 05 00000038 R	fadd one
+ 000001AF  DD 15 00000008 R	fst i
+ 000001B5  9B DB E3		finit
+ 000001B8  DD 05 00000000 R	fld h
+ 000001BE  DD 05 00000008 R	fld i
+ 000001C4  E2 C2		loop metka
+ 000001C6  9B DB E3		finit
+ 000001C9  DD 05 00000000 R	fld h
+ 000001CF  DD 05 00000010 R	fld s
+ 000001D5  DE C9		fmul
+ 000001D7  DD 45 24		fld arg
+ 000001DA  DE C9		fmul
+				ret 
+ 000001DE			tgg ENDP
+
+ 000001DE			ctgg PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 000001E1  DD 45 10		fld a
+ 000001E4  DD 45 10		fld a
+ 000001E7  D9 FE		fsin
+ 000001E9  D9 C9		fxch
+ 000001EB  D9 FF		fcos
+ 000001ED  D9 C9		fxch;тут
+ 000001EF  DE F9		fdiv
+				;fst tga
+ 000001F1  DD 45 08		fld b
+ 000001F4  DD 45 08		fld b
+ 000001F7  D9 FE		fsin
+ 000001F9  D9 C9		fxch
+ 000001FB  D9 FF		fcos
+ 000001FD  D9 C9		fxch;тут
+ 000001FF  DE F9		fdiv
+ 00000201  DE C1		fadd
+ 00000203  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 00000209  DD 15 00000010 R	fst s
+ 0000020F  9B DB E3		finit
+ 00000212  DD 45 08		fld b
+ 00000215  DD 45 10		fld a
+ 00000218  DE E9		fsub
+ 0000021A  DD 45 18		fld n
+ 0000021D  DE F9		fdiv ;(b - a) / n
+ 0000021F  DD 15 00000000 R	fst h
+ 00000225  8B 4D 20		mov ecx,nn
+ 00000228  DD 05 00000038 R	fld one
+ 0000022E  DD 15 00000008 R	fst i
+ 00000234			metka:
+ 00000234  D9 C9		fxch
+ 00000236  DC 0D 00000008 R	fmul i
+ 0000023C  DC 45 10		fadd a
+ 0000023F  DD 15 00000018 R	fst tga
+ 00000245  D9 FF		fcos
+ 00000247  DD 05 00000018 R	fld tga
+ 0000024D  D9 FE		fsin
+				;fxch
+ 0000024F  DE F9		fdiv
+ 00000251  DC 05 00000010 R	fadd s
+ 00000257  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 0000025D  DD 05 00000008 R	fld i
+ 00000263  DC 05 00000038 R	fadd one
+ 00000269  DD 15 00000008 R	fst i
+ 0000026F  9B DB E3		finit
+ 00000272  DD 05 00000000 R	fld h
+ 00000278  DD 05 00000008 R	fld i
+ 0000027E  E2 B4		loop metka
+ 00000280  9B DB E3		finit
+ 00000283  DD 05 00000000 R	fld h
+ 00000289  DD 05 00000010 R	fld s
+ 0000028F  DE C9		fmul
+ 00000291  DD 45 24		fld arg
+ 00000294  DE C9		fmul
+				ret 
+ 00000298			ctgg ENDP
+
+ 00000298			xx PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 0000029B  DD 45 08		fld b
+ 0000029E  DD 45 10		fld a
+ 000002A1  DE C1		fadd
+ 000002A3  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 000002A9  DD 15 00000010 R	fst s
+ 000002AF  9B DB E3		finit
+ 000002B2  DD 45 08		fld b
+ 000002B5  DD 45 10		fld a
+ 000002B8  DE E9		fsub
+ 000002BA  DD 45 18		fld n
+ 000002BD  DE F9		fdiv ;(b - a) / n
+ 000002BF  DD 15 00000000 R	fst h
+ 000002C5  8B 4D 20		mov ecx,nn
+ 000002C8  DD 05 00000038 R	fld one
+ 000002CE  DD 15 00000008 R	fst i
+ 000002D4			metka:
+ 000002D4  D9 C9		fxch
+ 000002D6  DC 0D 00000008 R	fmul i
+ 000002DC  DC 45 10		fadd a
+ 000002DF  DC 05 00000010 R	fadd s
+ 000002E5  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 000002EB  DD 05 00000008 R	fld i
+ 000002F1  DC 05 00000038 R	fadd one
+ 000002F7  DD 15 00000008 R	fst i
+ 000002FD  9B DB E3		finit
+ 00000300  DD 05 00000000 R	fld h
+ 00000306  DD 05 00000008 R	fld i
+ 0000030C  E2 C6		loop metka
+ 0000030E  9B DB E3		finit
+ 00000311  DD 05 00000000 R	fld h
+ 00000317  DD 05 00000010 R	fld s
+ 0000031D  DE C9		fmul
+ 0000031F  DD 45 24		fld arg
+ 00000322  DE C9		fmul
+				ret 
+ 00000326			xx ENDP
+
+ 00000326			x22 PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 00000329  DD 45 08		fld b
+ 0000032C  DD 45 10		fld a
+ 0000032F  DC 4D 10		fmul a
+ 00000332  D9 C9		fxch
+ 00000334  DC 4D 08		fmul b
+ 00000337  DE C1		fadd
+ 00000339  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 0000033F  DD 15 00000010 R	fst s
+ 00000345  9B DB E3		finit
+ 00000348  DD 45 08		fld b
+ 0000034B  DD 45 10		fld a
+ 0000034E  DE E9		fsub
+ 00000350  DD 45 18		fld n
+ 00000353  DE F9		fdiv ;(b - a) / n
+ 00000355  DD 15 00000000 R	fst h
+ 0000035B  8B 4D 20		mov ecx,nn
+ 0000035E  DD 05 00000038 R	fld one
+ 00000364  DD 15 00000008 R	fst i
+ 0000036A			metka:
+ 0000036A  D9 C9		fxch
+ 0000036C  DC 0D 00000008 R	fmul i
+ 00000372  DC 45 10		fadd a
+ 00000375  DD 15 00000028 R	fst sum
+ 0000037B  DC 0D 00000028 R	fmul sum
+ 00000381  DC 05 00000010 R	fadd s
+ 00000387  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 0000038D  DD 05 00000008 R	fld i
+ 00000393  DC 05 00000038 R	fadd one
+ 00000399  DD 15 00000008 R	fst i
+ 0000039F  9B DB E3		finit
+ 000003A2  DD 05 00000000 R	fld h
+ 000003A8  DD 05 00000008 R	fld i
+ 000003AE  E2 BA		loop metka
+ 000003B0  9B DB E3		finit
+ 000003B3  DD 05 00000000 R	fld h
+ 000003B9  DD 05 00000010 R	fld s
+ 000003BF  DE C9		fmul
+ 000003C1  DD 45 24		fld arg
+ 000003C4  DE C9		fmul
+				ret 
+ 000003C8			x22 ENDP
+
+ 000003C8			lnxx PROC b:qword, a:qword, n:qword, nn:dword, arg:qword
+ 000003CB  DD 05 00000038 R	fld one
+ 000003D1  DD 45 10		fld a
+ 000003D4  D9 F1		fyl2x 
+ 000003D6  DC 35 00000040 R	fdiv log2e
+ 000003DC  DD 05 00000038 R	fld one
+ 000003E2  DD 45 08		fld b
+ 000003E5  D9 F1		fyl2x
+ 000003E7  DC 35 00000040 R	fdiv log2e
+ 000003ED  DE C1		fadd
+ 000003EF  DC 35 00000030 R	fdiv two ;(sin(a) + sin(b)) / 2
+ 000003F5  DD 15 00000010 R	fst s
+ 000003FB  9B DB E3		finit
+ 000003FE  DD 45 08		fld b
+ 00000401  DD 45 10		fld a
+ 00000404  DE E9		fsub
+ 00000406  DD 45 18		fld n
+ 00000409  DE F9		fdiv ;(b - a) / n
+ 0000040B  DD 15 00000000 R	fst h
+ 00000411  8B 4D 20		mov ecx,nn
+ 00000414  DD 05 00000038 R	fld one
+ 0000041A  DD 15 00000008 R	fst i
+ 00000420			metka:
+ 00000420  D9 C9		fxch
+ 00000422  DC 0D 00000008 R	fmul i
+ 00000428  DC 45 10		fadd a
+ 0000042B  DD 05 00000038 R	fld one
+ 00000431  D9 C9		fxch
+ 00000433  D9 F1		fyl2x
+ 00000435  DC 35 00000040 R	fdiv log2e
+ 0000043B  DC 05 00000010 R	fadd s
+ 00000441  DD 15 00000010 R	fst s; s=sin(a+i*h)
+ 00000447  DD 05 00000008 R	fld i
+ 0000044D  DC 05 00000038 R	fadd one
+ 00000453  DD 15 00000008 R	fst i
+ 00000459  9B DB E3		finit
+ 0000045C  DD 05 00000000 R	fld h
+ 00000462  DD 05 00000008 R	fld i
+ 00000468  E2 B6		loop metka
+ 0000046A  9B DB E3		finit
+ 0000046D  DD 05 00000000 R	fld h
+ 00000473  DD 05 00000010 R	fld s
+ 00000479  DE C9		fmul
+ 0000047B  DD 45 24		fld arg
+ 0000047E  DE C9		fmul
+				ret 
+ 00000482			lnxx ENDP
+				END
+Microsoft (R) Macro Assembler Version 14.28.29336.0	    05/09/21 18:56:50
+..\..\..\..\OneDrive\Рабочий стол\ww.asm		     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000048 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 00000482 DWord	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+coss . . . . . . . . . . . . . .	P Near	 00000096 _TEXT	Length= 00000096 Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 000000D8 _TEXT	
+ctgg . . . . . . . . . . . . . .	P Near	 000001DE _TEXT	Length= 000000BA Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 00000234 _TEXT	
+lnxx . . . . . . . . . . . . . .	P Near	 000003C8 _TEXT	Length= 000000BA Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 00000420 _TEXT	
+sinn . . . . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 00000096 Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 00000042 _TEXT	
+tgg  . . . . . . . . . . . . . .	P Near	 0000012C _TEXT	Length= 000000B2 Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 00000188 _TEXT	
+x22  . . . . . . . . . . . . . .	P Near	 00000326 _TEXT	Length= 000000A2 Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 0000036A _TEXT	
+xx . . . . . . . . . . . . . . .	P Near	 00000298 _TEXT	Length= 0000008E Public C
+  b  . . . . . . . . . . . . . .	QWord	 bp + 00000008
+  a  . . . . . . . . . . . . . .	QWord	 bp + 00000010
+  n  . . . . . . . . . . . . . .	QWord	 bp + 00000018
+  nn . . . . . . . . . . . . . .	DWord	 bp + 00000020
+  arg  . . . . . . . . . . . . .	QWord	 bp + 00000024
+  metka  . . . . . . . . . . . .	L Near	 000002D4 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000001h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+h  . . . . . . . . . . . . . . .	QWord	 00000000 _DATA	
+i  . . . . . . . . . . . . . . .	QWord	 00000008 _DATA	
+log2e  . . . . . . . . . . . . .	QWord	 00000040 _DATA	
+one  . . . . . . . . . . . . . .	QWord	 00000038 _DATA	
+sum  . . . . . . . . . . . . . .	QWord	 00000028 _DATA	
+s  . . . . . . . . . . . . . . .	QWord	 00000010 _DATA	
+tga  . . . . . . . . . . . . . .	QWord	 00000018 _DATA	
+tgb  . . . . . . . . . . . . . .	QWord	 00000020 _DATA	
+two  . . . . . . . . . . . . . .	QWord	 00000030 _DATA	
+
+	   0 Warnings
+	   0 Errors

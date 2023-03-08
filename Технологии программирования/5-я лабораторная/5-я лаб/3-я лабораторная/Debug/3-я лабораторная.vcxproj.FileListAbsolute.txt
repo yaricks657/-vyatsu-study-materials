@@ -1,0 +1,3 @@
+C:\Users\user\OneDrive\Рабочий стол\5-я лаб\3-я лабораторная\Debug\3-я лабораторная.exe
+C:\Users\user\OneDrive\Рабочий стол\5-я лаб\3-я лабораторная\Debug\3-я лабораторная.pdb
+C:\Users\user\OneDrive\Рабочий стол\5-я лаб\Debug\3-я лабораторная.pdb

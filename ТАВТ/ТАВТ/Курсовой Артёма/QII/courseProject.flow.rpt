@@ -1,0 +1,199 @@
+Flow report for courseProject
+Tue Apr 06 13:36:47 2021
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++------------------------------------+----------------------------------------------+
+; Flow Status                        ; Successful - Tue Apr 06 13:36:44 2021        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; courseProject                                ;
+; Top-level Entity Name              ; courseProject                                ;
+; Family                             ; Cyclone III                                  ;
+; Device                             ; EP3C5E144C8                                  ;
+; Timing Models                      ; Final                                        ;
+; Met timing requirements            ; N/A                                          ;
+; Total logic elements               ; 0 / 5,136 ( 0 % )                            ;
+;     Total combinational functions  ; 0 / 5,136 ( 0 % )                            ;
+;     Dedicated logic registers      ; 0 / 5,136 ( 0 % )                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 90 / 95 ( 95 % )                             ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0 / 423,936 ( 0 % )                          ;
+; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                ;
++------------------------------------+----------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/06/2021 13:36:26 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; courseProject       ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                   ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 75361033103210.161770538604820 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_SHIFTREG                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_XOR                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_SHIFTREG                   ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_XOR                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_INV                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                            ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                              ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG2Left.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG2Left.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG2Left_inst.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG2Left.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG2Left.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; MuxRG1.tdf                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; MuxRG1.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; MuxRG1_inst.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; MuxRG1.inc                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; MuxRG1.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM1.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM1.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM1_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM1.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM1.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG1.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG1.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG1_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG1.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG1.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS1.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS1.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS1_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS1.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS1.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG3.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG3.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG3_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG3.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; RG3.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM2.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM2.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM2_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM2.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; SM2.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT1.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT1.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT1_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT1.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT1.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS2XOR.tdf                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS2XOR.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS2XOR_inst.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS2XOR.inc                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; KS2XOR.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                          ; Not6.tdf                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; Not6.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; Not6_inst.tdf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; Not6.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; Not6.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT2.tdf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT2.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT2_inst.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT2.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; CT2.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; E:/Курсач/courseProject.dpf    ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                           ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --            ; --          ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+--------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 232 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 274 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 243 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 214 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:09                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++---------------------------+------------------+---------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++---------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis      ; PC1-113-3        ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                    ; PC1-113-3        ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler                 ; PC1-113-3        ; Windows Vista ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; PC1-113-3        ; Windows Vista ; 6.2        ; x86_64         ;
++---------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off courseProject -c courseProject
+quartus_fit --read_settings_files=off --write_settings_files=off courseProject -c courseProject
+quartus_asm --read_settings_files=off --write_settings_files=off courseProject -c courseProject
+quartus_sta courseProject -c courseProject
+
+
+

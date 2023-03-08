@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="kk">
+		<CBX_INST_ENTRY INSTANCE_NAME="|kk|CT1:inst24|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e1k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kk|CT2:inst25|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kk|SM1:inst5|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_o3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kk|SM2:inst16|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_d2i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

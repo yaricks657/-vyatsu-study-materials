@@ -1,0 +1,60 @@
+#include <iostream>
+#include <thread>
+#include <mutex>
+#include <vector>
+
+using namespace std;
+mutex g_lock, b_lock;
+vector<thread> vec,rec;
+int countt = 0;
+
+void put_to_barrel(int& a, int H, int N)
+{
+    lock_guard<mutex> g_lock(g_lock);//g_lock.lock();
+    countt++;
+    if (countt == H) {
+        cout << "The bees woke up the bear!!!\n";              
+        countt = 0;
+      //  g_lock.unlock();
+        return;
+    }
+    else 
+        cout << "The bee number "<< rand() % N+1 << " brought honey. In a pot of " << countt << " servings\n";
+   // g_lock.unlock();
+    put_to_barrel(a, H, N);
+}
+
+void bear_awake(int&a, int H)
+{
+    b_lock.lock();
+    if (countt == H) {
+        cout << "THE BEAR IS AWAKE!!!\n";
+        countt = 0;
+    }
+    b_lock.unlock();
+    bear_awake(a, H);
+}
+
+int main()
+{
+    int a = 0;
+    int N;
+    int H;
+    cout << "Enter the number of bees:\n";
+    cin >> N;
+    cout << "Enter the number of servings of honey in the pot:\n";
+    cin >> H;
+    rec.push_back(thread(bear_awake, ref(a), H));
+    for (int i = 0; i < N; i++)
+    {
+        vec.push_back(thread(put_to_barrel, ref(a), H, N));
+    }
+
+    for (int i = 0; i < N; i++)
+    {
+        vec.at(i).join();
+    }
+    rec.at(0).join();
+
+    return 0;
+}

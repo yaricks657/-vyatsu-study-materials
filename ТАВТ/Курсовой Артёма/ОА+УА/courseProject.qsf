@@ -1,0 +1,111 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 20:04:09  April 05, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		courseProject_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name TOP_LEVEL_ENTITY courseProject
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:04:09  APRIL 05, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name MISC_FILE "E:/Курсач/courseProject.dpf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
+set_global_assignment -name SIMULATOR_GENERATE_SIGNAL_ACTIVITY_FILE OFF
+set_global_assignment -name VHDL_FILE ../Курсач2/reg.vhd
+set_global_assignment -name VHDL_FILE ../Курсач2/dc4.vhd
+set_global_assignment -name SOURCE_FILE ../Курсач2/dc4.cmp
+set_global_assignment -name VHDL_FILE ../Курсач2/CT4pm.vhd
+set_global_assignment -name SOURCE_FILE ../Курсач2/ct4pm.cmp
+set_global_assignment -name AHDL_FILE CT2.tdf
+set_global_assignment -name AHDL_FILE CT1.tdf
+set_global_assignment -name SOURCE_FILE KS1.cmp
+set_global_assignment -name AHDL_FILE KS1.tdf
+set_global_assignment -name SOURCE_FILE KS2XOR.cmp
+set_global_assignment -name AHDL_FILE KS2XOR.tdf
+set_global_assignment -name SOURCE_FILE MuxRG1.cmp
+set_global_assignment -name AHDL_FILE MuxRG1.tdf
+set_global_assignment -name SOURCE_FILE Not6.cmp
+set_global_assignment -name AHDL_FILE Not6.tdf
+set_global_assignment -name SOURCE_FILE RG1.cmp
+set_global_assignment -name AHDL_FILE RG1.tdf
+set_global_assignment -name SOURCE_FILE RG2Left.cmp
+set_global_assignment -name AHDL_FILE RG2Left.tdf
+set_global_assignment -name SOURCE_FILE RG3.cmp
+set_global_assignment -name AHDL_FILE RG3.tdf
+set_global_assignment -name SOURCE_FILE SM1.cmp
+set_global_assignment -name AHDL_FILE SM1.tdf
+set_global_assignment -name SOURCE_FILE SM2.cmp
+set_global_assignment -name AHDL_FILE SM2.tdf
+set_global_assignment -name VERILOG_FILE z.v
+set_global_assignment -name QIP_FILE RG2Left.qip
+set_global_assignment -name QIP_FILE MuxRG1.qip
+set_global_assignment -name QIP_FILE SM1.qip
+set_global_assignment -name QIP_FILE RG1.qip
+set_global_assignment -name QIP_FILE KS1.qip
+set_global_assignment -name QIP_FILE RG3.qip
+set_global_assignment -name QIP_FILE SM2.qip
+set_global_assignment -name QIP_FILE CT1.qip
+set_global_assignment -name QIP_FILE KS2XOR.qip
+set_global_assignment -name QIP_FILE Not6.qip
+set_global_assignment -name QIP_FILE CT2.qip
+set_global_assignment -name BDF_FILE courseProject.bdf
+set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE courseProject.sim.cvwf
+set_global_assignment -name QIP_FILE YY.qip
+set_global_assignment -name QIP_FILE YY14.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE courseProject.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE Waveform1.tbl
+set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE courseProject2.tbl
+set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE Waveform2.tbl
+set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE courseProject.tbl
+set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE courseProject.cvwf
+set_global_assignment -name VCD_FILE courseProject.vcd
+set_global_assignment -name BDF_FILE UAcourseProject.bdf
+set_global_assignment -name QIP_FILE RG4.qip
+set_global_assignment -name QIP_FILE Reg13.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE courseProject.tbl
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
