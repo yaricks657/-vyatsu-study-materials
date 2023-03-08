@@ -1,0 +1,206 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Buttons.hpp>
+#include <ComCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+    TGroupBox *GroupBox1;
+    TPageControl *PageControl1;
+    TTabSheet *TabSheet1;
+    TTabSheet *TabSheet2;
+    TGroupBox *GroupBox3;
+    TLabel *Label10;
+    TLabel *Label12;
+    TLabel *Label11;
+    TLabel *Label13;
+    TLabel *Label14;
+    TLabel *Label15;
+    TLabel *Label16;
+    TLabel *Label17;
+    TLabel *Label18;
+    TLabel *Label19;
+    TLabel *Label20;
+    TEdit *Edit7;
+    TBitBtn *BitBtn1;
+    TEdit *Edit8;
+    TEdit *Edit9;
+    TEdit *Edit10;
+    TEdit *Edit11;
+    TEdit *Edit12;
+    TEdit *Edit13;
+    TEdit *Edit14;
+    TEdit *Edit15;
+    TEdit *Edit16;
+    TEdit *Edit17;
+    TEdit *Edit18;
+    TGroupBox *GroupBox4;
+    TLabel *Label21;
+    TLabel *Label22;
+    TLabel *Label23;
+    TLabel *Label24;
+    TLabel *Label25;
+    TLabel *Label26;
+    TLabel *Label27;
+    TLabel *Label28;
+    TLabel *Label29;
+    TLabel *Label30;
+    TLabel *Label31;
+    TEdit *Edit19;
+    TEdit *Edit20;
+    TEdit *Edit22;
+    TEdit *Edit23;
+    TEdit *Edit24;
+    TEdit *Edit25;
+    TEdit *Edit26;
+    TEdit *Edit27;
+    TEdit *Edit28;
+    TEdit *Edit30;
+    TBitBtn *BitBtn2;
+    TGroupBox *GroupBox2;
+    TLabel *Label1;
+    TLabel *Label2;
+    TLabel *Label3;
+    TLabel *Label4;
+    TLabel *Label5;
+    TLabel *Label6;
+    TLabel *Label7;
+    TLabel *Label9;
+    TEdit *Edit1;
+    TEdit *Edit2;
+    TEdit *Edit3;
+    TEdit *Edit4;
+    TEdit *Edit5;
+    TGroupBox *GroupBox5;
+    TLabel *Label32;
+    TLabel *Label33;
+    TLabel *Label34;
+    TLabel *Label35;
+    TLabel *Label36;
+    TLabel *Label37;
+    TLabel *Label38;
+    TLabel *Label40;
+    TEdit *Edit31;
+    TEdit *Edit32;
+    TEdit *Edit33;
+    TEdit *Edit34;
+    TEdit *Edit35;
+    TEdit *Edit36;
+    TEdit *Edit37;
+    TEdit *Edit38;
+    TEdit *Edit39;
+    TEdit *Edit21;
+    TEdit *Edit40;
+    TEdit *Edit41;
+    TLabel *Label41;
+    TLabel *Label42;
+    TLabel *Label43;
+    TLabel *Label44;
+    TEdit *Edit42;
+    TEdit *Edit43;
+    TEdit *Edit44;
+    TEdit *Edit45;
+    TEdit *Edit46;
+    TEdit *Edit29;
+    TLabel *Label45;
+    TLabel *Label46;
+    TLabel *Label47;
+    TLabel *Label48;
+    TEdit *Edit47;
+    TEdit *Edit48;
+    TTabSheet *TabSheet3;
+    TGroupBox *GroupBox6;
+    TLabel *Label49;
+    TLabel *Label50;
+    TLabel *Label51;
+    TLabel *Label52;
+    TLabel *Label53;
+    TLabel *Label54;
+    TLabel *Label55;
+    TLabel *Label57;
+    TEdit *Edit49;
+    TEdit *Edit50;
+    TEdit *Edit51;
+    TEdit *Edit52;
+    TEdit *Edit53;
+    TGroupBox *GroupBox7;
+    TLabel *Label58;
+    TLabel *Label59;
+    TLabel *Label60;
+    TLabel *Label61;
+    TLabel *Label62;
+    TLabel *Label63;
+    TLabel *Label64;
+    TLabel *Label65;
+    TLabel *Label66;
+    TLabel *Label72;
+    TEdit *Edit59;
+    TEdit *Edit60;
+    TEdit *Edit61;
+    TEdit *Edit62;
+    TEdit *Edit63;
+    TEdit *Edit64;
+    TEdit *Edit65;
+    TEdit *Edit66;
+    TEdit *Edit72;
+    TBitBtn *BitBtn3;
+    TEdit *Edit6;
+    TLabel *Label8;
+    TEdit *Edit54;
+    TLabel *Label39;
+    TEdit *Edit55;
+    TEdit *Edit56;
+    TEdit *Edit57;
+    TLabel *Label56;
+    TLabel *Label67;
+    TEdit *Edit58;
+    TLabel *Label68;
+    TGroupBox *GroupBox8;
+    TGroupBox *GroupBox9;
+    TGroupBox *GroupBox10;
+    TGroupBox *GroupBox11;
+    TLabel *Label69;
+    TLabel *Label70;
+    TLabel *Label71;
+    TLabel *Label73;
+    TLabel *Label74;
+    TLabel *Label75;
+    TGroupBox *GroupBox12;
+    TGroupBox *GroupBox13;
+    TGroupBox *GroupBox14;
+    TGroupBox *GroupBox15;
+    TGroupBox *GroupBox16;
+    TGroupBox *GroupBox17;
+    TLabel *Label76;
+    TLabel *Label77;
+    TGroupBox *GroupBox18;
+    TGroupBox *GroupBox19;
+    TGroupBox *GroupBox20;
+    TGroupBox *GroupBox21;
+    TGroupBox *GroupBox22;
+    TGroupBox *GroupBox23;
+    TGroupBox *GroupBox24;
+    TGroupBox *GroupBox25;
+    TGroupBox *GroupBox26;
+    TGroupBox *GroupBox27;
+    TGroupBox *GroupBox28;
+    TGroupBox *GroupBox29;
+    void __fastcall BitBtn1Click(TObject *Sender);
+    void __fastcall BitBtn2Click(TObject *Sender);
+    void __fastcall BitBtn3Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+    __fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
