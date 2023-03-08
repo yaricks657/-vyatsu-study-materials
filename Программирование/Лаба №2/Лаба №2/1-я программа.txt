@@ -1,0 +1,26 @@
+program lab21;
+uses crt;
+var mas: array [1..100] of integer;
+i,j,k,b: integer;
+begin
+clrscr;
+        writeLn('Enter the number of array elements between 1 and 100: ');
+        readLn(b);
+        if (b>100) or (b<1) then
+        writeLn('Entered a number that does not match the range of the array') else
+        begin
+                for i:= 1 to b do
+                begin
+                        writeLn('Enter the ', i, ' element of the array: ');
+                        readLn(mas[i]);
+                end;
+                                writeLn('Enter the number k: ');
+                                readLn(k);
+                                for i := 1 to b do
+                                for j := 1 to b do
+                                if abs(mas[i]-mas[j])=k then
+                                writeLn('These numbers are ', mas[i], ' ', mas[j]);
+        end;
+readLn;
+end.
+

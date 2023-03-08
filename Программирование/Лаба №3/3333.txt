@@ -1,0 +1,51 @@
+program lab3;
+uses crt;
+var n,i:integer;
+a,b,h,x,xb,s,y:real;
+function f(x:real): real;
+begin
+  f:= 2*(x*x*x)+(-1)*(x*x)+(-3)*x+(5);
+end;
+function f1(x:real):real;
+begin
+f1 := x*(3*x*x*x-2*x*x-9*x+30)/6;
+end;
+procedure area(a,b:real;var i:integer);
+begin  
+write('Введите нижний предел интегрирования '); 
+readln(a);
+write('Введите верхний предел интегрирования ');
+readln(b);
+write('Введите количество прямоугольников '); 
+readln(n);
+h:=(b-a)/(n);
+s:=0; 
+xb:=a;
+for i:=0 to n do 
+begin
+x:=xb+i*h;
+s:=s+f(x)*h; 
+end; 
+writeln('Площадь фигуры равна  ',s:12:10); 
+readln;
+end;
+procedure inaccuracy(y:real);
+begin
+  y:= f1(b)-f1(a);  
+ writeLn('Absolute inaccuracy = ', abs(y-s):0:5);
+ writeLn('Comparative inaccuracy = ', abs(y-s)/y);
+ readLn;
+end;
+begin
+  repeat
+    clrscr;
+    writeLn('1. The area of the shape');
+    writeLn('2. Estimation of the error of the obtained result');
+    writeLn('3. Exit');
+    readLn(n);
+    case n of
+      1:area(a,b,n);
+      2:inaccuracy(n);
+    end;
+  until n=3;
+end.

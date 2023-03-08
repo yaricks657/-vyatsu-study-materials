@@ -1,0 +1,55 @@
+program lab22;
+uses crt;
+var
+str:string;
+sub:string;
+nstr:integer;
+nsub:integer;
+i,j,k,l,m,n,p,q:integer;
+count:integer;
+BEGIN
+clrscr;
+writeln('Print the string');
+readln(str);
+nstr:=integer(str[0]);
+writeln('Print a substring');
+readln(sub);
+nsub:=integer(sub[0]);
+for i:=1 to nstr do
+begin
+count:=0;
+for j:=1 to nsub do
+begin
+if str[i+j-1]=sub[j] then
+count:=count+1;
+if count=nsub then
+begin
+for k:=1 to nsub do
+for l:=i to nstr-1 do
+str[l]:=str[l+1];
+str[0]:=char(integer(str[0])-nsub);
+nstr:=integer(str[0]);
+for m:=nstr downto 1 do
+begin
+count:=0;
+for n:=nsub downto 1 do
+begin
+if str[m+n-1]=sub[n] then
+count:=count+1;
+if count=nsub then
+begin
+for p:=1 to nsub do
+for q:=m to nstr-1 do
+str[q]:=str[q+1];
+str[0]:=char(integer(str[0])-nsub);
+nstr:=integer(str[0]);
+writeln('String after:',str);
+readln;
+halt;
+end;
+end;
+end;
+end;
+end;
+end;
+END.

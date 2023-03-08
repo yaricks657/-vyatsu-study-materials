@@ -1,0 +1,26 @@
+Program pravii; {Метод правых прямоугольников}
+uses crt;
+var i,n:integer;
+a,b,h,x,xb,s:real;
+function f(x:real):real;
+begin
+f:=(1/x)*sin(3.14*x/2); 
+end;
+begin
+clrscr;
+write('Введите нижний предел интегрирования '); 
+readln(a);
+write('Введите верхний предел интегрирования ');
+readln(b);
+write('Введите количество отрезков '); 
+readln(n);
+h:=(b-a)/n;
+s:=0; 
+xb:=a;
+for i:=1 to n do 
+begin
+x:=xb+i*h;
+s:=s+f(x)*h; 
+end; 
+writeln('Интеграл равен ',s:12:10); 
+readln;
