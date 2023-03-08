@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+C:\Users\user\source\repos\Simplex\Simplex\MyForm.h(591,28): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Simplex.vcxproj -> C:\Users\user\source\repos\Simplex\x64\Debug\Simplex.exe

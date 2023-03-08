@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Lab1Full">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|CT1:inst18|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_tqj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_counter0:inst54|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3rj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_mux0:inst56|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_qaf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_mux1:inst82|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_5qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|USB_MUX1x2:b2v_inst116|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|Subsdf:inst43|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_e2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|PLL:inst5|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|UA:inst2|PZUMPR:b2v_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v2a1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|UA:inst2|ua_ct10:b2v_inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_t6j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|UA:inst2|ua_ct4:b2v_inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_cri.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|SM1:inst6|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_24i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|Subsdf:inst53|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_e2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_counterShift:inst72|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_n1k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|UA:inst2|ua_ms67x1:b2v_inst13|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_a8e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|USB_CT3:b2v_inst5|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_pqi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|USB_MUX8x2:b2v_instmux1|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_g6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|CT2:inst34|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_fdj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_add_sub65:inst74|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_f2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|USB_DC8:b2v_inst14|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_j1g.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|USB_MUX8x19:b2v_instmux2|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_c8e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|USBBridge:isntx|usb_dc3:b2v_instdc3|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_5af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|lpm_add_sub0:inst70|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_t3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Lab1Full|courseProject:inst|SM2:inst17|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_g2i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

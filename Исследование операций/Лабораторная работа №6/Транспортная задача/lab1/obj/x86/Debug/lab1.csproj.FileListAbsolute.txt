@@ -1,0 +1,18 @@
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\bin\Debug\lab1.exe
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\bin\Debug\lab1.pdb
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.mainForm.resources
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.exe
+C:\Users\user\OneDrive\Рабочий стол\Транспортная задача\lab1\obj\x86\Debug\lab1.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\bin\Debug\lab1.exe
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\bin\Debug\lab1.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.mainForm.resources
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.Properties.Resources.resources
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.exe
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №6\Транспортная задача\lab1\obj\x86\Debug\lab1.pdb

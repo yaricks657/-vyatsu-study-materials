@@ -1,0 +1,2 @@
+C:\Users\user\source\repos\Simplex\Simplex\x64\Debug\Simplex.MyForm.resources
+C:\Users\user\source\repos\Simplex\Simplex\x64\Debug\Simplex.vcxproj.GenerateResource.cache

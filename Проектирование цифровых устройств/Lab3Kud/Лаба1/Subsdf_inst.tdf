@@ -1,0 +1,10 @@
+(
+	result_sig[]
+) = Subsdf	(
+	.cin = cin_sig,
+	.dataa[] = dataa_sig[],
+	.datab[] = datab_sig[]
+)
+RETURNS (
+	.result[]
+);

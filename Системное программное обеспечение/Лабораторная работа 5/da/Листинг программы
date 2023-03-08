@@ -1,0 +1,49 @@
+	.MODEL	small
+	.DATA
+L	dw	?
+K	dw	?
+M	dw	?
+R1	dw	?
+R2	dw	?
+Const1	dw	4
+Const2	dw	13
+Const3	dw	3
+Const4	dw	5
+Const5	dw	1
+Const6	dw	6
+Const7	dw	1
+	.CODE
+Main:
+	MOV	AX,Const1
+	MOV	M,AX
+	MOV	AX,Const2
+	CMP	M,AX
+	JNL	A1
+	MOV	AX,K
+	SUB	AX,Const4
+	MOV	R1,AX
+	MOV	AX,Const7
+	ADD	AX,R1
+	MOV	R1,AX
+	MOV	AX,R1
+	MOV	L,AX
+	JMP	A2
+A1:
+	MOV	AX,Const5
+	MOV	L,AX
+A2:
+	MOV	AX,L
+	SUB	AX,Const4
+	MOV	R1,AX
+	MOV	AX,L
+	ADD	AX,Const6
+	MOV	R2,AX
+	MOV	AX,R1
+	ADD	AX,R2
+	MOV	R1,AX
+	MOV	AX,R1
+	SUB	AX,R2
+	MOV	R1,AX
+	MOV	AX,R1
+	MOV	K,AX
+END	Main

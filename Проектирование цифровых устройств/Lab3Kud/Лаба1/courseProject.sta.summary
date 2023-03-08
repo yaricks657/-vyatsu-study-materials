@@ -1,0 +1,269 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PinY[2]'
+Slack : -7.946
+TNS   : -174.233
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.171
+TNS   : -631.096
+
+Type  : Slow 1200mV 85C Model Setup 'PinY[10]'
+Slack : -4.438
+TNS   : -98.943
+
+Type  : Slow 1200mV 85C Model Setup 'PinY[8]'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Slow 1200mV 85C Model Setup 'PinY[7]'
+Slack : -1.456
+TNS   : -1.456
+
+Type  : Slow 1200mV 85C Model Setup 'PinY[1]'
+Slack : -0.644
+TNS   : -13.279
+
+Type  : Slow 1200mV 85C Model Hold 'PinY[10]'
+Slack : -4.235
+TNS   : -88.457
+
+Type  : Slow 1200mV 85C Model Hold 'PinY[2]'
+Slack : -1.622
+TNS   : -25.745
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PinY[1]'
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PinY[8]'
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PinY[7]'
+Slack : 1.158
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PinY[8]'
+Slack : -2.427
+TNS   : -2.427
+
+Type  : Slow 1200mV 85C Model Recovery 'PinY[2]'
+Slack : -1.748
+TNS   : -1.748
+
+Type  : Slow 1200mV 85C Model Removal 'PinY[2]'
+Slack : 1.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'PinY[8]'
+Slack : 2.175
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -260.251
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PinY[2]'
+Slack : -3.000
+TNS   : -40.175
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PinY[10]'
+Slack : -3.000
+TNS   : -38.688
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PinY[1]'
+Slack : -3.000
+TNS   : -38.688
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PinY[7]'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PinY[8]'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 0C Model Setup 'PinY[2]'
+Slack : -7.073
+TNS   : -157.877
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.633
+TNS   : -566.540
+
+Type  : Slow 1200mV 0C Model Setup 'PinY[10]'
+Slack : -4.022
+TNS   : -90.036
+
+Type  : Slow 1200mV 0C Model Setup 'PinY[8]'
+Slack : -1.992
+TNS   : -1.992
+
+Type  : Slow 1200mV 0C Model Setup 'PinY[7]'
+Slack : -1.197
+TNS   : -1.197
+
+Type  : Slow 1200mV 0C Model Setup 'PinY[1]'
+Slack : -0.693
+TNS   : -14.496
+
+Type  : Slow 1200mV 0C Model Hold 'PinY[10]'
+Slack : -3.953
+TNS   : -82.234
+
+Type  : Slow 1200mV 0C Model Hold 'PinY[2]'
+Slack : -1.606
+TNS   : -25.906
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PinY[1]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PinY[8]'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PinY[7]'
+Slack : 1.040
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PinY[8]'
+Slack : -1.952
+TNS   : -1.952
+
+Type  : Slow 1200mV 0C Model Recovery 'PinY[2]'
+Slack : -1.324
+TNS   : -1.324
+
+Type  : Slow 1200mV 0C Model Removal 'PinY[2]'
+Slack : 1.198
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'PinY[8]'
+Slack : 1.897
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -260.251
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PinY[2]'
+Slack : -3.000
+TNS   : -42.354
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PinY[10]'
+Slack : -3.000
+TNS   : -38.688
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PinY[1]'
+Slack : -3.000
+TNS   : -38.688
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PinY[7]'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PinY[8]'
+Slack : -3.000
+TNS   : -4.487
+
+Type  : Fast 1200mV 0C Model Setup 'PinY[2]'
+Slack : -3.086
+TNS   : -64.931
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.793
+TNS   : -274.671
+
+Type  : Fast 1200mV 0C Model Setup 'PinY[10]'
+Slack : -1.404
+TNS   : -29.757
+
+Type  : Fast 1200mV 0C Model Setup 'PinY[8]'
+Slack : -0.502
+TNS   : -0.502
+
+Type  : Fast 1200mV 0C Model Setup 'PinY[1]'
+Slack : -0.267
+TNS   : -5.554
+
+Type  : Fast 1200mV 0C Model Setup 'PinY[7]'
+Slack : -0.037
+TNS   : -0.037
+
+Type  : Fast 1200mV 0C Model Hold 'PinY[10]'
+Slack : -1.841
+TNS   : -38.895
+
+Type  : Fast 1200mV 0C Model Hold 'PinY[2]'
+Slack : -0.612
+TNS   : -9.399
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PinY[1]'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PinY[8]'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PinY[7]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PinY[8]'
+Slack : -1.484
+TNS   : -1.484
+
+Type  : Fast 1200mV 0C Model Recovery 'PinY[2]'
+Slack : -1.204
+TNS   : -1.204
+
+Type  : Fast 1200mV 0C Model Removal 'PinY[2]'
+Slack : 0.812
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PinY[8]'
+Slack : 1.087
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -186.689
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PinY[10]'
+Slack : -3.000
+TNS   : -42.965
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PinY[2]'
+Slack : -3.000
+TNS   : -34.138
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PinY[1]'
+Slack : -3.000
+TNS   : -28.472
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PinY[8]'
+Slack : -3.000
+TNS   : -4.131
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PinY[7]'
+Slack : -3.000
+TNS   : -4.005
+
+------------------------------------------------------------

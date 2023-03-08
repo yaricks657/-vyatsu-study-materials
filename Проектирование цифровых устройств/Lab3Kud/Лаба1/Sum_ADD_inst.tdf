@@ -1,0 +1,12 @@
+(
+	cout_sig,
+	result_sig[]
+) = Sum_ADD	(
+	.cin = cin_sig,
+	.dataa[] = dataa_sig[],
+	.datab[] = datab_sig[]
+)
+RETURNS (
+	.cout,
+	.result[]
+);

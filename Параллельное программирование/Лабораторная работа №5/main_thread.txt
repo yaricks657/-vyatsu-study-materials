@@ -1,0 +1,154 @@
+#include <iostream>	//Быстрое преобразование Фурье
+#include <chrono>		//Нахождение ДПФ
+#include <vector>
+#include <complex>
+#include <fstream>
+#include <thread>
+#include <pvm3.h>
+
+using namespace std;
+
+typedef complex<double> base;
+
+vector<int> information[30];	//data vector
+vector<int> result(10000000);	//result vector
+int counter = 1;
+int range = 1000000
+int thread_counter = 8;
+std::thread threads[8];	//8 threads were created
+
+
+
+void enter(string first, int number, int size, string path){
+	fill_from_file(path, number, size);	//number, size
+}
+
+void fill_from_file(string path, int number_of_vectors, int size_of_vectors) {	//reading data from the file
+	ifstream vectorr("C:\\Programming\\Parallel programming\\Lab 1\\" + path);
+
+	for (int i = 0; i < number_of_vectors; i++) {
+		information[i].resize(size_of_vectors);
+	}
+
+	for (int i = 0; i < number_of_vectors; i++) {
+		for (int j = 0; j < size_of_vectors; j++) {
+			vectorr >> information[i].at(j);
+		}
+	}
+	vectorr.close();
+}
+
+int main(int argc, char *argv[])
+{
+  int  ntask = 4;             /* число дочерних задач */
+  int  info;                  /* возвращаемый код завершения для функций PVM */
+  int  mytid;                 /* собственный идентификатор задачи */
+  int  myparent;              /* идентификатор родительской задачи */
+  int  child [ 50 ] ;  /* массив идентификаторов дочерних задач */
+  int  i, mydata, buf, len, tag, tid;    /* остальные переменные */
+
+
+	enter("The third", 8, 100000, "int_0-100 8_100000.txt");
+	cout << "8 vectors of size 100000";
+
+	unsigned int start_time = clock();
+
+	mytid = pvm_mytid();        /* определить собственный идентификатор */
+	
+	
+	
+	info = pvm_spawn ("slaves", information, PvmTaskDefault, NULL, 4, child); 
+
+	ntask = info;       /* запись в ntask числа успешно запущенных задач */
+
+	for (int rank = 0; rank < ntask; ++rank) {
+	pvm_recv(ntask, -1);
+ 	pvm_upkint(information, range, 1);
+	}
+
+	
+	info = pvm_spawn ("slaves", information, PvmTaskDefault, NULL, 2, child); 
+
+	ntask = info;       /* запись в ntask числа успешно запущенных задач */
+
+	for (int rank = 0; rank < ntask; ++rank) {
+	pvm_recv(ntask, -1);
+ 	pvm_upkint(information, range, 1);
+	}
+
+	pvm_recv(1, -1);
+ 	pvm_upkint(information, range, 1);
+
+	pvm_exit();
+
+	unsigned int end_time = clock();
+	unsigned int search_time = end_time - start_time;
+	std::cout << search_time << " mc\n";
+	cout << '\n';
+
+		cout << "8 vectors of size 1000000";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	enter("The sixth", 8, 1000000, "int_0-100 8_1000000.txt");
+
+
+	cout << "8 vectors of size 10000";
+	enter("The nineth", 8, 10000, "int_0-100 8_10000.txt");
+
+	/*cout << "2 vectors of size 10000000";
+	enter("The tenth", 2, 10000000, "int_0-100 2_10000000.txt");*/
+
+	/*cout << "2 vectors of size 100000";
+	enter("The first", 2, 100000, "int_0-100 2_100000.txt");
+
+	cout << "4 vectors of size 100000";
+	enter("The second", 4, 100000, "int_0-100 4_100000.txt");*/
+
+	/*cout << "2 vectors of size 1000000";
+	enter("The fourth", 2, 1000000, "int_0-100 2_1000000.txt");
+
+	cout << "4 vectors of size 1000000";
+	enter("The fifth", 4, 1000000, "int_0-100 4_1000000.txt");*/
+
+	/*cout << "6 vectors of size 100000";
+	enter("The seventh", 6, 100000, "int_0-100 6_100000.txt");
+
+	cout << "6 vectors of size 1000000";
+	enter("The eighth", 6, 1000000, "int_0-100 6_1000000.txt");*/
+
+}

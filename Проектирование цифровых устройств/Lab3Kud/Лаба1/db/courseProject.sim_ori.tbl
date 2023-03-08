@@ -1,0 +1,131 @@
+%
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+%
+
+GROUP CREATE x = x[15] x[14] x[13] x[12] x[11] x[10] x[9] x[8] x[7] x[6] x[5] x[4] x[3] x[2] x[1] x[0] ;
+GROUP CREATE p = p[7] p[6] p[5] p[4] p[3] p[2] p[1] p[0] ;
+GROUP CREATE y = y[11] y[10] y[9] y[8] y[7] y[6] y[5] y[4] y[3] y[2] y[1] y[0] ;
+GROUP CREATE result = result[15] result[14] result[13] result[12] result[11] result[10] result[9] result[8] result[7] result[6] result[5] result[4] result[3] result[2] result[1] result[0] ;
+INPUTS clk x;
+OUTPUTS p y result PRS PMR DEL result[31] result[30] result[29] result[28] result[27] result[26] result[25] result[24] result[23] result[22] result[21] result[20] result[19] result[18] result[17] result[16];
+UNIT ns;
+RADIX HEX;
+PATTERN
+   0.0> 0 2A00 = 70 00X 0000 0 U 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  10.0> 1 2A00 = XX 00X 0000 X U X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  60.0> 0 2A00 = XX 00X 0000 X U X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ 100.0> 0 0000 = XX 00X 0000 X U X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ 110.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 160.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 200.0> 0 6FFF = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 210.0> 1 6FFF = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 260.0> 0 6FFF = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 300.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 310.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 360.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 410.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 460.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 510.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 560.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 610.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 660.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 710.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 760.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 810.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 860.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 910.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+ 960.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1010.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1060.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1110.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1160.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1210.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1260.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1310.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1360.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1410.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1460.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1510.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1560.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1610.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1660.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1710.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1760.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1810.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1860.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1910.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+1960.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2010.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2060.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2110.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2160.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2210.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2260.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2310.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2360.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2410.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2460.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2510.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2560.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2610.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2660.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2710.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2760.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2810.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2860.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2910.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+2960.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3010.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3060.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3110.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3160.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3210.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3260.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3310.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3360.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3410.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3460.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3510.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3560.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3610.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3660.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3710.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3760.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3810.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3860.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3910.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+3960.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4010.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4060.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4110.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4160.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4210.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4260.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4310.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4360.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4410.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4460.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4510.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4560.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4610.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4660.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4710.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4760.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4810.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4860.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4910.0> 1 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+4960.0> 0 0000 = XX 00X XXXX X U X X X X X X X X X X X X X X X X X 
+5000.0> X X = X X X X X X X X X X X X X X X X X X X X X X 
+;

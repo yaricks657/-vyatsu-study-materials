@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="courseProject">
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|CT2:inst34|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_52k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|Subsdf:inst58|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_e2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|Sum_ADD:inst69|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_oii.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|lpm_counter0:inst22|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_sij.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|CT1:inst18|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_tqj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|SM1:inst6|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_t3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|lpm_counterShift:inst76|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3rj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|lpm_mux0:inst56|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_qaf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|lpm_mux1:inst62|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_6qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|SM2:inst17|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_bhi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|courseProject|Subsdf:inst61|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_e2i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

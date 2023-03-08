@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\Simplex\Simplex\Debug\Simplex.vcxproj.AssemblyReference.cache
+C:\Users\user\source\repos\Simplex\Simplex\Debug\Simplex.MyForm.resources
+C:\Users\user\source\repos\Simplex\Simplex\Debug\Simplex.vcxproj.GenerateResource.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №2-3\Simplex только 2, 3-я недоделана\Simplex\Debug\Simplex.vcxproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №2-3\Simplex только 2, 3-я недоделана\Simplex\Debug\Simplex.MyForm.resources
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №2-3\Simplex только 2, 3-я недоделана\Simplex\Debug\Simplex.vcxproj.GenerateResource.cache

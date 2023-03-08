@@ -1,0 +1,10 @@
+(
+	q_sig
+) = fdff	(
+	.clock = clock_sig,
+	.data = data_sig,
+	.sclr = sclr_sig
+)
+RETURNS (
+	.q
+);

@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №2-3\Simplex только 2, 3-я недоделана\Simplex\MyForm.h(884,28): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Создание кода...
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Simplex.vcxproj -> C:\Users\user\OneDrive\Рабочий стол\Учёба\3-й курс\Исследование операций\Лабораторная работа №2-3\Simplex только 2, 3-я недоделана\Debug\Simplex.exe

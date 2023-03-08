@@ -1,0 +1,446 @@
+body{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+  background-color: black;
+  font-family: 'Rubik', sans-serif;
+  /* background-image: url("../images/bb.jpg"); */
+}
+/* Conteiner */
+.container{
+  width:80%;
+  /* max-width:1200px; */
+  margin: 0 auto;
+  height:100%;
+}
+
+/* Banner */
+.banner{
+width: 100%;
+height: 100%;
+margin: 0;
+background-image: url("../images/bbb.jpg");
+background-size: cover;
+-webkit-background-size: cover;
+}
+
+/* Header */
+.header{
+  width: 80%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  position: fixed;
+  padding: 40px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  /*-moz-transition: padding 0.3s;*/
+  /*-o-transition: padding 0.3s;*/
+  /*-webkit-transition: padding 0.3s;*/
+  transition: padding 0.3s;
+}
+
+.up{
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  padding: 60px 20px;
+  /*-moz-transition: padding 0.3s;*/
+  /*-o-transition: padding 0.3s;*/
+  /*-webkit-transition: padding 0.3s;*/
+  transition: padding 0.3s;
+}
+
+.logo{
+float: left;
+margin: -15 0 ;
+}
+
+.header__flex{
+width: 100%;
+align-items: center;
+}
+
+/* Nav */
+.nav{
+  font-size: 16px;
+  text-transform: uppercase;
+  float: right;
+}
+
+.nav_link{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+  padding: 0 auto;
+  margin:  5 20;
+  transition: color .3s linear;
+}
+
+.nav_link:hover{
+  color: yellow;
+  /* text-decoration:underline; */
+}
+
+
+/* Intro */
+.intro{
+  /* float: left; */
+  /* padding: 100px; */
+    /* margin: 50 auto; */
+    display: grid;
+    position: relative;
+     grid-template-columns: repeat(12 , 1fr);
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  margin: 0 0;
+  font-size: 46px;
+    color: #c9a557;
+    text-align: center;
+}
+
+p{
+color: white;
+  text-align: center;
+}
+.intro_text{
+  /* align-items: center; */
+margin: 120 auto;
+  grid-row: 1;
+   grid-column: 3 / span 8;
+}
+
+.morant{
+  /*visibility: hidden;*/
+  opacity: 0;
+  width: 300px;
+  margin: 200 auto;
+  grid-row: 1;
+   grid-column: 1 ;
+  transition: padding 0.3s;
+}
+
+.b-show {
+  animation: 1s linear forwards;
+  visibility: visible;
+
+}
+
+.harden{
+  opacity: 0;
+  width: 400px;
+  margin: 260 auto;
+  grid-row: 1;
+   grid-column: 1 / span 5;
+   z-index: 1;
+}
+
+.tatum{
+  opacity: 0;
+  width: 500px;
+  margin: 330 auto;
+  grid-row: 1;
+   grid-column: 1 / span 60  ;
+   z-index: 3;
+}
+
+.davis{
+  opacity: 0;
+  width: 300px;
+  margin: 200 auto;
+  grid-row: 1;
+   grid-column: 7 / span 6 ;
+   z-index: 1;
+}
+
+.embiid{
+  opacity: 0;
+  width: 300px;
+  margin: 200 auto;
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.provodnik{
+  opacity: 0;
+}
+
+/* News */
+
+.heading_news1{
+  grid-row: 1;
+  grid-column: 2/span 8;
+  margin: 100 auto;
+  text-align: center;
+
+}
+
+.heading_news2{
+  grid-row: 1;
+  grid-column: 2 / span 8;
+  margin: 200 auto;
+  text-align: center;
+}
+
+.heading_analytic1{
+  grid-row: 1;
+  grid-column: 4 / span 5;
+  margin: 100 auto;
+}
+
+.heading_analytic2{
+  grid-row: 1;
+  grid-column: 4 / span 5;
+  margin: 200 auto;
+    text-align: center;
+}
+
+.heading_season1{
+  grid-row: 1;
+  grid-column: 2 /span 9;
+  margin: 100 auto;
+}
+
+.heading_season2{
+  grid-row: 1;
+  grid-column: 2 / span 9;
+  margin: 200 auto;
+  text-align: center;
+
+}
+
+.heading_players1{
+  grid-row: 1;
+  grid-column: 4/ span 7;
+  margin: 100 auto;
+}
+
+.heading_players2{
+  grid-row: 1;
+  grid-column: 4 / span 7;
+  margin: 200 auto;
+  text-align: center;
+
+}
+
+.heading_gallery1{
+  grid-row: 1;
+  grid-column: 3 / span 7;
+  margin: 100 auto;
+}
+
+.heading_gallery2{
+  grid-row: 1;
+  grid-column: 3 / span 7;
+  margin: 200 auto;
+  text-align: center;
+
+}
+
+.news{ /*Контейнер для всего*/
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 100%;
+  background-image: url("../images/bbb.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.conteiner_blocks{
+  width: 100%;
+  max-width:1200px;
+  margin:auto;
+  display: grid;
+  /* position: relative; */
+   grid-template-columns: repeat(12 , 1fr);
+
+  /* height:500%; */
+}
+
+.ayton{
+  width: 300px;
+  margin:50 -20;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.lillard{
+  width: 400px;
+  margin: 50 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 1 ;
+}
+
+/* Season */
+
+.season{
+  width: 100%;
+   /* max-width: 1200px; */
+  height: 100%;
+  background-image: url("../images/bbb.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.curry{
+  width: 400px;
+  margin:50 -100;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.booker{
+  width: 270px;
+  margin: 60 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 1 ;
+}
+
+
+/* Analitics*/
+
+.analitic{
+  width: 100%;
+   /* max-width: 1200px; */
+  height: 100%;
+  background-image: url("../images/bbb.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.brown{
+  width: 280px;
+  margin:80 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.howard{
+  width: 400px;
+  margin: 20 -20;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 1 ;
+}
+
+
+/* Players */
+
+.players{
+  width: 100%;
+   /* max-width: 1200px; */
+  height: 100%;
+  background-image: url("../images/bbb.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.james{
+  width: 380px;
+  margin:20 -40;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.leonard{
+  width: 200px;
+  margin: 80 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 1 ;
+}
+
+/* Gallery */
+
+.gallery{
+  width: 100%;
+   /* max-width: 1200px; */
+  height: 100%;
+  background-image: url("../images/bbb.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.durant{
+  width: 300px;
+  margin:60 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 12 ;
+}
+
+.mitchell{
+  width: 330px;
+  margin: 80 auto;
+  /* margin: 150 auto; */
+  grid-row: 1;
+   grid-column: 1 ;
+}
+
+/* Last_Banner */
+
+.end{
+  width: 100%;
+   /* max-width: 1200px; */
+  height: 50%;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../images/last_banner.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  /* position: absolute; */
+}
+
+.up_left_banner{
+grid-row: 1;
+grid-column: 1/span2;
+margin: 50 20 80 20;
+padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.up_right_banner{
+grid-row: 1;
+grid-column: 2;
+margin: 50 20 80 20;
+/* padding: 0; */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.35); */
+}
+
+.down_left_banner{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.down_right_banner{
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.inst{
+width: 50px;
+height: 50px;
+object-fit: contain;
+}

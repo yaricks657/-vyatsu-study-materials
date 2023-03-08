@@ -1,0 +1,6 @@
+﻿  Parallel programming 4.cpp
+C:\Users\user\source\repos\Parallel programming 4\Parallel programming 4\Parallel programming 4.cpp(57,11): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\user\source\repos\Parallel programming 4\Parallel programming 4\Parallel programming 4.cpp(122,14): warning C4101: request: неиспользованная локальная переменная
+C:\Users\user\source\repos\Parallel programming 4\Parallel programming 4\Parallel programming 4.cpp(121,13): warning C4101: status: неиспользованная локальная переменная
+C:\Users\user\source\repos\Parallel programming 4\Parallel programming 4\Parallel programming 4.cpp(116,6): warning C4101: world_size: неиспользованная локальная переменная
+  Parallel programming 4.vcxproj -> C:\Users\user\source\repos\Parallel programming 4\Debug\Parallel programming 4.exe

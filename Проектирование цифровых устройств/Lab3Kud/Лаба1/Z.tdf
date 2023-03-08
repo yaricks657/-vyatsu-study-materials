@@ -1,0 +1,100 @@
+
+module Z
+(
+clk, p, clkout, y, Z
+);
+input clk;
+
+input [5:0] p;
+
+output clkout;
+
+output Z;
+
+output [14:0] y;
+
+
+integer pc=1; 
+
+reg [14:0] y;
+
+wire clkout; 
+
+reg Z=0; 
+
+assign clkout=!clk; 
+
+always @(posedge clk)
+
+begin
+
+case (pc)
+1: begin
+y=11'b100000101010;
+pc= pc + 1;
+end
+2: begin
+y=11'b01000000100;
+pc= pc + 1;
+end
+3: begin
+y=11'b00000001010;
+pc= pc + 1;
+end
+4: begin
+if (p[4]==1) begin y=11'b00001000000; pc=13; end else begin
+if (p[5]==1) begin y=11'b00000000001; pc=13; end else begin
+y=11'b11000000000;
+pc= pc + 1;
+end;
+end
+end
+5: begin
+if (p[2]==0) begin y=12'b10000000100; pc=pc+1; end else 
+begin y=11'b00010000000; pc=13; end 
+end
+
+6: begin
+if (p[1]==0) y=11'b000100000000; else y=12'b000000000000;
+pc=pc+1;
+end
+7: begin
+if (p[2]==0) begin if (p[3]==0) begin y=11'b00000010000; pc=pc+1; end else begin y=11'b0000000001; pc=13; end  end
+else begin y=11'b00010000000; pc=13; end
+end
+8: begin
+if (p[0]==1) begin y=11'b00000000000; Z = 1; pc=100; end else 
+if (p[1]==0) begin y=11'b10000000100; pc=7; end else begin y=11'b00000000100; pc=7; end
+end
+9:begin
+y=12'b000000000001;
+pc= 13;
+end
+
+13: begin
+Z=1; pc=100; 
+end
+
+default y=13'b000000000000;
+endcase;
+end
+endmodule
+// {{ALTERA_ARGS_BEGIN}} DO NOT REMOVE THIS LINE!
+clk, p, Z, clkout, y
+// {{ALTERA_ARGS_END}} DO NOT REMOVE THIS LINE!
+// {{ALTERA_IO_BEGIN}} DO NOT REMOVE THIS LINE!
+input clk;
+input [5:0] p;
+output Z;
+output clkout;
+output [11:0] y;
+// {{ALTERA_IO_END}} DO NOT REMOVE THIS LINE!
+-- {{ALTERA_PARAMETERS_BEGIN}} DO NOT REMOVE THIS LINE!
+-- {{ALTERA_PARAMETERS_END}} DO NOT REMOVE THIS LINE!
+	-- {{ALTERA_IO_BEGIN}} DO NOT REMOVE THIS LINE!
+	clk : INPUT;
+	p[7..0] : INPUT;
+	Z : OUTPUT;
+	clkout : OUTPUT;
+	y[12..0] : OUTPUT;
+	-- {{ALTERA_IO_END}} DO NOT REMOVE THIS LINE!

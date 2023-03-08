@@ -1,0 +1,142 @@
+module UA
+(
+clk, p, clkout, y, Z
+);
+input clk;
+
+input [8:0] p;
+
+output clkout;
+
+output Z;
+
+output [11:0] y;
+
+
+integer pc=1; 
+
+reg [11:0] y;
+
+wire clkout; 
+
+reg Z=0; 
+
+assign clkout=!clk; 
+
+always @(posedge clk)
+
+begin
+case (pc)
+1: begin
+	if (p[8]==1)
+		begin
+			y=11'b010000010010;
+			pc= pc + 1;
+		end;
+end
+2: begin
+	y=11'b000100000100;
+	pc= pc + 1;
+end
+3: begin
+	if (p[8]==1)
+		begin
+			y=11'b000000000010;
+			pc=4;
+		end;
+end
+4: begin
+	if (p[4]==1) 
+		begin 
+			y=11'b000000100000; 
+			pc=1000; 
+		end 
+	else 
+	begin
+		if (p[5]==1) 
+			begin 
+				y=11'b010000000001; 
+				pc=13;  
+			end 
+		else 
+			begin
+				y=11'b001100000000;
+				pc= pc+1;
+			end;
+		end;
+end
+5: begin
+	if (p[3]==1) 
+		begin 
+			y=11'b000001000000;  
+		end 
+	else 
+		begin
+		if (p[6]==1) 
+			begin
+				y=11'b010000000001; 
+				pc=13;
+			end
+		else
+			begin
+			if (p[0]==0)
+				begin
+					if (p[1]==0)
+						begin
+						y=11'b001000000100; 
+						end
+					else
+						begin
+						y=11'b000000000100; 
+						end;
+					pc=pc+1;
+				end
+			else
+				begin
+				if (p[7]==1)
+					begin
+						if(p[2]==1)
+							begin
+							y=11'b010000000001; 
+							pc=13;
+							end
+						else
+							begin
+							y=11'b000000000000; 
+							pc=13;
+							end;
+					end
+				else
+					begin
+					y=11'b000010000000;
+					pc=7;
+					end;
+				end
+			end
+		end;  
+end
+6: begin
+y=11'b000000001000;
+pc=5;
+end
+7: begin
+	if(p[3]==0)
+		begin
+		y=13'b000000000000; 
+				pc=13;
+		end
+	else
+		begin
+		y=11'b000001000000; 
+		pc=1000;
+		end;
+end
+13: begin
+	y=13'b100000000000;  pc=14; 
+	Z=1;
+end
+
+default y=11'b000000000000;
+endcase
+end
+endmodule

@@ -1,0 +1,133 @@
+%
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+%
+
+GROUP CREATE x = x[15] x[14] x[13] x[12] x[11] x[10] x[9] x[8] x[7] x[6] x[5] x[4] x[3] x[2] x[1] x[0] ;
+GROUP CREATE p = p[8] p[7] p[6] p[5] p[4] p[3] p[2] p[1] p[0] ;
+GROUP CREATE y = y[11] y[10] y[9] y[8] y[7] y[6] y[5] y[4] y[3] y[2] y[1] y[0] ;
+GROUP CREATE result = result[15] result[14] result[13] result[12] result[11] result[10] result[9] result[8] result[7] result[6] result[5] result[4] result[3] result[2] result[1] result[0] ;
+INPUTS clk x;
+OUTPUTS p y result DEL result[31] result[30] result[29] result[28] result[27] result[26] result[25] result[24] result[23] result[22] result[21] result[20] result[19] result[18] result[17] result[16];
+UNIT ns;
+RADIX HEX;
+PATTERN
+   0.0> 0 7E00 = 000 00X 0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  10.0> 1 7E00 = 0XX 00X 000X X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  60.0> 0 7E00 = 0XX 00X 000X X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ 100.0> 0 0000 = 0XX 00X 000X X 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ 110.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 160.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 200.0> 0 8500 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 210.0> 1 8500 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 260.0> 0 8500 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 300.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 310.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 360.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 410.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 460.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 510.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 560.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 610.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 660.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 710.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 760.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 810.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 860.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 910.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+ 960.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1010.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1060.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1110.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1160.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1210.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1260.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1310.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1360.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1410.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1460.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1510.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1560.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1610.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1660.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1710.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1760.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1810.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1860.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1910.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+1960.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2010.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2060.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2110.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2160.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2210.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2260.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2310.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2360.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2410.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2460.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2510.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2560.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2610.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2660.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2710.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2760.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2810.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2860.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2910.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+2960.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3010.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3060.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3110.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3160.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3210.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3260.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3310.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3360.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3410.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3460.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3510.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3560.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3610.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3660.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3710.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3760.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3810.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3860.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3910.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+3960.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4010.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4060.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4110.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4160.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4210.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4260.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4310.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4360.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4410.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4460.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4510.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4560.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4610.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4660.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4710.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4760.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4810.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4860.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4910.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+4960.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+5010.0> 1 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+5060.0> 0 0000 = 0XX 00X UUUU X 0 0 0 0 0 0 0 0 U U U U U U U U 
+5100.0> X X = X X X X X X X X X X X X X X X X X X X X 
+;

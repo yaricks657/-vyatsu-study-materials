@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\Database\Database\bin\Debug\Database.exe.config
+C:\Users\user\source\repos\Database\Database\bin\Debug\Database.exe
+C:\Users\user\source\repos\Database\Database\bin\Debug\Database.pdb
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.Form1.resources
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.Properties.Resources.resources
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.exe
+C:\Users\user\source\repos\Database\Database\obj\Debug\Database.pdb
+C:\Users\user\source\repos\Database\Database\bin\Debug\Mono.Security.dll
+C:\Users\user\source\repos\Database\Database\bin\Debug\npgsql.dll

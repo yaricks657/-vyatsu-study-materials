@@ -1,0 +1,27 @@
+﻿  Parallel programming 2.cpp
+C:\Users\user\source\repos\Parallel programming 2\Parallel programming 2\Parallel programming 2.cpp(56,12): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(55,14): error C2672: "invoke": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(61): message : выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int std::thread::_Invoke<_Tuple,0,1,2,3>(void *) noexcept"
+          with
+          [
+              _Tuple=_Tuple
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(66): message : выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int (__stdcall *std::thread::_Get_invoke<_Tuple,0,1,2,3>(std::integer_sequence<size_t,0,1,2,3>) noexcept)(void *)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(89): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::thread::_Start<void(__cdecl &)(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,int),std::vector<int,std::allocator<int>>&,std::vector<int,std::allocator<int>>&,std::vector<int,std::allocator<int>>&>(_Fn,std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &)"
+          with
+          [
+              _Fn=void (__cdecl &)(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,int)
+          ]
+C:\Users\user\source\repos\Parallel programming 2\Parallel programming 2\Parallel programming 2.cpp(110): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::thread::thread<void(__cdecl &)(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,int),std::vector<int,std::allocator<int>>&,std::vector<int,std::allocator<int>>&,std::vector<int,std::allocator<int>>&,0>(_Fn,std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &)"
+          with
+          [
+              _Fn=void (__cdecl &)(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,int)
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2893: Сбой при специализации функции-шаблона "unknown-type std::invoke(_Callable &&,_Ty1 &&,_Types2 &&...) noexcept(<expr>)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(1589): message : см. объявление "std::invoke"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : "_Callable=void (__cdecl *)(const std::vector<int,std::allocator<int>> &,const std::vector<int,std::allocator<int>> &,std::vector<int,std::allocator<int>> &,int)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : "_Ty1=std::vector<int,std::allocator<int>>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : "_Types2={std::vector<int,std::allocator<int>>, std::vector<int,std::allocator<int>>}"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2780: unknown-type std::invoke(_Callable &&) noexcept(<expr>): требует аргументов: 1, имеется: 4
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\type_traits(1583): message : см. объявление "std::invoke"

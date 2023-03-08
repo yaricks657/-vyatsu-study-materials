@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+     <canvas id="myChart" width="300" height="200"></canvas>
+  </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
+
+    var dataArray = []
+    var dateArray = []
+
+    function grafDrawing(){
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: dateArray,
+      datasets: [
+        {
+          borderColor: <% if (Context.data.DollarOrEuro){%> ["red"], <%} else {%> ["blue"], <%}%>
+          data: dataArray,
+          fill: false,
+          tension: 0
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: <% if (Context.data.DollarOrEuro){%>'Динамика курса доллара США к рублю (USD, ЦБ РФ)' 
+        <%} else {%> 
+        'Динамика курса евро к рублю (EUR, ЦБ РФ)' <%}%>
+      }
+    }
+  })
+    }
+
+    var dataArrayss = <%=Scripts%>.CurrencyArray()
+    dataArrayss.then(result => {dataArray = result}).then(() => console.log(dataArray)).then(() => {dateArray = dataArray.splice(-(Math.ceil(dataArray.length / 2)))}).then(() => grafDrawing())
+  </script>
+</body>

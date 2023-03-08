@@ -1,0 +1,11 @@
+﻿  module.cpp
+C:\Users\user\source\repos\Lab 4 Python\string_methods_c\module.cpp(11,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Lab 4 Python\string_methods_c\module.cpp(24,25): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Lab 4 Python\string_methods_c\module.cpp(39,17): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+     Создается библиотека C:\Users\user\source\repos\Lab 4 Python\x64\Release\string_methods_c.lib и объект C:\Users\user\source\repos\Lab 4 Python\x64\Release\string_methods_c.exp
+  Создание кода
+  302 of 2288 functions (13.2%) were compiled, the rest were copied from previous compilation.
+    92 functions were new in current compilation
+    180 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  string_methods_c.vcxproj -> C:\Users\user\source\repos\Lab 4 Python\x64\Release\string_methods_c.pyd

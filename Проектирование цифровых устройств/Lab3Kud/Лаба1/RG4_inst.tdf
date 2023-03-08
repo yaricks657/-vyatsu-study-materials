@@ -1,0 +1,11 @@
+(
+	q_sig[]
+) = RG4	(
+	.aclr = aclr_sig,
+	.clock = clock_sig,
+	.data[] = data_sig[],
+	.enable = enable_sig
+)
+RETURNS (
+	.q[]
+);

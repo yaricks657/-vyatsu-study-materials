@@ -1,0 +1,2 @@
+﻿  module.cpp
+C:\Users\user\source\repos\Lab 4 Python\string_methods_c\module.cpp(1,10): fatal error C1083: Не удается открыть файл включение: pybind11/pybind11.h: No such file or directory,

@@ -1,0 +1,10 @@
+(
+	result_sig[]
+) = lpm_add_sub242	(
+	.cin = cin_sig,
+	.dataa[] = dataa_sig[],
+	.datab[] = datab_sig[]
+)
+RETURNS (
+	.result[]
+);

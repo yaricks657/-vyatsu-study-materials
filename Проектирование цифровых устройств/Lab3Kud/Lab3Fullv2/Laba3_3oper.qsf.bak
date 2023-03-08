@@ -1,0 +1,188 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 14:48:06  December 22, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Laba3_3oper_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name TOP_LEVEL_ENTITY Laba3_3oper
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:48:06  DECEMBER 22, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SOURCE_FILE ../Ырср1/CT1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/CT1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/CT1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/CT2.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/CT2.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/CT2_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/ct4pm.cmp
+set_global_assignment -name VHDL_FILE ../Ырср1/CT4pm.vhd
+set_global_assignment -name SOURCE_FILE ../Ырср1/dc4.cmp
+set_global_assignment -name VHDL_FILE ../Ырср1/dc4.vhd
+set_global_assignment -name SOURCE_FILE ../Ырср1/ilireset.cmp
+set_global_assignment -name VHDL_FILE ../Ырср1/ilireset.vhd
+set_global_assignment -name VHDL_FILE ../Ырср1/ilireset_inst.vhd
+set_global_assignment -name SOURCE_FILE ../Ырср1/KC1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/KC1.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/KS1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/KS1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/KS1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/KS2XOR.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/KS2XOR.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/KS2XOR_inst.tdf
+set_global_assignment -name BDF_FILE ../Ырср1/lab2.bdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_add_sub0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_add_sub0.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_add_sub65.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_add_sub65.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_add_sub242.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_add_sub242.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_add_sub242_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_and0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_and0.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_and0_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_counter0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_counter0.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_counterShift.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_counterShift.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_inv0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv0.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv0_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_inv1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_inv2.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv2.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_inv2_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_mux0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_mux0.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_mux0_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_mux1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_mux1.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_or0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_or0.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_or0_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_or1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_or1.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_or76.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_or76.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_shiftreg0.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_shiftreg0.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_shiftreg1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_shiftreg1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_shiftreg1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_shiftreg2.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_shiftreg2.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_shiftreg2_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_xor1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_xor1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_xor1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_xor45.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_xor45.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_xor45_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/lpm_xorResult.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/lpm_xorResult.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/MuxRG1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/MuxRG1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/MuxRG1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/Not6.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/Not6.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/Not6_inst.tdf
+set_global_assignment -name VHDL_FILE ../Ырср1/reg.vhd
+set_global_assignment -name SOURCE_FILE ../Ырср1/Reg13.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/Reg13.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/Reg13_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/ResultReg.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/ResultReg.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/ResultReg_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/ResultShift.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/ResultShift.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/RG1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/RG1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/RG1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/RG2.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/RG2.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/RG2Left.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/RG2Left.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/RG2Left_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/RG3.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/RG3.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/RG3_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/RG4.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/RG4.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/RG4_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/SM1.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/SM1.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/SM1_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/SM2.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/SM2.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/SM2_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/SM23.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/SM23.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/Subsdf.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/Subsdf.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/Subsdf_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/SUM4.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/SUM4.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/SUM4_inst.tdf
+set_global_assignment -name VERILOG_FILE ../Ырср1/ua.v
+set_global_assignment -name BDF_FILE ../Ырср1/UAcourseProject.bdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/XOR3.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/XOR3.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/XOR3_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/YY.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/YY.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/YY_inst.tdf
+set_global_assignment -name SOURCE_FILE ../Ырср1/YY14.cmp
+set_global_assignment -name AHDL_FILE ../Ырср1/YY14.tdf
+set_global_assignment -name AHDL_FILE ../Ырср1/YY14_inst.tdf
+set_global_assignment -name VHDL_FILE files/PZUMPR.vhd
+set_global_assignment -name VHDL_FILE files/UA.vhd
+set_global_assignment -name VHDL_FILE files/ua_ct4.vhd
+set_global_assignment -name VHDL_FILE files/ua_ct10.vhd
+set_global_assignment -name VHDL_FILE files/ua_ms67x1.vhd
+set_global_assignment -name VHDL_FILE files/USB_CT3.vhd
+set_global_assignment -name VHDL_FILE files/usb_dc3.vhd
+set_global_assignment -name VHDL_FILE files/USB_DC8.vhd
+set_global_assignment -name VHDL_FILE files/USB_MUX1x2.vhd
+set_global_assignment -name VHDL_FILE files/USB_MUX8x2.vhd
+set_global_assignment -name VHDL_FILE files/USB_MUX8x19.vhd
+set_global_assignment -name VHDL_FILE files/USB_RG8E.vhd
+set_global_assignment -name VHDL_FILE files/USBBridge.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
