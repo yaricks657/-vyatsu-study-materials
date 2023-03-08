@@ -1,0 +1,25 @@
+object Form1: TForm1
+  Left = 627
+  Height = 300
+  Top = 306
+  Width = 625
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 625
+  DesignTimePPI = 120
+  LCLVersion = '2.0.8.0'
+  object Button1: TButton
+    Left = 232
+    Height = 86
+    Top = 88
+    Width = 176
+    Caption = 'Генератор'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object SaveDialog1: TSaveDialog
+    left = 85
+    top = 32
+  end
+end
