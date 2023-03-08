@@ -1,0 +1,128 @@
+unit Unit5;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, StdCtrls, ExtCtrls, TeeProcs, TeEngine, Chart, Series,
+  Buttons;
+
+type
+  TForm5 = class(TForm)
+    lbl1: TLabel;
+    lbl2: TLabel;
+    strngrd1: TStringGrid;
+    lbl3: TLabel;
+    strngrd2: TStringGrid;
+    cht1: TChart;
+    lnsrsSeries1: TLineSeries;
+    lnsrsSeries2: TLineSeries;
+    btn1: TBitBtn;
+    procedure FormShow(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+uses Unit1;
+
+{$R *.dfm}
+
+procedure delta(n,num: Byte);
+var
+  i,j:byte;
+begin
+  with form5 do
+  begin
+    for j:=1 to n do
+      if j>3 then Break
+      else
+      for i:=0 to n-j do
+        if num = 1 then strngrd1.cells[j+4,i+1]:=floattostr(StrToFloat(strngrd1.cells[j-1+4,i+1+1])-StrToFloat(strngrd1.cells[j-1+4,i+1]))
+        else strngrd2.cells[j+4,i+1]:=floattostr(StrToFloat(strngrd2.cells[j-1+4,i+1+1])-StrToFloat(strngrd2.cells[j-1+4,i+1]))
+  end;
+end;
+procedure TForm5.FormShow(Sender: TObject);
+var
+  i,j,k:byte;
+  temp:real;
+begin
+  //начальное заполнение
+  strngrd1.Cells[0,0]:='K';
+  strngrd1.Cells[1,0]:='X_k';
+  strngrd1.Cells[2,0]:='Y_k';
+  strngrd1.Cells[3,0]:='Delta_y';
+  strngrd1.Cells[4,0]:='Tk=hf_k';
+  strngrd1.Cells[5,0]:='Delta_1Tk';
+  strngrd1.Cells[6,0]:='Delta_2Tk';
+  strngrd1.Cells[7,0]:='Delta_3Tk';
+  strngrd2.Cells[0,0]:='K';
+  strngrd2.Cells[1,0]:='X_k';
+  strngrd2.Cells[2,0]:='Y_k';
+  strngrd2.Cells[3,0]:='Delta_y';
+  strngrd2.Cells[4,0]:='Tk=hf_k';
+  strngrd2.Cells[5,0]:='Delta_1Tk';
+  strngrd2.Cells[6,0]:='Delta_2Tk';
+  strngrd2.Cells[7,0]:='Delta_3Tk';
+  //Для шага 0,1
+  for i:=1 to 9 do
+    begin
+      strngrd1.Cells[0,i]:=IntToStr(i-1);
+      strngrd1.Cells[1,i]:=FloatToStr((i-1)/10);
+    end;
+  strngrd1.Cells[2,1]:='1';
+  strngrd1.Cells[2,2]:='1,1103';
+  strngrd1.Cells[2,3]:='1,2427';
+  strngrd1.Cells[2,4]:='1,3996';
+  for i:=1 to 3 do
+    strngrd1.Cells[4,i]:=floattostr(0.1*(strtofloat(strngrd1.Cells[1,i])+strtofloat(strngrd1.Cells[2,i])));
+  for k:=3 to 9-1 do
+    begin
+      strngrd1.Cells[4,k+1]:=floattostr(0.1*(StrToFloat(strngrd1.Cells[1,k+1])+strtofloat(strngrd1.Cells[2,k+1])));
+      delta(k,1);
+      strngrd1.Cells[3,k+1]:=FloatToStr(StrToFloat(strngrd1.Cells[4,k+1])+0.5*StrToFloat(strngrd1.Cells[5,k])+(5/12)*StrToFloat(strngrd1.Cells[6,k-1])+(3/8)*StrToFloat(strngrd1.Cells[7,k-2]));
+      strngrd1.Cells[2,k+2]:=FloatToStr(StrToFloat(strngrd1.cells[2,k+1])+strtofloat(strngrd1.cells[3,k+1]))
+    end;
+  //Для шага 0,05
+  temp:=0;
+  for i:=1 to 17 do
+    begin
+      strngrd2.Cells[0,i]:=IntToStr(i-1);
+      strngrd2.Cells[1,i]:=FloatToStr(temp);
+      temp:=temp+0.05;
+    end;
+  strngrd2.Cells[2,1]:='1';
+  strngrd2.Cells[2,2]:='1,0525';
+  strngrd2.Cells[2,3]:='1,1103';
+  strngrd2.Cells[2,4]:='1,1736';
+  for i:=1 to 3 do
+    strngrd2.Cells[4,i]:=floattostr(0.05*(strtofloat(strngrd2.Cells[1,i])+strtofloat(strngrd2.Cells[2,i])));
+  for k:=3 to 17-1 do
+    begin
+      strngrd2.Cells[4,k+1]:=floattostr(0.05*(StrToFloat(strngrd2.Cells[1,k+1])+strtofloat(strngrd2.Cells[2,k+1])));
+      delta(k,2);
+      strngrd2.Cells[3,k+1]:=FloatToStr(StrToFloat(strngrd2.Cells[4,k+1])+0.5*StrToFloat(strngrd2.Cells[5,k])+(5/12)*StrToFloat(strngrd2.Cells[6,k-1])+(3/8)*StrToFloat(strngrd2.Cells[7,k-2]));
+      strngrd2.Cells[2,k+2]:=FloatToStr(StrToFloat(strngrd2.cells[2,k+1])+strtofloat(strngrd2.cells[3,k+1]))
+    end;
+    //Построение графика
+  lnsrsSeries1.Clear;
+  lnsrsSeries2.Clear;
+  for i:=1 to 9 do
+    lnsrsSeries1.AddXY(StrToFloat(strngrd1.Cells[1,i]),StrToFloat(strngrd1.Cells[2,i]),'',clred);
+  for i:=1 to 17 do
+    lnsrsSeries2.AddXY(StrToFloat(strngrd2.Cells[1,i]),StrToFloat(strngrd2.Cells[2,i]),'',clGreen);
+end;
+
+procedure TForm5.btn1Click(Sender: TObject);
+begin
+ Form5.Close;
+end;
+
+end.

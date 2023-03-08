@@ -1,0 +1,43 @@
+object Form1: TForm1
+  Left = 890
+  Top = 27
+  Width = 332
+  Height = 231
+  Caption = #1052#1077#1090#1086#1076#1099' '#1087#1088#1080#1073#1083#1080#1078#1077#1085#1080#1103' '#1092#1091#1085#1082#1094#1080#1081
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btn1: TButton
+    Left = 56
+    Top = 32
+    Width = 193
+    Height = 33
+    Caption = #1060#1086#1088#1084#1091#1083#1072' '#1051#1072#1075#1088#1072#1085#1078#1072
+    TabOrder = 0
+    OnClick = btn1Click
+  end
+  object btn2: TButton
+    Left = 56
+    Top = 72
+    Width = 193
+    Height = 33
+    Caption = #1060#1086#1088#1084#1091#1083#1072' '#1053#1100#1102#1090#1086#1085#1072
+    TabOrder = 1
+    OnClick = btn2Click
+  end
+  object btn3: TButton
+    Left = 56
+    Top = 112
+    Width = 193
+    Height = 41
+    Caption = #1057#1088#1077#1076#1085#1077#1082#1074#1072#1076#1088#1072#1090#1080#1095#1085#1086#1077' '#1087#1088#1080#1073#1083#1080#1078#1077#1085#1080#1077' '
+    TabOrder = 2
+    OnClick = btn3Click
+  end
+end

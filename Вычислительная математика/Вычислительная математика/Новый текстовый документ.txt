@@ -1,0 +1,28 @@
+var 
+
+function shoot: TByteArray;
+var
+ pos, counter, cur: Integer;
+begin
+ // Выбирается номер случайной непосещенной клетки из оставшихся
+ pos := random(leftCells);
+
+ // Эта клетка ищется на поле
+ // Поле нумеруется с нуля слева направо, сверзу вниз
+ // counter - нумерация только непосещенных клеток
+ // cur - нумерация всех клеток
+ counter := -1;
+ cur := -1;
+ while counter <> pos do begin
+ inc(cur);
+ // cur div 10 - координата Y, cur mod 10 - координата X.
+ if (visited[(cur div 10) * 10 + cur mod 10] = false) then inc(counter);
+ end;
+
+ visited[(cur div 10) * 10 + cur mod 10] := true;
+ shoot := TByteArray.Create(cur mod 10, cur div 10);
+end;
+procedure shootResult(resultCode: integer);
+begin
+ dec(leftCells);
+end;

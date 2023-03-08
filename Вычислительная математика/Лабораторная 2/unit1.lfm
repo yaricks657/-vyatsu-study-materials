@@ -1,0 +1,142 @@
+object Form1: TForm1
+  Left = 547
+  Height = 633
+  Top = 165
+  Width = 974
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Лабораторная работа №2'
+  ClientHeight = 633
+  ClientWidth = 974
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.8.0'
+  object Panel1: TPanel
+    Left = 768
+    Height = 648
+    Top = -8
+    Width = 213
+    BevelColor = clMenuText
+    ClientHeight = 648
+    ClientWidth = 213
+    Color = clWhite
+    Font.Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object Button1: TButton
+      Left = 8
+      Height = 32
+      Top = 72
+      Width = 192
+      Caption = 'Метод Гаусса'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 8
+      Height = 31
+      Top = 128
+      Width = 192
+      Caption = 'Метод Зейделя'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 8
+      Height = 31
+      Top = 184
+      Width = 192
+      Caption = 'Метод обратной матрицы'
+      OnClick = Button3Click
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 8
+      Height = 31
+      Top = 240
+      Width = 192
+      Caption = 'Метод Ньютона'
+      OnClick = Button4Click
+      TabOrder = 3
+    end
+  end
+  object Shape1: TShape
+    Left = -8
+    Height = 104
+    Top = 0
+    Width = 784
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 90
+    Caption = 'Уравнения:'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 104
+    Height = 92
+    Top = 8
+    Width = 361
+    Caption = '0,64*x1+0,72*x2-0,83*x3+4,20*x4=2,23             '#13#10'0,58*x1-0,83*x2+1,43*x3-0,62*x4=1,71             '#13#10'0,86*x1+0,77*x2-1,83*x3+0,88*x4=-0,54            '#13#10'1,32*x1-0,52*x2-0,65*x3+1,22*x4=0,65'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 592
+    Height = 23
+    Top = 8
+    Width = 153
+    Caption = 'Точность: e = 0,001'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 104
+    Height = 92
+    Top = 8
+    Width = 380
+    Caption = 'x1=0,19*x1-0,07*x2+0,38*x3-0,21*x4-0,81           '#13#10'x2=-0,22*x1+0,08*x2+0,11*x3+0,33*x4-0,64          '#13#10'x3=0,51*x1-0,07*x2-0,09*x3-0,11*x4-0,71           '#13#10'x4=0,33*x1-0,41*x2-0,21'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 592
+    Height = 23
+    Top = 8
+    Width = 162
+    Caption = 'Точность: e = 0,0001'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 104
+    Height = 46
+    Top = 8
+    Width = 206
+    Caption = 'x-exp(-1,6-y)+1,4=0           '#13#10'y-tg(x)=0'
+    Font.Height = -17
+    ParentColor = False
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 0
+    Height = 529
+    Top = 104
+    Width = 768
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+end
