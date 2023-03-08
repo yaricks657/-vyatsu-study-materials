@@ -1,0 +1,91 @@
+uses
+  WinCrt,Graph;
+
+var
+  i1,i2,j1,j2: integer;
+  x1,x2,y1,y2: double;
+
+function WinX(x: double): integer;
+begin
+  WinX:= Round((x-x1)/(x2-x1)*(i2-i1)) + i1
+end;
+
+function WinY(y: double): integer;
+begin
+  WinY:= j2-Round((y-y1)/(y2-y1)*(j2-j1))
+end;
+
+procedure WinLine(x1,y1,x2,y2: double);
+begin
+  Line(WinX(x1	),WinY(y1),WinX(x2),WinY(y2))
+end;
+
+procedure WinSet(u1,v1,u2,v2: double; a1,b1,a2,b2: integer);
+begin
+  if a1<0 then i1:= GetMaxX+a1 else i1:= a1;
+  if b1<0 then j1:= GetMaxY+b1 else j1:= b1;
+  if a2<0 then i2:= GetMaxX+a2 else i2:= a2;
+  if b2<0 then j2:= GetMaxY+b2 else j2:= b2;
+  x1:= u1;
+  y1:= v1;
+  if u2<=u1 then x2:= x1+(v2-v1)/(j2-j1)*(i2-i1) else x2:= u2;
+  if v2<=v1 then y2:= y1+(u2-u1)/(i2-i1)*(j2-j1) else y2:= v2
+end;
+
+procedure Hilbert(p: integer; x1,y1,x2,y2: double);
+var
+  dx,dy,k1,k2: double;
+begin
+  dx:= x2-x1;
+  dy:= y2-y1;
+  if p=1 then begin
+    MoveTo(WinX(x1),WinY(y1));
+    LineTo(WinX(x1-dy),WinY(y1+dx));
+    LineTo(WinX(x2-dy),WinY(y2+dx));
+    LineTo(WinX(x2),WinY(y2))
+  end
+  else begin
+    k1:= (1 shl (p-1)-1)/(1 shl p-1);
+    k2:= (1 shl (p-1))/(1 shl p-1);
+    Hilbert(p-1, x1-k1*dy, y1+k1*dx, x1, y1);
+    WinLine(x1-k1*dy, y1+k1*dx, x1-k2*dy, y1+k2*dx);
+    Hilbert(p-1, x1-k2*dy, y1+k2*dx, x1+k1*dx-k2*dy, y1+k2*dx+k1*dy);
+    WinLine(x1+k1*dx-k2*dy, y1+k2*dx+k1*dy, x1+k2*(dx-dy), y1+k2*(dx+dy));
+    Hilbert(p-1, x1+k2*(dx-dy), y1+k2*(dx+dy), x2-k2*dy, y2+k2*dx);
+    WinLine(x2-k2*dy, y2+k2*dx, x2-k1*dy, y2+k1*dx);
+    Hilbert(p-1, x2, y2, x2-k1*dy, y2+k1*dx);
+  end
+end;
+
+var
+  gd,gm: integer;
+
+begin
+  gd:= Detect;
+  InitGraph(gd,gm,'');
+  WinSet(-0.5,-0.1,-100,1.1,10,10,-10,-10);
+   SetColor(LightBlue);
+  SetLineStyle(0,0,3);
+  Hilbert(3,0,0,1,0);
+     SetColor(LightGreen);
+  SetLineStyle(0,0,3);
+  Hilbert(4,0,0,1,0);
+  SetColor(Yellow);
+  SetLineStyle(0,0,3);
+  Hilbert(5,0,0,1,0);
+  SetColor(LightRed);
+  SetLineStyle(0,0,1);
+  Hilbert(6,0,0,1,0);
+   SetColor(LightRed);
+  SetLineStyle(0,0,1);
+  Hilbert(7,0,0,1,0);
+    SetColor(LightBlue);
+  SetLineStyle(0,0,1);
+  Hilbert(8,0,0,1,0);
+    SetColor(LightRed);
+  SetLineStyle(0,0,1);
+  Hilbert(9,0,0,1,0);
+
+  ReadKey
+end.
+
