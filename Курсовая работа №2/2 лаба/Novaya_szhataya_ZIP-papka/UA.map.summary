@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 01 21:58:20 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : UA
+Top-level Entity Name : UA
+Family : Cyclone III
+Total logic elements : 47
+    Total combinational functions : 47
+    Dedicated logic registers : 19
+Total registers : 19
+Total pins : 39
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,105 @@
+20	
+Alec Burks	
+SG	
+6-6	
+214	
+7/20/1991 (29)	
+8	
+21	
+Joel Embiid 	
+C	
+7-0	
+280	
+3/16/1994 (26)	
+3	
+12	
+Tobias Harris 	
+SF	
+6-8	
+226	
+7/15/1992 (28)	
+8	
+42	
+Al Horford	
+C	
+6-9	
+240	
+6/3/1986 (34)	
+12	
+30	
+Furkan Korkmaz	
+SG	
+6-7	
+202	
+7/24/1997 (23)	
+2	
+18	
+Shake Milton	
+SG	
+6-5	
+205	
+9/26/1996 (23)	
+1
+19	
+Raul Neto 	
+PG	
+6-1	
+180	
+5/19/1992 (28)	
+4	
+9	
+Kyle O'Quinn	
+C	
+6-9	
+250	
+3/26/1990 (30)	
+7	
+14	
+Norvel Pelle	
+SF	
+6-10	
+231	
+2/3/1993 (27)	
+R	
+0	
+Josh Richardson	
+SG	
+6-5	
+200	
+9/15/1993 (26)	
+4	
+40	
+Glenn Robinson III  
+SF	
+6-6	
+222	
+1/8/1994 (26)	
+5	
+1	
+Mike Scott  	
+PF	
+6-7	
+237	
+7/16/1988 (32)	
+7	
+35	
+Marial Shayok	
+SG	
+6-5	
+198	
+7/26/1995 (25)	
+R	
+25	
+Ben Simmons 	
+PG	
+6-10	
+240	
+7/20/1996 (24)	
+2	
+22	
+Matisse Thybulle	
+SG	
+6-5	
+201	
+3/4/1997 (23)	
+R	

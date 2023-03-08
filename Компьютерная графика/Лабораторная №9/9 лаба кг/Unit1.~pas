@@ -1,0 +1,105 @@
+///////////////////////////////////////
+//  Автор: Клящицкий Виталий         //
+//  E-mail: Klesh_7_30@mail.ru       //
+//-----------------------------------//
+//  Премер к 5-му уроку OpenGL      //
+///////////////////////////////////////
+
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, OpenGL, DGLUT;
+
+type
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+    procedure FormPaint(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  HRC : HGLRC ;
+  Sphere_amb: array[0..3] of GLfloat = (0,1,0,0);
+  Sphere_spec: array[0..3] of GLfloat = (1,1,1,0);
+  Sphere_dif: array[0..3] of GLfloat = (1,1,1,0);
+  Light_pos: array [0..3] of GLfloat;
+  a: Glfloat = 0.001;
+  L: boolean;
+  X,Y,phi: single;
+  shin: single = 50;
+implementation
+
+{$R *.dfm}
+
+procedure SetDCPixelFormat ( hdc : HDC );
+ var
+  pfd : TPixelFormatDescriptor;
+  nPixelFormat : Integer;
+ begin
+  FillChar (pfd, SizeOf (pfd), 0);
+  pfd.dwFlags  := PFD_DRAW_TO_WINDOW or PFD_SUPPORT_OPENGL or PFD_DOUBLEBUFFER;
+   nPixelFormat := ChoosePixelFormat (hdc, @pfd);
+  SetPixelFormat (hdc, nPixelFormat, @pfd);
+ end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  SetDCPixelFormat(Canvas.Handle);
+  hrc := wglCreateContext(Canvas.Handle);
+  wglMakeCurrent(Canvas.Handle, hrc);
+  glEnable(GL_DEPTH_TEST); // включаем проверку разрешения фигур (впереди стоящая закрывает фигуру за ней)
+  glDepthFunc(GL_LEQUAL);  //тип проверки
+  glEnable(GL_LIGHTING);
+  glEnable(GL_LIGHT0);
+end;
+
+procedure TForm1.FormPaint(Sender: TObject);
+begin
+  FormResize(Sender); //процедура обновления
+
+  glrotatef(90,1,0,0);
+  if (GetAsyncKeyState(VK_UP)<>0) and (shin>=0) then shin:=shin-0.1;
+  if (GetAsyncKeyState(VK_DOWN)<>0) and (shin<=128) then shin:=shin+0.1;
+  phi:=phi+0.09;
+
+  Light_pos[2]:=3*cos(phi*PI/180);   // изменение позиции источника света
+  Light_pos[1]:=3*sin(phi*PI/180);   // изменение позиции источника света
+  Light_pos[0]:=1;
+
+ glLightfv(GL_LIGHT0,GL_POSITION,@Light_pos);  // задаём позицию источника света
+
+
+
+ glClearColor (0.5, 0.5, 0.75, 1.0); // цвет фона
+ glClear (GL_COLOR_BUFFER_BIT or GL_DEPTH_BUFFER_BIT); // очистка буфера цвета
+
+ glmaterialfv(GL_FRONT_AND_BACK,GL_AMBIENT,@Sphere_amb);    //рассеянный цвет
+ glmaterialfv(GL_FRONT_AND_BACK,GL_SPECULAR,@Sphere_spec);  //зеркальный цвет
+ glmaterialfv(GL_FRONT_AND_BACK,GL_DIFFUSE,@Sphere_dif);    //диффузный цвет
+ glmaterialf(GL_FRONT_AND_BACK,GL_SHININESS,shin);          //мощность блика
+
+glutSolidTeapot(1);       //рисуем чайник
+SwapBuffers(Canvas.Handle);
+end;
+
+procedure TForm1.FormResize(Sender: TObject);
+begin
+  glViewport(0, 0, ClientWidth, ClientHeight); //выделяем область куда будет выводиться наш буфер
+  glMatrixMode ( GL_PROJECTION ); //переходим в матрицу проекции
+  glLoadIdentity;  //Сбрасываем текущую матрицу
+  glFrustum ( -1 , 1 , -1 , 1 , 1.25 , 100.0 ); //Область видимости
+  glMatrixMode ( GL_MODELVIEW ); //переходим в модельную матрицу
+  glLoadIdentity;//Сбрасываем текущую матрицу
+  gluLookAt(3,1,1,0,0,0,0,0,1);  //позиция наблюдателя
+  InvalidateRect ( Handle,nil,False );  //перерисовка формы
+end;
+
+end.

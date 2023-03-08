@@ -1,0 +1,539 @@
+Simulator report for OA
+Sat Apr 22 12:39:39 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.5 us       ;
+; Simulation Netlist Size     ; 295 nodes    ;
+; Simulation Coverage         ;      74.52 % ;
+; Total Number of Transitions ; 3124         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5E144C7  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; On         ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.52 % ;
+; Total nodes checked                                 ; 295          ;
+; Total output ports checked                          ; 314          ;
+; Total output ports with complete 1/0-value coverage ; 234          ;
+; Total output ports with no 1/0-value coverage       ; 60           ;
+; Total output ports with no 1-value coverage         ; 61           ;
+; Total output ports with no 0-value coverage         ; 79           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                                     ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[13]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[13]                                                      ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[12]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[12]                                                      ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[11]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[11]                                                      ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[10]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[10]                                                      ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[9]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[9]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[8]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[8]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[7]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[7]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[6]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[6]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[5]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[5]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[4]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[4]                                                       ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[2]                                                   ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[2]                                                       ; q                ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[2]  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[2]      ; q                ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[1]  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[1]      ; q                ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[0]  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[0]      ; q                ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita0  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita0      ; combout          ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita0  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita1  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita1      ; combout          ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita1  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita2  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita2      ; combout          ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita2  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita3  ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_comb_bita3      ; combout          ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[15]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[15]                                                      ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[14]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[14]                                                      ; q                ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[0]~1      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[0]~1          ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[1]~2      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[1]~2          ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[1]~2      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[1]~3          ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[2]~4      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[2]~4          ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[2]~4      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[2]~5          ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[3]~6      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[3]~6          ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[3]~6      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[3]~7          ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[4]~8      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[4]~8          ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[4]~8      ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[4]~9          ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[5]~10     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[5]~10         ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[5]~10     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[5]~11         ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[6]~12     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[6]~12         ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[6]~12     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[6]~13         ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[7]~14     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[7]~14         ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[7]~14     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[7]~15         ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[8]~16     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[8]~16         ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[8]~16     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[8]~17         ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[9]~18     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[9]~18         ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[9]~18     ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[9]~19         ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[10]~20    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[10]~20        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[10]~20    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[10]~21        ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[11]~22    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[11]~22        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[11]~22    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[11]~23        ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[12]~24    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[12]~24        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[12]~24    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[12]~25        ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[13]~26    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[13]~26        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[13]~26    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[13]~27        ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[14]~28    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[14]~28        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[14]~28    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[14]~29        ; cout             ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[16]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[16]                                                      ; q                ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[15]~30    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[15]~30        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[15]~30    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[15]~31        ; cout             ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[16]~32    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[16]~32        ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[16]~32    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[16]~33        ; cout             ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[0]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[0]                                                        ; q                ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[17]~34    ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|result_int[17]~34        ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[15]                                                   ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[15]                                                       ; q                ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~0                                         ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~0                                             ; combout          ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~1                                         ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~1                                             ; combout          ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~4                                         ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~4                                             ; combout          ;
+; |OA|block_name:inst8|y[10]                                                                       ; |OA|block_name:inst8|y[10]                                                                           ; q                ;
+; |OA|block_name:inst8|y[0]                                                                        ; |OA|block_name:inst8|y[0]                                                                            ; q                ;
+; |OA|block_name:inst8|y[8]                                                                        ; |OA|block_name:inst8|y[8]                                                                            ; q                ;
+; |OA|block_name:inst8|y[6]                                                                        ; |OA|block_name:inst8|y[6]                                                                            ; q                ;
+; |OA|block_name:inst8|y[3]                                                                        ; |OA|block_name:inst8|y[3]                                                                            ; q                ;
+; |OA|block_name:inst8|y[2]                                                                        ; |OA|block_name:inst8|y[2]                                                                            ; q                ;
+; |OA|block_name:inst8|y[1]                                                                        ; |OA|block_name:inst8|y[1]                                                                            ; q                ;
+; |OA|block_name:inst8|pc[2]                                                                       ; |OA|block_name:inst8|pc[2]                                                                           ; q                ;
+; |OA|block_name:inst8|pc[0]                                                                       ; |OA|block_name:inst8|pc[0]                                                                           ; q                ;
+; |OA|block_name:inst8|Equal4~0                                                                    ; |OA|block_name:inst8|Equal4~0                                                                        ; combout          ;
+; |OA|block_name:inst8|pc[1]                                                                       ; |OA|block_name:inst8|pc[1]                                                                           ; q                ;
+; |OA|block_name:inst8|Equal4~1                                                                    ; |OA|block_name:inst8|Equal4~1                                                                        ; combout          ;
+; |OA|block_name:inst8|Selector4~0                                                                 ; |OA|block_name:inst8|Selector4~0                                                                     ; combout          ;
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|_~0                 ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|_~0                     ; combout          ;
+; |OA|block_name:inst8|y~0                                                                         ; |OA|block_name:inst8|y~0                                                                             ; combout          ;
+; |OA|block_name:inst8|y~1                                                                         ; |OA|block_name:inst8|y~1                                                                             ; combout          ;
+; |OA|block_name:inst8|WideOr0                                                                     ; |OA|block_name:inst8|WideOr0                                                                         ; combout          ;
+; |OA|block_name:inst8|Equal6~0                                                                    ; |OA|block_name:inst8|Equal6~0                                                                        ; combout          ;
+; |OA|block_name:inst8|Equal5~0                                                                    ; |OA|block_name:inst8|Equal5~0                                                                        ; combout          ;
+; |OA|block_name:inst8|Equal2~0                                                                    ; |OA|block_name:inst8|Equal2~0                                                                        ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[47]~0  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[47]~0      ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[3]            ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[3]                ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[0]            ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[0]                ; q                ;
+; |OA|inst16~0                                                                                     ; |OA|inst16~0                                                                                         ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[6]            ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[6]                ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[5]            ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[5]                ; q                ;
+; |OA|inst17~0                                                                                     ; |OA|inst17~0                                                                                         ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[13]~0              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[13]~0                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[46]~1  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[46]~1      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[12]~1              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[12]~1                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[45]~2  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[45]~2      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[11]~2              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[11]~2                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[44]~3  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[44]~3      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[10]~3              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[10]~3                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[43]~4  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[43]~4      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[9]~4               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[9]~4                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[42]~5  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[42]~5      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[8]~5               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[8]~5                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[41]~6  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[41]~6      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[7]~6               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[7]~6                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[40]~7  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[40]~7      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[6]~7               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[6]~7                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[39]~8  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[39]~8      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[5]~8               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[5]~8                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[38]~9  ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[38]~9      ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[4]~9               ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[4]~9                   ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[37]~10 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[37]~10     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[3]~10              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[3]~10                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[36]~11 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[36]~11     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[2]~11              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[2]~11                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[35]~12 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[35]~12     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[1]~12              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[1]~12                  ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[34]~13 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[34]~13     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[0]~13              ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[0]~13                  ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~0               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~0                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~1               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~1                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~2               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~2                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~3               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~3                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~4               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~4                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~5               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~5                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~6               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~6                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~7               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~7                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~8               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~8                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~9               ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~9                   ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~10              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~10                  ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~11              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~11                  ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~12              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~12                  ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~13              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~13                  ; combout          ;
+; |OA|block_name:inst8|Selector1~0                                                                 ; |OA|block_name:inst8|Selector1~0                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector1~1                                                                 ; |OA|block_name:inst8|Selector1~1                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector1~2                                                                 ; |OA|block_name:inst8|Selector1~2                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector3~0                                                                 ; |OA|block_name:inst8|Selector3~0                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector3~1                                                                 ; |OA|block_name:inst8|Selector3~1                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector2~0                                                                 ; |OA|block_name:inst8|Selector2~0                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector2~1                                                                 ; |OA|block_name:inst8|Selector2~1                                                                     ; combout          ;
+; |OA|block_name:inst8|Selector2~2                                                                 ; |OA|block_name:inst8|Selector2~2                                                                     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[15]~14             ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[15]~14                 ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[49]~14 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[49]~14     ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[48]~15 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[48]~15     ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[14]~15             ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[14]~15                 ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~14              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~14                  ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[1]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[1]                                                        ; q                ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[2]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[2]                                                        ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode38w[3]~0      ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode38w[3]~0          ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode1w[3]~0       ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode1w[3]~0           ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode68w[3]        ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode68w[3]            ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode58w[3]        ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode58w[3]            ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~15              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~15                  ; combout          ;
+; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[16]~16             ; |OA|Mult2:inst22|lpm_mux:lpm_mux_component|mux_orc:auto_generated|result_node[16]~16                 ; combout          ;
+; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[50]~16 ; |OA|Shift1:inst28|lpm_clshift:lpm_clshift_component|lpm_clshift_vjc:auto_generated|sbit_w[50]~16     ; combout          ;
+; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~16              ; |OA|Sum:inst24|lpm_add_sub:lpm_add_sub_component|add_sub_v3i:auto_generated|op_1~16                  ; combout          ;
+; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[32]~0   ; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[32]~0       ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[3]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[3]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[1]~0                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[1]~0                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[2]~0                                                  ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[2]~0                                                      ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[4]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[4]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[2]~1                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[2]~1                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[5]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[5]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[3]~2                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[3]~2                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[6]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[6]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[4]~3                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[4]~3                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[7]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[7]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[5]~4                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[5]~4                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[8]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[8]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[6]~5                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[6]~5                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[9]                                                    ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[9]                                                        ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[7]~6                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[7]~6                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[10]                                                   ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[10]                                                       ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[8]~7                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[8]~7                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[11]                                                   ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[11]                                                       ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[9]~8                ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[9]~8                    ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[12]                                                   ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[12]                                                       ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[10]~9               ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[10]~9                   ; combout          ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[13]                                                   ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[13]                                                       ; q                ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[11]~10              ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[11]~10                  ; combout          ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[12]~11              ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[12]~11                  ; combout          ;
+; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[13]~12              ; |OA|Mux1:inst10|lpm_mux:lpm_mux_component|mux_krc:auto_generated|result_node[13]~12                  ; combout          ;
+; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[47]~2   ; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[47]~2       ; combout          ;
+; |OA|P[1]~output                                                                                  ; |OA|P[1]~output                                                                                      ; o                ;
+; |OA|P[1]                                                                                         ; |OA|P[1]                                                                                             ; padout           ;
+; |OA|Y[10]~output                                                                                 ; |OA|Y[10]~output                                                                                     ; o                ;
+; |OA|Y[10]                                                                                        ; |OA|Y[10]                                                                                            ; padout           ;
+; |OA|Y[9]~output                                                                                  ; |OA|Y[9]~output                                                                                      ; o                ;
+; |OA|Y[9]                                                                                         ; |OA|Y[9]                                                                                             ; padout           ;
+; |OA|Y[8]~output                                                                                  ; |OA|Y[8]~output                                                                                      ; o                ;
+; |OA|Y[8]                                                                                         ; |OA|Y[8]                                                                                             ; padout           ;
+; |OA|Y[6]~output                                                                                  ; |OA|Y[6]~output                                                                                      ; o                ;
+; |OA|Y[6]                                                                                         ; |OA|Y[6]                                                                                             ; padout           ;
+; |OA|Y[3]~output                                                                                  ; |OA|Y[3]~output                                                                                      ; o                ;
+; |OA|Y[3]                                                                                         ; |OA|Y[3]                                                                                             ; padout           ;
+; |OA|Y[2]~output                                                                                  ; |OA|Y[2]~output                                                                                      ; o                ;
+; |OA|Y[2]                                                                                         ; |OA|Y[2]                                                                                             ; padout           ;
+; |OA|Y[1]~output                                                                                  ; |OA|Y[1]~output                                                                                      ; o                ;
+; |OA|Y[1]                                                                                         ; |OA|Y[1]                                                                                             ; padout           ;
+; |OA|Y[0]~output                                                                                  ; |OA|Y[0]~output                                                                                      ; o                ;
+; |OA|Y[0]                                                                                         ; |OA|Y[0]                                                                                             ; padout           ;
+; |OA|result[14]~output                                                                            ; |OA|result[14]~output                                                                                ; o                ;
+; |OA|result[14]                                                                                   ; |OA|result[14]                                                                                       ; padout           ;
+; |OA|result[13]~output                                                                            ; |OA|result[13]~output                                                                                ; o                ;
+; |OA|result[13]                                                                                   ; |OA|result[13]                                                                                       ; padout           ;
+; |OA|result[12]~output                                                                            ; |OA|result[12]~output                                                                                ; o                ;
+; |OA|result[12]                                                                                   ; |OA|result[12]                                                                                       ; padout           ;
+; |OA|result[11]~output                                                                            ; |OA|result[11]~output                                                                                ; o                ;
+; |OA|result[11]                                                                                   ; |OA|result[11]                                                                                       ; padout           ;
+; |OA|result[10]~output                                                                            ; |OA|result[10]~output                                                                                ; o                ;
+; |OA|result[10]                                                                                   ; |OA|result[10]                                                                                       ; padout           ;
+; |OA|result[9]~output                                                                             ; |OA|result[9]~output                                                                                 ; o                ;
+; |OA|result[9]                                                                                    ; |OA|result[9]                                                                                        ; padout           ;
+; |OA|result[8]~output                                                                             ; |OA|result[8]~output                                                                                 ; o                ;
+; |OA|result[8]                                                                                    ; |OA|result[8]                                                                                        ; padout           ;
+; |OA|result[7]~output                                                                             ; |OA|result[7]~output                                                                                 ; o                ;
+; |OA|result[7]                                                                                    ; |OA|result[7]                                                                                        ; padout           ;
+; |OA|result[6]~output                                                                             ; |OA|result[6]~output                                                                                 ; o                ;
+; |OA|result[6]                                                                                    ; |OA|result[6]                                                                                        ; padout           ;
+; |OA|result[5]~output                                                                             ; |OA|result[5]~output                                                                                 ; o                ;
+; |OA|result[5]                                                                                    ; |OA|result[5]                                                                                        ; padout           ;
+; |OA|result[3]~output                                                                             ; |OA|result[3]~output                                                                                 ; o                ;
+; |OA|result[3]                                                                                    ; |OA|result[3]                                                                                        ; padout           ;
+; |OA|X[14]~input                                                                                  ; |OA|X[14]~input                                                                                      ; o                ;
+; |OA|X[14]                                                                                        ; |OA|X[14]                                                                                            ; padout           ;
+; |OA|X[12]~input                                                                                  ; |OA|X[12]~input                                                                                      ; o                ;
+; |OA|X[12]                                                                                        ; |OA|X[12]                                                                                            ; padout           ;
+; |OA|X[11]~input                                                                                  ; |OA|X[11]~input                                                                                      ; o                ;
+; |OA|X[11]                                                                                        ; |OA|X[11]                                                                                            ; padout           ;
+; |OA|X[9]~input                                                                                   ; |OA|X[9]~input                                                                                       ; o                ;
+; |OA|X[9]                                                                                         ; |OA|X[9]                                                                                             ; padout           ;
+; |OA|X[8]~input                                                                                   ; |OA|X[8]~input                                                                                       ; o                ;
+; |OA|X[8]                                                                                         ; |OA|X[8]                                                                                             ; padout           ;
+; |OA|clk~input                                                                                    ; |OA|clk~input                                                                                        ; o                ;
+; |OA|clk                                                                                          ; |OA|clk                                                                                              ; padout           ;
+; |OA|clk~inputclkctrl                                                                             ; |OA|clk~inputclkctrl                                                                                 ; outclk           ;
++--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                      ; Output Port Name                                                                               ; Output Port Type ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[1]                                                 ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[1]                                                 ; q                ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[14]                                                 ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[14]                                                 ; q                ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~2                                       ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~2                                       ; combout          ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~3                                       ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~3                                       ; combout          ;
+; |OA|block_name:inst8|y[5]                                                                      ; |OA|block_name:inst8|y[5]                                                                      ; q                ;
+; |OA|inst                                                                                       ; |OA|inst                                                                                       ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[15]                                                 ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[15]                                                 ; q                ;
+; |OA|inst6                                                                                      ; |OA|inst6                                                                                      ; combout          ;
+; |OA|block_name:inst8|Equal0~0                                                                  ; |OA|block_name:inst8|Equal0~0                                                                  ; combout          ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[13]                                                 ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[13]                                                 ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[7]          ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[7]          ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[4]          ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[4]          ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[10]                                                 ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[10]                                                 ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                  ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode78w[3]      ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode78w[3]      ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode48w[3]      ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode48w[3]      ; combout          ;
+; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[46]~1 ; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[46]~1 ; combout          ;
+; |OA|~GND                                                                                       ; |OA|~GND                                                                                       ; combout          ;
+; |OA|Y[7]~output                                                                                ; |OA|Y[7]~output                                                                                ; o                ;
+; |OA|Y[7]                                                                                       ; |OA|Y[7]                                                                                       ; padout           ;
+; |OA|Y[5]~output                                                                                ; |OA|Y[5]~output                                                                                ; o                ;
+; |OA|Y[5]                                                                                       ; |OA|Y[5]                                                                                       ; padout           ;
+; |OA|Y[4]~output                                                                                ; |OA|Y[4]~output                                                                                ; o                ;
+; |OA|Y[4]                                                                                       ; |OA|Y[4]                                                                                       ; padout           ;
+; |OA|PRS~output                                                                                 ; |OA|PRS~output                                                                                 ; o                ;
+; |OA|PRS                                                                                        ; |OA|PRS                                                                                        ; padout           ;
+; |OA|result[15]~output                                                                          ; |OA|result[15]~output                                                                          ; o                ;
+; |OA|result[15]                                                                                 ; |OA|result[15]                                                                                 ; padout           ;
+; |OA|result[2]~output                                                                           ; |OA|result[2]~output                                                                           ; o                ;
+; |OA|result[2]                                                                                  ; |OA|result[2]                                                                                  ; padout           ;
+; |OA|result[0]~output                                                                           ; |OA|result[0]~output                                                                           ; o                ;
+; |OA|result[0]                                                                                  ; |OA|result[0]                                                                                  ; padout           ;
+; |OA|X[15]~input                                                                                ; |OA|X[15]~input                                                                                ; o                ;
+; |OA|X[15]                                                                                      ; |OA|X[15]                                                                                      ; padout           ;
+; |OA|X[13]~input                                                                                ; |OA|X[13]~input                                                                                ; o                ;
+; |OA|X[13]                                                                                      ; |OA|X[13]                                                                                      ; padout           ;
+; |OA|X[10]~input                                                                                ; |OA|X[10]~input                                                                                ; o                ;
+; |OA|X[10]                                                                                      ; |OA|X[10]                                                                                      ; padout           ;
+; |OA|X[7]~input                                                                                 ; |OA|X[7]~input                                                                                 ; o                ;
+; |OA|X[7]                                                                                       ; |OA|X[7]                                                                                       ; padout           ;
+; |OA|X[6]~input                                                                                 ; |OA|X[6]~input                                                                                 ; o                ;
+; |OA|X[6]                                                                                       ; |OA|X[6]                                                                                       ; padout           ;
+; |OA|X[5]~input                                                                                 ; |OA|X[5]~input                                                                                 ; o                ;
+; |OA|X[5]                                                                                       ; |OA|X[5]                                                                                       ; padout           ;
+; |OA|X[4]~input                                                                                 ; |OA|X[4]~input                                                                                 ; o                ;
+; |OA|X[4]                                                                                       ; |OA|X[4]                                                                                       ; padout           ;
+; |OA|X[3]~input                                                                                 ; |OA|X[3]~input                                                                                 ; o                ;
+; |OA|X[3]                                                                                       ; |OA|X[3]                                                                                       ; padout           ;
+; |OA|X[2]~input                                                                                 ; |OA|X[2]~input                                                                                 ; o                ;
+; |OA|X[2]                                                                                       ; |OA|X[2]                                                                                       ; padout           ;
+; |OA|X[1]~input                                                                                 ; |OA|X[1]~input                                                                                 ; o                ;
+; |OA|X[1]                                                                                       ; |OA|X[1]                                                                                       ; padout           ;
+; |OA|X[0]~input                                                                                 ; |OA|X[0]~input                                                                                 ; o                ;
+; |OA|X[0]                                                                                       ; |OA|X[0]                                                                                       ; padout           ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                       ; Output Port Name                                                                                ; Output Port Type ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[3] ; |OA|Counter:inst29|lpm_counter:lpm_counter_component|cntr_cri:auto_generated|counter_reg_bit[3] ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[3]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[3]                                                  ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[1]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[1]                                                  ; q                ;
+; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[0]                                                  ; |OA|RG3:inst25|lpm_ff:lpm_ff_component|dffs[0]                                                  ; q                ;
+; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[14]                                                  ; |OA|RG2:inst7|lpm_ff:lpm_ff_component|dffs[14]                                                  ; q                ;
+; |OA|block_name:inst8|Z                                                                          ; |OA|block_name:inst8|Z                                                                          ; q                ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~2                                        ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~2                                        ; combout          ;
+; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~3                                        ; |OA|Or32:inst21|lpm_or:lpm_or_component|or_node[0][15]~3                                        ; combout          ;
+; |OA|block_name:inst8|y[5]                                                                       ; |OA|block_name:inst8|y[5]                                                                       ; q                ;
+; |OA|inst                                                                                        ; |OA|inst                                                                                        ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[15]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[15]                                                  ; q                ;
+; |OA|inst6                                                                                       ; |OA|inst6                                                                                       ; combout          ;
+; |OA|block_name:inst8|pc[3]                                                                      ; |OA|block_name:inst8|pc[3]                                                                      ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[12]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[12]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[13]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[13]                                                  ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[7]           ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[7]           ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[4]           ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|dffe1a[4]           ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[11]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[11]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[10]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[10]                                                  ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[9]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[9]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[8]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[8]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[7]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[6]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[5]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                   ; q                ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                   ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                   ; q                ;
+; |OA|block_name:inst8|pc[3]~0                                                                    ; |OA|block_name:inst8|pc[3]~0                                                                    ; combout          ;
+; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[14]                                                  ; |OA|RG2:inst5|lpm_ff:lpm_ff_component|dffs[14]                                                  ; q                ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode78w[3]       ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode78w[3]       ; combout          ;
+; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode48w[3]       ; |OA|Decode:inst11|lpm_decode:lpm_decode_component|decode_4sh:auto_generated|w_anode48w[3]       ; combout          ;
+; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[46]~1  ; |OA|SDvig:inst13|lpm_clshift:lpm_clshift_component|lpm_clshift_ujc:auto_generated|sbit_w[46]~1  ; combout          ;
+; |OA|~GND                                                                                        ; |OA|~GND                                                                                        ; combout          ;
+; |OA|Z~output                                                                                    ; |OA|Z~output                                                                                    ; o                ;
+; |OA|Z                                                                                           ; |OA|Z                                                                                           ; padout           ;
+; |OA|P[2]~output                                                                                 ; |OA|P[2]~output                                                                                 ; o                ;
+; |OA|P[2]                                                                                        ; |OA|P[2]                                                                                        ; padout           ;
+; |OA|Y[7]~output                                                                                 ; |OA|Y[7]~output                                                                                 ; o                ;
+; |OA|Y[7]                                                                                        ; |OA|Y[7]                                                                                        ; padout           ;
+; |OA|Y[5]~output                                                                                 ; |OA|Y[5]~output                                                                                 ; o                ;
+; |OA|Y[5]                                                                                        ; |OA|Y[5]                                                                                        ; padout           ;
+; |OA|Y[4]~output                                                                                 ; |OA|Y[4]~output                                                                                 ; o                ;
+; |OA|Y[4]                                                                                        ; |OA|Y[4]                                                                                        ; padout           ;
+; |OA|PRS~output                                                                                  ; |OA|PRS~output                                                                                  ; o                ;
+; |OA|PRS                                                                                         ; |OA|PRS                                                                                         ; padout           ;
+; |OA|result[15]~output                                                                           ; |OA|result[15]~output                                                                           ; o                ;
+; |OA|result[15]                                                                                  ; |OA|result[15]                                                                                  ; padout           ;
+; |OA|result[4]~output                                                                            ; |OA|result[4]~output                                                                            ; o                ;
+; |OA|result[4]                                                                                   ; |OA|result[4]                                                                                   ; padout           ;
+; |OA|result[2]~output                                                                            ; |OA|result[2]~output                                                                            ; o                ;
+; |OA|result[2]                                                                                   ; |OA|result[2]                                                                                   ; padout           ;
+; |OA|result[1]~output                                                                            ; |OA|result[1]~output                                                                            ; o                ;
+; |OA|result[1]                                                                                   ; |OA|result[1]                                                                                   ; padout           ;
+; |OA|result[0]~output                                                                            ; |OA|result[0]~output                                                                            ; o                ;
+; |OA|result[0]                                                                                   ; |OA|result[0]                                                                                   ; padout           ;
+; |OA|X[15]~input                                                                                 ; |OA|X[15]~input                                                                                 ; o                ;
+; |OA|X[15]                                                                                       ; |OA|X[15]                                                                                       ; padout           ;
+; |OA|X[13]~input                                                                                 ; |OA|X[13]~input                                                                                 ; o                ;
+; |OA|X[13]                                                                                       ; |OA|X[13]                                                                                       ; padout           ;
+; |OA|X[10]~input                                                                                 ; |OA|X[10]~input                                                                                 ; o                ;
+; |OA|X[10]                                                                                       ; |OA|X[10]                                                                                       ; padout           ;
+; |OA|X[7]~input                                                                                  ; |OA|X[7]~input                                                                                  ; o                ;
+; |OA|X[7]                                                                                        ; |OA|X[7]                                                                                        ; padout           ;
+; |OA|X[6]~input                                                                                  ; |OA|X[6]~input                                                                                  ; o                ;
+; |OA|X[6]                                                                                        ; |OA|X[6]                                                                                        ; padout           ;
+; |OA|X[5]~input                                                                                  ; |OA|X[5]~input                                                                                  ; o                ;
+; |OA|X[5]                                                                                        ; |OA|X[5]                                                                                        ; padout           ;
+; |OA|X[4]~input                                                                                  ; |OA|X[4]~input                                                                                  ; o                ;
+; |OA|X[4]                                                                                        ; |OA|X[4]                                                                                        ; padout           ;
+; |OA|X[3]~input                                                                                  ; |OA|X[3]~input                                                                                  ; o                ;
+; |OA|X[3]                                                                                        ; |OA|X[3]                                                                                        ; padout           ;
+; |OA|X[2]~input                                                                                  ; |OA|X[2]~input                                                                                  ; o                ;
+; |OA|X[2]                                                                                        ; |OA|X[2]                                                                                        ; padout           ;
+; |OA|X[1]~input                                                                                  ; |OA|X[1]~input                                                                                  ; o                ;
+; |OA|X[1]                                                                                        ; |OA|X[1]                                                                                        ; padout           ;
+; |OA|X[0]~input                                                                                  ; |OA|X[0]~input                                                                                  ; o                ;
+; |OA|X[0]                                                                                        ; |OA|X[0]                                                                                        ; padout           ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Apr 22 12:39:38 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off OA -c OA
+Info: Using vector source file "C:/Users/affl/Desktop/for education/2 курс/4 семестр/Теори автоматов/Лабораторные работы/quartus НЕ МОИ ЛАБЫ/4 lab Кокорин/OA.tbl"
+Info: Inverted registers were found during simulation
+    Info: Register: |OA|block_name:inst8|pc[0]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      74.52 %
+Info: Number of transitions in simulation is 3124
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 194 megabytes
+    Info: Processing ended: Sat Apr 22 12:39:39 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

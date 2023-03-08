@@ -1,0 +1,119 @@
+37	
+Kostas Antetokounmpo	
+PF	
+6-10	
+200	
+11/20/1997 (22)	
+1	
+12	
+Devontae Cacok	
+C	
+6-8	
+240	
+10/8/1996 (23)	
+R	
+1	
+Kentavious Caldwell-Pope	
+SG	
+6-5	
+204	
+2/18/1993 (27)	
+6	
+4	
+Alex Caruso	
+SG	
+6-5	
+186	
+2/28/1994 (26)	
+2	
+28	
+Quinn Cook	
+PG	
+6-1	
+180	
+3/23/1993 (27)	
+3	
+3	
+Anthony Davis  	
+PF	
+6-10	
+253	
+3/11/1993 (27)	
+7	
+10	
+Jared Dudley	
+SF	
+6-6	
+237	
+7/10/1985 (35)	
+12	
+14	
+Danny Green	
+SF	
+6-6	
+215	
+6/22/1987 (33)
+10	
+5	
+Talen Horton-Tucker	
+SG	
+6-4	
+234	
+11/25/2000 (19)	
+R	
+39	
+Dwight Howard	
+C	
+6-10	
+265	
+12/8/1985 (34)	
+15	
+23	
+LeBron James  	
+SF	
+6-9	
+250	
+12/30/1984 (35)	
+16	
+0	
+Kyle Kuzma  	
+PF	
+6-8	
+221	
+7/24/1995 (25)	
+2	
+7	
+JaVale McGee	
+C	
+7-0	
+270	
+1/19/1988 (32)	
+11	
+88	
+Markieff Morris	
+PF	
+6-8	
+245	
+9/2/1989 (30)	
+8	
+9	
+Rajon Rondo 	
+PG	
+6-1	
+180	
+2/22/1986 (34)	
+13	
+21	
+J.R. Smith	
+SG	
+6-6	
+225	
+9/9/1985 (34)	
+15	
+—	
+Dion Waiters	
+SG	
+6-3	
+210	
+12/10/1991 (28)	
+7	

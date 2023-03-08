@@ -1,0 +1,112 @@
+12	
+Steven Adams 	
+C	
+6-11	
+265	
+7/20/1993 (27)	
+6	
+7	
+Darius Bazley	
+SF	
+6-8	
+208	
+6/12/2000 (20)	
+R	
+30	
+Deonte Burton	
+SG	
+6-4	
+240	
+1/31/1994 (26)	
+1	
+6	
+Hamidou Diallo 	
+SG	
+6-5	
+202	
+7/31/1998 (22)	
+1	
+5	
+Luguentz Dort 	
+SG	
+6-3	
+215	
+4/19/1999 (21)	
+R	
+23	
+Terrance Ferguson 
+SF	
+6-6	
+190	
+5/17/1998 (22)	
+2	
+8	
+Danilo Gallinari 	
+SF	
+6-10	
+233	
+8/8/1988 (31)	
+10	
+2	
+Shai Gilgeous-Alexander 	
+SG	
+6-5	
+180	
+7/12/1998 (22)	
+1	
+22	
+Devon Hall	
+SG	
+6-2	
+215	
+7/7/1995 (25)	
+R	
+15	
+Kevin Hervey	
+PF	
+6-9	
+230	
+7/9/1996 (24)	
+R	
+33	
+Mike Muscala	
+PF	
+6-10	
+240	
+7/1/1991 (29)	
+6	
+11	
+Abdel Nader	
+SF	
+6-5	
+225	
+9/25/1993 (26)	
+2	
+9	
+Nerlens Noel	
+C	
+6-10	
+220	
+4/10/1994 (26)	
+5	
+3	
+Chris Paul 	
+PG	
+6-1	
+175	
+5/6/1985 (35)	
+14	
+21	
+Andre Roberson	
+SG	
+6-7	
+210	
+12/4/1991 (28)	
+5	
+17	
+Dennis Schroder	
+PG	
+6-1	
+172	
+9/15/1993 (26)	
+6	

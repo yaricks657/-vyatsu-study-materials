@@ -1,0 +1,469 @@
+Simulator report for 2laba
+Wed May 19 02:01:23 2021
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 144 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; 2laba.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 144          ;
+; Total output ports checked                          ; 147          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 147          ;
+; Total output ports with no 1-value coverage         ; 147          ;
+; Total output ports with no 0-value coverage         ; 147          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                           ; Output Port Name                                                                                      ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |2laba|apin[8]                                                                                      ; |2laba|apin[8]                                                                                        ; pin_out          ;
+; |2laba|apin[7]                                                                                      ; |2laba|apin[7]                                                                                        ; pin_out          ;
+; |2laba|apin[6]                                                                                      ; |2laba|apin[6]                                                                                        ; pin_out          ;
+; |2laba|apin[5]                                                                                      ; |2laba|apin[5]                                                                                        ; pin_out          ;
+; |2laba|apin[4]                                                                                      ; |2laba|apin[4]                                                                                        ; pin_out          ;
+; |2laba|apin[3]                                                                                      ; |2laba|apin[3]                                                                                        ; pin_out          ;
+; |2laba|apin[2]                                                                                      ; |2laba|apin[2]                                                                                        ; pin_out          ;
+; |2laba|apin[1]                                                                                      ; |2laba|apin[1]                                                                                        ; pin_out          ;
+; |2laba|apin[0]                                                                                      ; |2laba|apin[0]                                                                                        ; pin_out          ;
+; |2laba|inst75                                                                                       ; |2laba|inst75                                                                                         ; out0             ;
+; |2laba|inst46                                                                                       ; |2laba|inst46                                                                                         ; out0             ;
+; |2laba|inst45                                                                                       ; |2laba|inst45                                                                                         ; out0             ;
+; |2laba|xpin[10]                                                                                     ; |2laba|xpin[10]                                                                                       ; out              ;
+; |2laba|xpin[9]                                                                                      ; |2laba|xpin[9]                                                                                        ; out              ;
+; |2laba|xpin[8]                                                                                      ; |2laba|xpin[8]                                                                                        ; out              ;
+; |2laba|xpin[7]                                                                                      ; |2laba|xpin[7]                                                                                        ; out              ;
+; |2laba|xpin[6]                                                                                      ; |2laba|xpin[6]                                                                                        ; out              ;
+; |2laba|xpin[5]                                                                                      ; |2laba|xpin[5]                                                                                        ; out              ;
+; |2laba|xpin[4]                                                                                      ; |2laba|xpin[4]                                                                                        ; out              ;
+; |2laba|xpin[3]                                                                                      ; |2laba|xpin[3]                                                                                        ; out              ;
+; |2laba|xpin[2]                                                                                      ; |2laba|xpin[2]                                                                                        ; out              ;
+; |2laba|xpin[1]                                                                                      ; |2laba|xpin[1]                                                                                        ; out              ;
+; |2laba|xpin[0]                                                                                      ; |2laba|xpin[0]                                                                                        ; out              ;
+; |2laba|inst28                                                                                       ; |2laba|inst28                                                                                         ; out0             ;
+; |2laba|inst34                                                                                       ; |2laba|inst34                                                                                         ; out0             ;
+; |2laba|inst42                                                                                       ; |2laba|inst42                                                                                         ; out0             ;
+; |2laba|inst29                                                                                       ; |2laba|inst29                                                                                         ; out0             ;
+; |2laba|inst30                                                                                       ; |2laba|inst30                                                                                         ; out0             ;
+; |2laba|inst74                                                                                       ; |2laba|inst74                                                                                         ; out0             ;
+; |2laba|inst76                                                                                       ; |2laba|inst76                                                                                         ; out0             ;
+; |2laba|inst49                                                                                       ; |2laba|inst49                                                                                         ; out0             ;
+; |2laba|inst48                                                                                       ; |2laba|inst48                                                                                         ; out0             ;
+; |2laba|inst47                                                                                       ; |2laba|inst47                                                                                         ; out0             ;
+; |2laba|inst41                                                                                       ; |2laba|inst41                                                                                         ; out0             ;
+; |2laba|inst51                                                                                       ; |2laba|inst51                                                                                         ; out0             ;
+; |2laba|inst71                                                                                       ; |2laba|inst71                                                                                         ; out0             ;
+; |2laba|inst53                                                                                       ; |2laba|inst53                                                                                         ; out0             ;
+; |2laba|inst37                                                                                       ; |2laba|inst37                                                                                         ; out0             ;
+; |2laba|inst40                                                                                       ; |2laba|inst40                                                                                         ; out0             ;
+; |2laba|inst52                                                                                       ; |2laba|inst52                                                                                         ; out0             ;
+; |2laba|inst35                                                                                       ; |2laba|inst35                                                                                         ; out0             ;
+; |2laba|inst36                                                                                       ; |2laba|inst36                                                                                         ; out0             ;
+; |2laba|inst50                                                                                       ; |2laba|inst50                                                                                         ; out0             ;
+; |2laba|inst38                                                                                       ; |2laba|inst38                                                                                         ; out0             ;
+; |2laba|inst39                                                                                       ; |2laba|inst39                                                                                         ; out0             ;
+; |2laba|inst43                                                                                       ; |2laba|inst43                                                                                         ; out0             ;
+; |2laba|inst32                                                                                       ; |2laba|inst32                                                                                         ; out0             ;
+; |2laba|inst33                                                                                       ; |2laba|inst33                                                                                         ; out0             ;
+; |2laba|inst31                                                                                       ; |2laba|inst31                                                                                         ; out0             ;
+; |2laba|clk                                                                                          ; |2laba|clk                                                                                            ; out              ;
+; |2laba|inst72                                                                                       ; |2laba|inst72                                                                                         ; out0             ;
+; |2laba|reset                                                                                        ; |2laba|reset                                                                                          ; out              ;
+; |2laba|ctpin[7]                                                                                     ; |2laba|ctpin[7]                                                                                       ; pin_out          ;
+; |2laba|ctpin[6]                                                                                     ; |2laba|ctpin[6]                                                                                       ; pin_out          ;
+; |2laba|ctpin[5]                                                                                     ; |2laba|ctpin[5]                                                                                       ; pin_out          ;
+; |2laba|ctpin[4]                                                                                     ; |2laba|ctpin[4]                                                                                       ; pin_out          ;
+; |2laba|ctpin[3]                                                                                     ; |2laba|ctpin[3]                                                                                       ; pin_out          ;
+; |2laba|ctpin[2]                                                                                     ; |2laba|ctpin[2]                                                                                       ; pin_out          ;
+; |2laba|ctpin[1]                                                                                     ; |2laba|ctpin[1]                                                                                       ; pin_out          ;
+; |2laba|ctpin[0]                                                                                     ; |2laba|ctpin[0]                                                                                       ; pin_out          ;
+; |2laba|outpin[3]                                                                                    ; |2laba|outpin[3]                                                                                      ; pin_out          ;
+; |2laba|outpin[2]                                                                                    ; |2laba|outpin[2]                                                                                      ; pin_out          ;
+; |2laba|outpin[1]                                                                                    ; |2laba|outpin[1]                                                                                      ; pin_out          ;
+; |2laba|outpin[0]                                                                                    ; |2laba|outpin[0]                                                                                      ; pin_out          ;
+; |2laba|ypin[14]                                                                                     ; |2laba|ypin[14]                                                                                       ; pin_out          ;
+; |2laba|ypin[13]                                                                                     ; |2laba|ypin[13]                                                                                       ; pin_out          ;
+; |2laba|ypin[12]                                                                                     ; |2laba|ypin[12]                                                                                       ; pin_out          ;
+; |2laba|ypin[11]                                                                                     ; |2laba|ypin[11]                                                                                       ; pin_out          ;
+; |2laba|ypin[10]                                                                                     ; |2laba|ypin[10]                                                                                       ; pin_out          ;
+; |2laba|ypin[9]                                                                                      ; |2laba|ypin[9]                                                                                        ; pin_out          ;
+; |2laba|ypin[8]                                                                                      ; |2laba|ypin[8]                                                                                        ; pin_out          ;
+; |2laba|ypin[7]                                                                                      ; |2laba|ypin[7]                                                                                        ; pin_out          ;
+; |2laba|ypin[6]                                                                                      ; |2laba|ypin[6]                                                                                        ; pin_out          ;
+; |2laba|ypin[5]                                                                                      ; |2laba|ypin[5]                                                                                        ; pin_out          ;
+; |2laba|ypin[4]                                                                                      ; |2laba|ypin[4]                                                                                        ; pin_out          ;
+; |2laba|ypin[3]                                                                                      ; |2laba|ypin[3]                                                                                        ; pin_out          ;
+; |2laba|ypin[2]                                                                                      ; |2laba|ypin[2]                                                                                        ; pin_out          ;
+; |2laba|ypin[1]                                                                                      ; |2laba|ypin[1]                                                                                        ; pin_out          ;
+; |2laba|ypin[0]                                                                                      ; |2laba|ypin[0]                                                                                        ; pin_out          ;
+; |2laba|inst57                                                                                       ; |2laba|inst57                                                                                         ; out0             ;
+; |2laba|inst56                                                                                       ; |2laba|inst56                                                                                         ; out0             ;
+; |2laba|inst58                                                                                       ; |2laba|inst58                                                                                         ; out0             ;
+; |2laba|inst59                                                                                       ; |2laba|inst59                                                                                         ; out0             ;
+; |2laba|inst61                                                                                       ; |2laba|inst61                                                                                         ; out0             ;
+; |2laba|inst44                                                                                       ; |2laba|inst44                                                                                         ; out0             ;
+; |2laba|inst64                                                                                       ; |2laba|inst64                                                                                         ; out0             ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[14]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[14]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[13]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[13]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[12]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[12]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[11]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[11]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[10]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[10]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[9]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[9]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[8]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[8]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[7]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[7]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[6]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[6]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[3]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[3]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[2]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[2]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[1]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[1]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~3  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~3    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~15                  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~15                    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~16                  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~16                    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~6  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~6    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita3    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita3      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[3]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[3]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[2]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[2]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[1]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[1]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[1]             ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~7  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~7    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]~8  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]~8    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]~9  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]~9    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~10 ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~10   ; out              ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                           ; Output Port Name                                                                                      ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |2laba|apin[8]                                                                                      ; |2laba|apin[8]                                                                                        ; pin_out          ;
+; |2laba|apin[7]                                                                                      ; |2laba|apin[7]                                                                                        ; pin_out          ;
+; |2laba|apin[6]                                                                                      ; |2laba|apin[6]                                                                                        ; pin_out          ;
+; |2laba|apin[5]                                                                                      ; |2laba|apin[5]                                                                                        ; pin_out          ;
+; |2laba|apin[4]                                                                                      ; |2laba|apin[4]                                                                                        ; pin_out          ;
+; |2laba|apin[3]                                                                                      ; |2laba|apin[3]                                                                                        ; pin_out          ;
+; |2laba|apin[2]                                                                                      ; |2laba|apin[2]                                                                                        ; pin_out          ;
+; |2laba|apin[1]                                                                                      ; |2laba|apin[1]                                                                                        ; pin_out          ;
+; |2laba|apin[0]                                                                                      ; |2laba|apin[0]                                                                                        ; pin_out          ;
+; |2laba|inst75                                                                                       ; |2laba|inst75                                                                                         ; out0             ;
+; |2laba|inst46                                                                                       ; |2laba|inst46                                                                                         ; out0             ;
+; |2laba|inst45                                                                                       ; |2laba|inst45                                                                                         ; out0             ;
+; |2laba|xpin[10]                                                                                     ; |2laba|xpin[10]                                                                                       ; out              ;
+; |2laba|xpin[9]                                                                                      ; |2laba|xpin[9]                                                                                        ; out              ;
+; |2laba|xpin[8]                                                                                      ; |2laba|xpin[8]                                                                                        ; out              ;
+; |2laba|xpin[7]                                                                                      ; |2laba|xpin[7]                                                                                        ; out              ;
+; |2laba|xpin[6]                                                                                      ; |2laba|xpin[6]                                                                                        ; out              ;
+; |2laba|xpin[5]                                                                                      ; |2laba|xpin[5]                                                                                        ; out              ;
+; |2laba|xpin[4]                                                                                      ; |2laba|xpin[4]                                                                                        ; out              ;
+; |2laba|xpin[3]                                                                                      ; |2laba|xpin[3]                                                                                        ; out              ;
+; |2laba|xpin[2]                                                                                      ; |2laba|xpin[2]                                                                                        ; out              ;
+; |2laba|xpin[1]                                                                                      ; |2laba|xpin[1]                                                                                        ; out              ;
+; |2laba|xpin[0]                                                                                      ; |2laba|xpin[0]                                                                                        ; out              ;
+; |2laba|inst28                                                                                       ; |2laba|inst28                                                                                         ; out0             ;
+; |2laba|inst34                                                                                       ; |2laba|inst34                                                                                         ; out0             ;
+; |2laba|inst42                                                                                       ; |2laba|inst42                                                                                         ; out0             ;
+; |2laba|inst29                                                                                       ; |2laba|inst29                                                                                         ; out0             ;
+; |2laba|inst30                                                                                       ; |2laba|inst30                                                                                         ; out0             ;
+; |2laba|inst74                                                                                       ; |2laba|inst74                                                                                         ; out0             ;
+; |2laba|inst76                                                                                       ; |2laba|inst76                                                                                         ; out0             ;
+; |2laba|inst49                                                                                       ; |2laba|inst49                                                                                         ; out0             ;
+; |2laba|inst48                                                                                       ; |2laba|inst48                                                                                         ; out0             ;
+; |2laba|inst47                                                                                       ; |2laba|inst47                                                                                         ; out0             ;
+; |2laba|inst41                                                                                       ; |2laba|inst41                                                                                         ; out0             ;
+; |2laba|inst51                                                                                       ; |2laba|inst51                                                                                         ; out0             ;
+; |2laba|inst71                                                                                       ; |2laba|inst71                                                                                         ; out0             ;
+; |2laba|inst53                                                                                       ; |2laba|inst53                                                                                         ; out0             ;
+; |2laba|inst37                                                                                       ; |2laba|inst37                                                                                         ; out0             ;
+; |2laba|inst40                                                                                       ; |2laba|inst40                                                                                         ; out0             ;
+; |2laba|inst52                                                                                       ; |2laba|inst52                                                                                         ; out0             ;
+; |2laba|inst35                                                                                       ; |2laba|inst35                                                                                         ; out0             ;
+; |2laba|inst36                                                                                       ; |2laba|inst36                                                                                         ; out0             ;
+; |2laba|inst50                                                                                       ; |2laba|inst50                                                                                         ; out0             ;
+; |2laba|inst38                                                                                       ; |2laba|inst38                                                                                         ; out0             ;
+; |2laba|inst39                                                                                       ; |2laba|inst39                                                                                         ; out0             ;
+; |2laba|inst43                                                                                       ; |2laba|inst43                                                                                         ; out0             ;
+; |2laba|inst32                                                                                       ; |2laba|inst32                                                                                         ; out0             ;
+; |2laba|inst33                                                                                       ; |2laba|inst33                                                                                         ; out0             ;
+; |2laba|inst31                                                                                       ; |2laba|inst31                                                                                         ; out0             ;
+; |2laba|clk                                                                                          ; |2laba|clk                                                                                            ; out              ;
+; |2laba|inst72                                                                                       ; |2laba|inst72                                                                                         ; out0             ;
+; |2laba|reset                                                                                        ; |2laba|reset                                                                                          ; out              ;
+; |2laba|ctpin[7]                                                                                     ; |2laba|ctpin[7]                                                                                       ; pin_out          ;
+; |2laba|ctpin[6]                                                                                     ; |2laba|ctpin[6]                                                                                       ; pin_out          ;
+; |2laba|ctpin[5]                                                                                     ; |2laba|ctpin[5]                                                                                       ; pin_out          ;
+; |2laba|ctpin[4]                                                                                     ; |2laba|ctpin[4]                                                                                       ; pin_out          ;
+; |2laba|ctpin[3]                                                                                     ; |2laba|ctpin[3]                                                                                       ; pin_out          ;
+; |2laba|ctpin[2]                                                                                     ; |2laba|ctpin[2]                                                                                       ; pin_out          ;
+; |2laba|ctpin[1]                                                                                     ; |2laba|ctpin[1]                                                                                       ; pin_out          ;
+; |2laba|ctpin[0]                                                                                     ; |2laba|ctpin[0]                                                                                       ; pin_out          ;
+; |2laba|outpin[3]                                                                                    ; |2laba|outpin[3]                                                                                      ; pin_out          ;
+; |2laba|outpin[2]                                                                                    ; |2laba|outpin[2]                                                                                      ; pin_out          ;
+; |2laba|outpin[1]                                                                                    ; |2laba|outpin[1]                                                                                      ; pin_out          ;
+; |2laba|outpin[0]                                                                                    ; |2laba|outpin[0]                                                                                      ; pin_out          ;
+; |2laba|ypin[14]                                                                                     ; |2laba|ypin[14]                                                                                       ; pin_out          ;
+; |2laba|ypin[13]                                                                                     ; |2laba|ypin[13]                                                                                       ; pin_out          ;
+; |2laba|ypin[12]                                                                                     ; |2laba|ypin[12]                                                                                       ; pin_out          ;
+; |2laba|ypin[11]                                                                                     ; |2laba|ypin[11]                                                                                       ; pin_out          ;
+; |2laba|ypin[10]                                                                                     ; |2laba|ypin[10]                                                                                       ; pin_out          ;
+; |2laba|ypin[9]                                                                                      ; |2laba|ypin[9]                                                                                        ; pin_out          ;
+; |2laba|ypin[8]                                                                                      ; |2laba|ypin[8]                                                                                        ; pin_out          ;
+; |2laba|ypin[7]                                                                                      ; |2laba|ypin[7]                                                                                        ; pin_out          ;
+; |2laba|ypin[6]                                                                                      ; |2laba|ypin[6]                                                                                        ; pin_out          ;
+; |2laba|ypin[5]                                                                                      ; |2laba|ypin[5]                                                                                        ; pin_out          ;
+; |2laba|ypin[4]                                                                                      ; |2laba|ypin[4]                                                                                        ; pin_out          ;
+; |2laba|ypin[3]                                                                                      ; |2laba|ypin[3]                                                                                        ; pin_out          ;
+; |2laba|ypin[2]                                                                                      ; |2laba|ypin[2]                                                                                        ; pin_out          ;
+; |2laba|ypin[1]                                                                                      ; |2laba|ypin[1]                                                                                        ; pin_out          ;
+; |2laba|ypin[0]                                                                                      ; |2laba|ypin[0]                                                                                        ; pin_out          ;
+; |2laba|inst57                                                                                       ; |2laba|inst57                                                                                         ; out0             ;
+; |2laba|inst56                                                                                       ; |2laba|inst56                                                                                         ; out0             ;
+; |2laba|inst58                                                                                       ; |2laba|inst58                                                                                         ; out0             ;
+; |2laba|inst59                                                                                       ; |2laba|inst59                                                                                         ; out0             ;
+; |2laba|inst61                                                                                       ; |2laba|inst61                                                                                         ; out0             ;
+; |2laba|inst44                                                                                       ; |2laba|inst44                                                                                         ; out0             ;
+; |2laba|inst64                                                                                       ; |2laba|inst64                                                                                         ; out0             ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[14]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[14]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[13]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[13]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[12]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[12]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[11]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[11]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[10]                                                   ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[10]                                                     ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[9]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[9]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[8]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[8]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[7]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[7]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[6]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[6]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[5]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[4]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[3]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[3]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[2]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[2]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[1]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[1]                                                      ; regout           ;
+; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                    ; |2laba|reg:inst4|lpm_ff:lpm_ff_component|dffs[0]                                                      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~3  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~3    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~15                  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~15                    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~16                  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|_~16                    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~6  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~6    ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita3    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_comb_bita3      ; combout          ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]    ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode21w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode31w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode41w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[3]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[3]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[2]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[2]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[1]            ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode4w[1]              ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode51w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode61w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode71w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode81w[1]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[3]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[3]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[2]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[2]             ; out0             ;
+; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[1]           ; |2laba|dc4:inst14|lpm_decode:lpm_decode_component|decode_lbf:auto_generated|w_anode91w[1]             ; out0             ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~7  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[3]~7    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]~8  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[2]~8    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]~9  ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[1]~9    ; out              ;
+; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~10 ; |2laba|ct4pm:inst16|lpm_counter:lpm_counter_component|cntr_60j:auto_generated|counter_reg_bit[0]~10   ; out              ;
++-----------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed May 19 02:01:23 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off 2laba -c 2laba
+Info: Using vector source file "C:/Users/user/OneDrive/Рабочий стол/2lab/2laba.vwf"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[10]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[9]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[8]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[7]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[6]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[5]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[4]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[3]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[2]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[1]"
+Warning: Can't find signal in vector source file for input pin "|2laba|xpin[0]"
+Warning: Can't find signal in vector source file for input pin "|2laba|clk"
+Warning: Can't find signal in vector source file for input pin "|2laba|reset"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Wed May 19 02:01:23 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

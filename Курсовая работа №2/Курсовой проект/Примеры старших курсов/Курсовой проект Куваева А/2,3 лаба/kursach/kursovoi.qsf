@@ -1,0 +1,89 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 14:28:12  March 04, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		kursovoi_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C5E144C8
+set_global_assignment -name TOP_LEVEL_ENTITY kursovoi
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:28:12  MARCH 04, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name CHECK_OUTPUTS OFF
+set_global_assignment -name VHDL_FILE ../kursua/ant.vhd
+set_global_assignment -name VHDL_FILE ../kursua/asd.vhd
+set_global_assignment -name VHDL_FILE ../kursua/Ct4pm.vhd
+set_global_assignment -name VHDL_FILE ../kursua/Dc4.vhd
+set_global_assignment -name QIP_FILE RG1.qip
+set_global_assignment -name QIP_FILE RG2.qip
+set_global_assignment -name QIP_FILE RG3.qip
+set_global_assignment -name QIP_FILE RG4.qip
+set_global_assignment -name QIP_FILE SM1.qip
+set_global_assignment -name QIP_FILE MS1.qip
+set_global_assignment -name BDF_FILE kursovoi.bdf
+set_global_assignment -name QIP_FILE invertor.qip
+set_global_assignment -name QIP_FILE SM2.qip
+set_global_assignment -name QIP_FILE CT1.qip
+set_global_assignment -name QIP_FILE CT2.qip
+set_global_assignment -name QIP_FILE vprs.qip
+set_global_assignment -name QIP_FILE rg5.qip
+set_global_assignment -name QIP_FILE pr_na_nol.qip
+set_global_assignment -name VERILOG_FILE UA.v
+set_global_assignment -name QIP_FILE inv.qip
+set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE kursovoi.tbl
+set_global_assignment -name QIP_FILE invert.qip
+set_global_assignment -name QIP_FILE sdvig.qip
+set_global_assignment -name QIP_FILE zrg.qip
+set_global_assignment -name QIP_FILE MS2.qip
+set_global_assignment -name QIP_FILE ili.qip
+set_global_assignment -name QIP_FILE ili10.qip
+set_global_assignment -name QIP_FILE ili9.qip
+set_global_assignment -name BDF_FILE UA.bdf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE kursovoi.tbl
+set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE kursovoi.sim.cvwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

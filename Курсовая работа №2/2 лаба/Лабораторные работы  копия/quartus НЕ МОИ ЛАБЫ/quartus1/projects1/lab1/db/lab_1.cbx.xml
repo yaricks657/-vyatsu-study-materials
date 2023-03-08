@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab_1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_p3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_6ki.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab_1|CT1:inst11|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab_1|CT2:inst12|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_e1k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab_1|MS1:inst10|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

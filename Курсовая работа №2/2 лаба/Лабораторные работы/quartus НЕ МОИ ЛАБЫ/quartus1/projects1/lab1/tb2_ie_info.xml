@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2021/04/03 13:52:32</DateInvoked>
+	<ElapsedTime>6</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>5025756643093.161349081013184</UserID>
+		<UserName>user</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<License>
+		<Edition>Full Version</Edition>
+		<LicenseHostID>049226707f15</LicenseHostID>
+	</License>
+	<SchemaVersion>schema_2008-12-15</SchemaVersion>
+	<ApplicationError>
+		<ErrorMessage>Current editor: GED</ErrorMessage>
+		<Line>0</Line>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x0101c2fa: CCL_MSG + 0x2c2fa (?garbage_collect_all_pdb_memory@MSG_LOCATION_SCHEMA@@SIXXZ + 0x28a)
+	0x0254beb5: tcl84 + 0xbeb5 (_TclInvokeStringCommand + 0x75)
+	0x0258ca4b: tcl84 + 0x4ca4b (_Tcl_GetCommandFromObj + 0x5b)
+	0x0254c8f9: tcl84 + 0xc8f9 (_TclEvalObjvInternal + 0x229)
+	0x0254df65: tcl84 + 0xdf65 (_Tcl_EvalEx + 0x185)
+	0x0254e304: tcl84 + 0xe304 (_Tcl_Eval + 0x14)
+	0x0254e79a: tcl84 + 0xe79a (_Tcl_GlobalEval + 0x1a)
+	0x1001f335: ccl_atcl + 0x1f335 (?atcl_flush_queue@@YIX_N0@Z + 0x175)
+	0x00cca8a6: GCL_AFC + 0xa8a6 (?PreTranslateMessage@AFC_APP@@UAEHPAUtagMSG@@@Z + 0x16)
+	0x59bca96e: mfc90 + 0x9a96e
+	0x59bca853: mfc90 + 0x9a853
+	0x01121968: ccl_thr + 0x1968 (thr_thread_var_destroy + 0x28)
+	0x59b971e7: mfc90 + 0x671e7
+	0x0044f42e: quartus + 0x4f42e (Pjm_Uninit + 0x401ee)
+	0x752efa28: KERNEL32 + 0x1fa28 (BaseThreadInitThunk + 0x18)
+	0x77407c7d: ntdll + 0x67c7d (RtlGetAppContainerNamedObjectPath + 0x11d)
+	0x77407c4d: ntdll + 0x67c4d (RtlGetAppContainerNamedObjectPath + 0xed)
+	0xffffffffffffffff:
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<QuartusInstallation>
+		<InstallationID>5025756643093.161348963106912</InstallationID>
+		<Version>
+			<Build>132</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Full Version</Edition>
+			<ServicePack>0</ServicePack>
+			<VersionNumber>9</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<Machine>
+		<CPUCountLogical>8</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>1800</CPUSpeed>
+		<Hostname>DESKTOP-01U269K</Hostname>
+		<OS>Windows Vista</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>6.2</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+		<TotalVirtualRAM>0</TotalVirtualRAM>
+		<NIC>
+			<Address>049226707f15</Address>
+		</NIC>
+		<NIC>
+			<Address>d0c5d3d64e89</Address>
+		</NIC>
+		<NIC>
+			<Address>d2c5d3d64e89</Address>
+		</NIC>
+		<NIC>
+			<Address>f2c5d3d64e89</Address>
+		</NIC>
+	</Machine>
+</ProgramExecution>
+

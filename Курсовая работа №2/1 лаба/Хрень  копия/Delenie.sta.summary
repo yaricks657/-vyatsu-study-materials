@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.339
+TNS   : -184.596
+
+Type  : Slow 1200mV 85C Model Setup 'block_name:inst4|y[10]'
+Slack : -3.920
+TNS   : -3.920
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -1.902
+TNS   : -22.621
+
+Type  : Slow 1200mV 85C Model Hold 'block_name:inst4|y[10]'
+Slack : 1.949
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'block_name:inst4|y[0]'
+Slack : -2.338
+TNS   : -2.338
+
+Type  : Slow 1200mV 85C Model Recovery 'block_name:inst4|y[10]'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'block_name:inst4|y[10]'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'block_name:inst4|y[0]'
+Slack : 2.875
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.146
+TNS   : -170.595
+
+Type  : Slow 1200mV 0C Model Setup 'block_name:inst4|y[10]'
+Slack : -3.443
+TNS   : -3.443
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -1.803
+TNS   : -20.916
+
+Type  : Slow 1200mV 0C Model Hold 'block_name:inst4|y[10]'
+Slack : 1.778
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'block_name:inst4|y[0]'
+Slack : -2.086
+TNS   : -2.086
+
+Type  : Slow 1200mV 0C Model Recovery 'block_name:inst4|y[10]'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'block_name:inst4|y[10]'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'block_name:inst4|y[0]'
+Slack : 2.611
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'block_name:inst4|y[10]'
+Slack : -1.881
+TNS   : -1.881
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.639
+TNS   : -50.505
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -1.236
+TNS   : -13.970
+
+Type  : Fast 1200mV 0C Model Hold 'block_name:inst4|y[10]'
+Slack : 0.905
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'block_name:inst4|y[0]'
+Slack : -0.579
+TNS   : -0.579
+
+Type  : Fast 1200mV 0C Model Recovery 'block_name:inst4|y[10]'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'block_name:inst4|y[10]'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'block_name:inst4|y[0]'
+Slack : 1.304
+TNS   : 0.000
+
+------------------------------------------------------------

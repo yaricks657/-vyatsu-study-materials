@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="2laba">
+		<CBX_INST_ENTRY INSTANCE_NAME="|2laba|ct4pm:inst16|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_60j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|2laba|dc4:inst14|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_lbf.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

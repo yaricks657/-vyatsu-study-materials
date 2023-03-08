@@ -1,0 +1,112 @@
+3	
+Grayson Allen	
+SG	
+6-4	
+198	
+10/8/1995 (24)	
+1	
+1	
+Kyle Anderson	
+SF	
+6-9	
+230	
+9/20/1993 (26)	
+5	
+24	
+Dillon Brooks 	
+SG	
+6-7	
+225	
+1/22/1996 (24)	
+2	
+15	
+Brandon Clarke 	
+SF	
+6-8	
+215	
+9/19/1996 (23)	
+R	
+14	
+Gorgui Dieng	
+C	
+6-10	
+252	
+1/18/1990 (30)	
+6	
+23	
+Marko Guduric	
+SG	
+6-6	
+201	
+3/8/1995 (25)	
+R	
+20	
+Josh Jackson	
+SG	
+6-8	
+207	
+2/10/1997 (23)	
+2	
+13	
+Jaren Jackson Jr. 	
+PF	
+6-11	
+242	
+9/15/1999 (20)	
+1	
+21	
+Tyus Jones  	
+PG	
+6-0	
+196	
+5/10/1996 (24)	
+4	
+46	
+John Konchar	
+SG	
+6-5	
+210	
+3/22/1996 (24)	
+R	
+0	
+De'Anthony Melton	
+SG	
+6-2	
+200	
+5/28/1998 (22)	
+1	
+12	
+Ja Morant 	
+PG	
+6-3	
+174	
+8/10/1999 (20)	
+R	
+43	
+Anthony Tolliver	
+PF	
+6-8	
+240	
+6/1/1985 (35)	
+11	
+17	
+Jonas Valanciunas 	
+C	
+6-11	
+265	
+5/6/1992 (28)	
+7	
+18	
+Yuta Watanabe	
+SG	
+6-8	
+215	
+10/13/1994 (25)	
+1	
+7	
+Justise Winslow 	
+SF	
+6-6	
+222	
+3/26/1996 (24)	
+4	

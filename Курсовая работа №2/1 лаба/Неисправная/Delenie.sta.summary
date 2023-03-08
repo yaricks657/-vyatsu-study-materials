@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'block_name:inst4|y[10]'
+Slack : -5.292
+TNS   : -5.292
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.930
+TNS   : -177.696
+
+Type  : Slow 1200mV 85C Model Setup 'block_name:inst4|y[5]'
+Slack : -2.478
+TNS   : -2.478
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -1.174
+TNS   : -2.061
+
+Type  : Slow 1200mV 85C Model Hold 'block_name:inst4|y[5]'
+Slack : 3.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'block_name:inst4|y[10]'
+Slack : 3.968
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'block_name:inst4|y[10]'
+Slack : -2.363
+TNS   : -2.363
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -1.067
+TNS   : -1.067
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 1.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'block_name:inst4|y[10]'
+Slack : 2.863
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'block_name:inst4|y[10]'
+Slack : -4.778
+TNS   : -4.778
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.592
+TNS   : -163.735
+
+Type  : Slow 1200mV 0C Model Setup 'block_name:inst4|y[5]'
+Slack : -2.229
+TNS   : -2.229
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -1.098
+TNS   : -1.946
+
+Type  : Slow 1200mV 0C Model Hold 'block_name:inst4|y[5]'
+Slack : 2.840
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'block_name:inst4|y[10]'
+Slack : 3.701
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'block_name:inst4|y[10]'
+Slack : -2.091
+TNS   : -2.091
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -0.916
+TNS   : -0.916
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 1.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'block_name:inst4|y[10]'
+Slack : 2.651
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'block_name:inst4|y[10]'
+Slack : -2.429
+TNS   : -2.429
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.619
+TNS   : -42.095
+
+Type  : Fast 1200mV 0C Model Setup 'block_name:inst4|y[5]'
+Slack : -1.224
+TNS   : -1.224
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.583
+TNS   : -1.418
+
+Type  : Fast 1200mV 0C Model Hold 'block_name:inst4|y[10]'
+Slack : 1.815
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'block_name:inst4|y[5]'
+Slack : 1.980
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'block_name:inst4|y[10]'
+Slack : -0.524
+TNS   : -0.524
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'block_name:inst4|y[10]'
+Slack : 1.298
+TNS   : 0.000
+
+------------------------------------------------------------

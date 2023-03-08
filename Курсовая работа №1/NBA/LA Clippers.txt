@@ -1,0 +1,105 @@
+21	
+Patrick Beverley 	
+PG	
+6-1	
+180	
+7/12/1988 (32)	
+7	
+7	
+Amir Coffey 	
+SG	
+6-7	
+210	
+6/17/1997 (23)	
+R	
+13	
+Paul George 	
+SG	
+6-8	
+220	
+5/2/1990 (30)	
+9	
+4	
+JaMychal Green	
+PF	
+6-8	
+227	
+6/21/1990 (30)	
+5	
+5	
+Montrezl Harrell  	
+PF	
+6-7	
+240	
+1/26/1994 (26)	
+4	
+1	
+Reggie Jackson 	
+PG	
+6-3	
+208	
+4/16/1990 (30)	
+8	
+2	
+Kawhi Leonard 	
+SF	
+6-7	
+225	
+6/29/1991 (29)	
+8	
+14	
+Terance Mann	
+SG	
+6-5	
+215	
+10/18/1996 (23)	
+R	
+19	
+Rodney McGruder 	
+SG	
+6-4	
+205	
+7/29/1991 (29)	
+3	
+31	
+Marcus Morris	
+SF	
+6-8	
+218	
+9/2/1989 (30)	
+8	
+55	
+Joakim Noah	
+C	
+6-11	
+230	
+2/25/1985 (35)	
+12	
+54	
+Patrick Patterson	
+PF	
+6-8	
+235	
+3/14/1989 (31)	
+9	
+20	
+Landry Shamet	
+SG	
+6-4	
+190	
+3/13/1997 (23)	
+1	
+23	
+Lou Williams 	
+SG	
+6-1	
+175	
+10/27/1986 (33)	
+14	
+40	
+Ivica Zubac	
+C	
+7-0	
+240	
+3/18/1997 (23)	
+3	

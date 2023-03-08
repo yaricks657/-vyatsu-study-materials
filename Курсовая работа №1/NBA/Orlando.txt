@@ -1,0 +1,112 @@
+14	
+D.J. Augustin	
+PG	
+5-11	
+183	
+11/10/1987 (32)	
+11	
+5	
+Mo Bamba	
+C	
+7-0	
+231	
+5/12/1998 (22)	
+1	
+24	
+Khem Birch	
+PF	
+6-9	
+233	
+9/28/1992 (27)	
+2	
+7	
+Michael Carter-Williams	
+PG	
+6-5	
+190	
+10/10/1991 (28)	
+6	
+12	
+Gary Clark	
+PF	
+6-6	
+225	
+11/16/1994 (25)	
+1	
+11	
+James Ennis III 	
+SF	
+6-6	
+215	
+7/1/1990 (30)	
+5	
+10	
+Evan Fournier 	
+SG	
+6-7	
+205	
+10/29/1992 (27)	
+7	
+35	
+Melvin Frazier Jr.	
+SG	
+6-5	
+215	
+8/30/1996 (23)	
+1	
+20	
+Markelle Fultz 	
+PG	
+6-3	
+209	
+5/29/1998 (22)	
+2	
+00	
+Aaron Gordon 	
+PF	
+6-8	
+235	
+9/16/1995 (24)	
+5	
+1	
+Jonathan Isaac 	
+PF	
+6-11	
+230	
+10/3/1997 (22)	
+2	
+25	
+Wes Iwundu 	
+SF	
+6-6	
+195	
+12/20/1994 (25)	
+2	
+13	
+BJ Johnson	
+SF	
+6-7	
+200	
+12/21/1995 (24)	
+1	
+23	
+Vic Law	
+F	
+6-7	
+200	
+12/19/1995 (24)	
+R	
+31	
+Terrence Ross	
+SG	
+6-6	
+206	
+2/5/1991 (29)	
+7	
+9	
+Nikola Vucevic 	
+C	
+6-11	
+260	
+10/24/1990 (29)	
+8	

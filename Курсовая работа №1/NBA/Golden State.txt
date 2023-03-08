@@ -1,0 +1,112 @@
+17	
+Dragan Bender	
+SF	
+7-0	
+249	
+11/17/1997 (22)	
+3	
+12	
+Ky Bowman 	
+PG	
+6-1	
+187	
+6/16/1997 (23)	
+R	
+32	
+Marquese Chriss 	
+C	
+6-9	
+240	
+7/2/1997 (23)	
+3	
+30	
+Stephen Curry 	
+PG	
+6-3	
+185	
+3/14/1988 (32)	
+10	
+23	
+Draymond Green 	
+PF	
+6-6	
+230	
+3/4/1990 (30)	
+7	
+1	
+Damion Lee	
+SG	
+6-5	
+210	
+10/21/1992 (27)	
+2	
+5	
+Kevon Looney  	
+PF	
+6-9	
+222	
+2/6/1996 (24)	
+4	
+15	
+Mychal Mulder	
+G	
+6-4	
+184	
+6/12/1994 (26)	
+R	
+21	
+Zach Norvell	
+SG	
+6-5	
+205	
+12/9/1997 (22)	
+R	
+0	
+Jeremy Pargo	
+PG	
+6-2	
+219	
+3/7/1986 (34)	
+2	
+7	
+Eric Paschall 	
+PF	
+6-6	
+255	
+11/4/1996 (23)	
+R	
+3	
+Jordan Poole	
+SG	
+6-4	
+194	
+6/19/1999 (21)	
+R	
+6	
+Alen Smailagic 	
+PF	
+6-10	
+215	
+8/18/2000 (19)	
+R	
+11	
+Klay Thompson 	
+SG	
+6-6	
+215	
+2/8/1990 (30)	
+8	
+95	
+Juan Toscano-Anderson 	
+SF	
+6-6	
+209	
+4/10/1993 (27)	
+R	
+22	
+Andrew Wiggins	
+SG	
+6-7	
+197	
+2/23/1995 (25)	
+5	

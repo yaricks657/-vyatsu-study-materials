@@ -1,0 +1,698 @@
+Simulator report for lab_1
+Fri Apr 29 15:19:11 2016
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 418 nodes    ;
+; Simulation Coverage         ;      60.31 % ;
+; Total Number of Transitions ; 2889         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5E144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; lab_1.tbl  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      60.31 % ;
+; Total nodes checked                                 ; 418          ;
+; Total output ports checked                          ; 451          ;
+; Total output ports with complete 1/0-value coverage ; 272          ;
+; Total output ports with no 1/0-value coverage       ; 79           ;
+; Total output ports with no 1-value coverage         ; 113          ;
+; Total output ports with no 0-value coverage         ; 145          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                                    ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                    ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                       ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[3]      ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[2]      ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[1]      ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[0]      ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                        ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0      ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1      ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2      ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3      ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4      ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5   ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita5      ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[0]~0    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[0]~0       ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[0]~0    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[0]~1       ; cout             ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[1]~2    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[1]~2       ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[1]~2    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[1]~3       ; cout             ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[2]~4    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[2]~4       ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[2]~4    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[2]~5       ; cout             ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[3]~6    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[3]~6       ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[3]~6    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[3]~7       ; cout             ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[4]~8    ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[4]~8       ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                        ; q                ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                     ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                        ; q                ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[1]~2    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[1]~2       ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[1]~2    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[1]~3       ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[2]~4    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[2]~4       ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[2]~4    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[2]~5       ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[3]~6    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[3]~6       ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[3]~6    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[3]~7       ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[4]~8    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[4]~8       ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[4]~8    ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[4]~9       ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[5]~10   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[5]~10      ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[5]~10   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[5]~11      ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[6]~12   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[6]~12      ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[6]~12   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[6]~13      ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[7]~14   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[7]~14      ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[7]~14   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[7]~15      ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[8]~16   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[8]~16      ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[8]~16   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[8]~17      ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[9]~18   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[9]~18      ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[9]~18   ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[9]~19      ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[10]~20  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[10]~20     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[10]~20  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[10]~21     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[11]~22  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[11]~22     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[11]~22  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[11]~23     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[12]~24  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[12]~24     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[12]~24  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[12]~25     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[13]~26  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[13]~26     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[13]~26  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[13]~27     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[14]~28  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[14]~28     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[14]~28  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[14]~29     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[15]~30  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[15]~30     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[15]~30  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[15]~31     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[16]~32  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[16]~32     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[16]~32  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[16]~33     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[17]~34  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[17]~34     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[17]~34  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[17]~35     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[18]~36  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[18]~36     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[18]~36  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[18]~37     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[19]~38  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[19]~38     ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[19]~38  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[19]~39     ; cout             ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[20]~40  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[20]~40     ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[3]   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[3]      ; q                ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[2]   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[2]      ; q                ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[1]   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[1]      ; q                ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[0]   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[0]      ; q                ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita0   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita0      ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita0   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita1   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita1      ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita1   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita2   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita2      ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita2   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita3   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita3      ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita3   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita4   ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_comb_bita4      ; combout          ;
+; |lab_1|block_name:inst79|y[6]                                                                    ; |lab_1|block_name:inst79|y[6]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[5]                                                                    ; |lab_1|block_name:inst79|y[5]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[3]                                                                    ; |lab_1|block_name:inst79|y[3]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[2]                                                                    ; |lab_1|block_name:inst79|y[2]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[1]                                                                    ; |lab_1|block_name:inst79|y[1]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[0]                                                                    ; |lab_1|block_name:inst79|y[0]                                                                       ; q                ;
+; |lab_1|inst65                                                                                    ; |lab_1|inst65                                                                                       ; combout          ;
+; |lab_1|inst61                                                                                    ; |lab_1|inst61                                                                                       ; combout          ;
+; |lab_1|inst66~0                                                                                  ; |lab_1|inst66~0                                                                                     ; combout          ;
+; |lab_1|inst66~1                                                                                  ; |lab_1|inst66~1                                                                                     ; combout          ;
+; |lab_1|inst78                                                                                    ; |lab_1|inst78                                                                                       ; combout          ;
+; |lab_1|inst15~0                                                                                  ; |lab_1|inst15~0                                                                                     ; combout          ;
+; |lab_1|inst58                                                                                    ; |lab_1|inst58                                                                                       ; combout          ;
+; |lab_1|block_name:inst79|pc[2]                                                                   ; |lab_1|block_name:inst79|pc[2]                                                                      ; q                ;
+; |lab_1|block_name:inst79|pc[0]                                                                   ; |lab_1|block_name:inst79|pc[0]                                                                      ; q                ;
+; |lab_1|block_name:inst79|pc[3]                                                                   ; |lab_1|block_name:inst79|pc[3]                                                                      ; q                ;
+; |lab_1|block_name:inst79|pc[1]                                                                   ; |lab_1|block_name:inst79|pc[1]                                                                      ; q                ;
+; |lab_1|block_name:inst79|y[9]~0                                                                  ; |lab_1|block_name:inst79|y[9]~0                                                                     ; combout          ;
+; |lab_1|block_name:inst79|Selector1~1                                                             ; |lab_1|block_name:inst79|Selector1~1                                                                ; combout          ;
+; |lab_1|block_name:inst79|y[9]~1                                                                  ; |lab_1|block_name:inst79|y[9]~1                                                                     ; combout          ;
+; |lab_1|block_name:inst79|y[9]~2                                                                  ; |lab_1|block_name:inst79|y[9]~2                                                                     ; combout          ;
+; |lab_1|block_name:inst79|Selector1~2                                                             ; |lab_1|block_name:inst79|Selector1~2                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector1~3                                                             ; |lab_1|block_name:inst79|Selector1~3                                                                ; combout          ;
+; |lab_1|block_name:inst79|y[9]~3                                                                  ; |lab_1|block_name:inst79|y[9]~3                                                                     ; combout          ;
+; |lab_1|block_name:inst79|y[9]~5                                                                  ; |lab_1|block_name:inst79|y[9]~5                                                                     ; combout          ;
+; |lab_1|block_name:inst79|Selector2~0                                                             ; |lab_1|block_name:inst79|Selector2~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|Equal0~0                                                                ; |lab_1|block_name:inst79|Equal0~0                                                                   ; combout          ;
+; |lab_1|block_name:inst79|WideNor0~0                                                              ; |lab_1|block_name:inst79|WideNor0~0                                                                 ; combout          ;
+; |lab_1|block_name:inst79|Equal0~2                                                                ; |lab_1|block_name:inst79|Equal0~2                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Equal0~3                                                                ; |lab_1|block_name:inst79|Equal0~3                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector4~0                                                             ; |lab_1|block_name:inst79|Selector4~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|y[5]~7                                                                  ; |lab_1|block_name:inst79|y[5]~7                                                                     ; combout          ;
+; |lab_1|block_name:inst79|y[5]~8                                                                  ; |lab_1|block_name:inst79|y[5]~8                                                                     ; combout          ;
+; |lab_1|block_name:inst79|y[5]~9                                                                  ; |lab_1|block_name:inst79|y[5]~9                                                                     ; combout          ;
+; |lab_1|block_name:inst79|y[5]~10                                                                 ; |lab_1|block_name:inst79|y[5]~10                                                                    ; combout          ;
+; |lab_1|block_name:inst79|y[5]~12                                                                 ; |lab_1|block_name:inst79|y[5]~12                                                                    ; combout          ;
+; |lab_1|block_name:inst79|y[5]~13                                                                 ; |lab_1|block_name:inst79|y[5]~13                                                                    ; combout          ;
+; |lab_1|block_name:inst79|Selector6~0                                                             ; |lab_1|block_name:inst79|Selector6~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|Equal0~4                                                                ; |lab_1|block_name:inst79|Equal0~4                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector6~2                                                             ; |lab_1|block_name:inst79|Selector6~2                                                                ; combout          ;
+; |lab_1|block_name:inst79|Equal0~5                                                                ; |lab_1|block_name:inst79|Equal0~5                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Equal0~6                                                                ; |lab_1|block_name:inst79|Equal0~6                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector7~2                                                             ; |lab_1|block_name:inst79|Selector7~2                                                                ; combout          ;
+; |lab_1|block_name:inst79|y~14                                                                    ; |lab_1|block_name:inst79|y~14                                                                       ; combout          ;
+; |lab_1|block_name:inst79|Selector8~0                                                             ; |lab_1|block_name:inst79|Selector8~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector9~0                                                             ; |lab_1|block_name:inst79|Selector9~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector9~1                                                             ; |lab_1|block_name:inst79|Selector9~1                                                                ; combout          ;
+; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[3]                                                 ; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[3]                                                    ; q                ;
+; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[2]                                                 ; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[2]                                                    ; q                ;
+; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[1]                                                 ; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[1]                                                    ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0 ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5]~0    ; combout          ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|_~0                  ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|_~0                     ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~1             ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~1                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~0                                 ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~0                                    ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~0                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~0                                            ; combout          ;
+; |lab_1|inst72~0                                                                                  ; |lab_1|inst72~0                                                                                     ; combout          ;
+; |lab_1|inst52                                                                                    ; |lab_1|inst52                                                                                       ; combout          ;
+; |lab_1|inst51                                                                                    ; |lab_1|inst51                                                                                       ; combout          ;
+; |lab_1|inst50                                                                                    ; |lab_1|inst50                                                                                       ; combout          ;
+; |lab_1|inst49                                                                                    ; |lab_1|inst49                                                                                       ; combout          ;
+; |lab_1|inst48                                                                                    ; |lab_1|inst48                                                                                       ; combout          ;
+; |lab_1|inst47                                                                                    ; |lab_1|inst47                                                                                       ; combout          ;
+; |lab_1|inst46                                                                                    ; |lab_1|inst46                                                                                       ; combout          ;
+; |lab_1|inst45                                                                                    ; |lab_1|inst45                                                                                       ; combout          ;
+; |lab_1|inst44                                                                                    ; |lab_1|inst44                                                                                       ; combout          ;
+; |lab_1|inst43                                                                                    ; |lab_1|inst43                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                         ; q                ;
+; |lab_1|inst42                                                                                    ; |lab_1|inst42                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                         ; q                ;
+; |lab_1|inst41                                                                                    ; |lab_1|inst41                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                         ; q                ;
+; |lab_1|inst40                                                                                    ; |lab_1|inst40                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                         ; q                ;
+; |lab_1|inst39                                                                                    ; |lab_1|inst39                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                         ; q                ;
+; |lab_1|inst38                                                                                    ; |lab_1|inst38                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                         ; q                ;
+; |lab_1|inst37                                                                                    ; |lab_1|inst37                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                         ; q                ;
+; |lab_1|inst36                                                                                    ; |lab_1|inst36                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                         ; q                ;
+; |lab_1|inst35                                                                                    ; |lab_1|inst35                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                         ; q                ;
+; |lab_1|inst34                                                                                    ; |lab_1|inst34                                                                                       ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                      ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                         ; q                ;
+; |lab_1|inst13                                                                                    ; |lab_1|inst13                                                                                       ; combout          ;
+; |lab_1|inst73                                                                                    ; |lab_1|inst73                                                                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~0                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~0                                      ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~10                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~10                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~11                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~11                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~12                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~12                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~13                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~13                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~15                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~15                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~16                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~16                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~17                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~17                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~18                                        ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~18                                           ; combout          ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|_~0                  ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|_~0                     ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~2             ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~2                ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~3             ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~3                ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~4             ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~4                ; combout          ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~5             ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~5                ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~1                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~1                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~2                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; combout          ;
+; |lab_1|block_name:inst79|WideOr13~0                                                              ; |lab_1|block_name:inst79|WideOr13~0                                                                 ; combout          ;
+; |lab_1|block_name:inst79|Equal0~8                                                                ; |lab_1|block_name:inst79|Equal0~8                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector12~0                                                            ; |lab_1|block_name:inst79|Selector12~0                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector12~1                                                            ; |lab_1|block_name:inst79|Selector12~1                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~0                                                            ; |lab_1|block_name:inst79|Selector13~0                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector1~4                                                             ; |lab_1|block_name:inst79|Selector1~4                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector14~0                                                            ; |lab_1|block_name:inst79|Selector14~0                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector1~5                                                             ; |lab_1|block_name:inst79|Selector1~5                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector14~1                                                            ; |lab_1|block_name:inst79|Selector14~1                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector11~0                                                            ; |lab_1|block_name:inst79|Selector11~0                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector11~1                                                            ; |lab_1|block_name:inst79|Selector11~1                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector11~2                                                            ; |lab_1|block_name:inst79|Selector11~2                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector11~3                                                            ; |lab_1|block_name:inst79|Selector11~3                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~1                                                            ; |lab_1|block_name:inst79|Selector13~1                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~2                                                            ; |lab_1|block_name:inst79|Selector13~2                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~3                                                            ; |lab_1|block_name:inst79|Selector13~3                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~4                                                            ; |lab_1|block_name:inst79|Selector13~4                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector13~5                                                            ; |lab_1|block_name:inst79|Selector13~5                                                               ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~3                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~4                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~5                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~5                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~6                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~7                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~8                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~9                                         ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~9                                            ; combout          ;
+; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~10                                        ; |lab_1|RG2:inst4|lpm_shiftreg:lpm_shiftreg_component|_~10                                           ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~9                                          ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~9                                             ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~10                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~10                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~11                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~11                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~12                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~12                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~13                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~13                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~14                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~14                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~15                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~15                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~16                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~16                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~17                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~17                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~18                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~18                                            ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~19                                         ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~19                                            ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~10                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~10                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector7~3                                                             ; |lab_1|block_name:inst79|Selector7~3                                                                ; combout          ;
+; |lab_1|y[6]~output                                                                               ; |lab_1|y[6]~output                                                                                  ; o                ;
+; |lab_1|y[6]                                                                                      ; |lab_1|y[6]                                                                                         ; padout           ;
+; |lab_1|y[5]~output                                                                               ; |lab_1|y[5]~output                                                                                  ; o                ;
+; |lab_1|y[5]                                                                                      ; |lab_1|y[5]                                                                                         ; padout           ;
+; |lab_1|y[3]~output                                                                               ; |lab_1|y[3]~output                                                                                  ; o                ;
+; |lab_1|y[3]                                                                                      ; |lab_1|y[3]                                                                                         ; padout           ;
+; |lab_1|y[2]~output                                                                               ; |lab_1|y[2]~output                                                                                  ; o                ;
+; |lab_1|y[2]                                                                                      ; |lab_1|y[2]                                                                                         ; padout           ;
+; |lab_1|y[1]~output                                                                               ; |lab_1|y[1]~output                                                                                  ; o                ;
+; |lab_1|y[1]                                                                                      ; |lab_1|y[1]                                                                                         ; padout           ;
+; |lab_1|y[0]~output                                                                               ; |lab_1|y[0]~output                                                                                  ; o                ;
+; |lab_1|y[0]                                                                                      ; |lab_1|y[0]                                                                                         ; padout           ;
+; |lab_1|p[7]~output                                                                               ; |lab_1|p[7]~output                                                                                  ; o                ;
+; |lab_1|p[7]                                                                                      ; |lab_1|p[7]                                                                                         ; padout           ;
+; |lab_1|p[4]~output                                                                               ; |lab_1|p[4]~output                                                                                  ; o                ;
+; |lab_1|p[4]                                                                                      ; |lab_1|p[4]                                                                                         ; padout           ;
+; |lab_1|p[2]~output                                                                               ; |lab_1|p[2]~output                                                                                  ; o                ;
+; |lab_1|p[2]                                                                                      ; |lab_1|p[2]                                                                                         ; padout           ;
+; |lab_1|p[1]~output                                                                               ; |lab_1|p[1]~output                                                                                  ; o                ;
+; |lab_1|p[1]                                                                                      ; |lab_1|p[1]                                                                                         ; padout           ;
+; |lab_1|result[15]~output                                                                         ; |lab_1|result[15]~output                                                                            ; o                ;
+; |lab_1|result[15]                                                                                ; |lab_1|result[15]                                                                                   ; padout           ;
+; |lab_1|result[13]~output                                                                         ; |lab_1|result[13]~output                                                                            ; o                ;
+; |lab_1|result[13]                                                                                ; |lab_1|result[13]                                                                                   ; padout           ;
+; |lab_1|result[12]~output                                                                         ; |lab_1|result[12]~output                                                                            ; o                ;
+; |lab_1|result[12]                                                                                ; |lab_1|result[12]                                                                                   ; padout           ;
+; |lab_1|result[11]~output                                                                         ; |lab_1|result[11]~output                                                                            ; o                ;
+; |lab_1|result[11]                                                                                ; |lab_1|result[11]                                                                                   ; padout           ;
+; |lab_1|result[10]~output                                                                         ; |lab_1|result[10]~output                                                                            ; o                ;
+; |lab_1|result[10]                                                                                ; |lab_1|result[10]                                                                                   ; padout           ;
+; |lab_1|result[0]~output                                                                          ; |lab_1|result[0]~output                                                                             ; o                ;
+; |lab_1|result[0]                                                                                 ; |lab_1|result[0]                                                                                    ; padout           ;
+; |lab_1|clk~input                                                                                 ; |lab_1|clk~input                                                                                    ; o                ;
+; |lab_1|clk                                                                                       ; |lab_1|clk                                                                                          ; padout           ;
+; |lab_1|x[15]~input                                                                               ; |lab_1|x[15]~input                                                                                  ; o                ;
+; |lab_1|x[15]                                                                                     ; |lab_1|x[15]                                                                                        ; padout           ;
+; |lab_1|x[0]~input                                                                                ; |lab_1|x[0]~input                                                                                   ; o                ;
+; |lab_1|x[0]                                                                                      ; |lab_1|x[0]                                                                                         ; padout           ;
+; |lab_1|x[14]~input                                                                               ; |lab_1|x[14]~input                                                                                  ; o                ;
+; |lab_1|x[14]                                                                                     ; |lab_1|x[14]                                                                                        ; padout           ;
+; |lab_1|x[10]~input                                                                               ; |lab_1|x[10]~input                                                                                  ; o                ;
+; |lab_1|x[10]                                                                                     ; |lab_1|x[10]                                                                                        ; padout           ;
+; |lab_1|clk~inputclkctrl                                                                          ; |lab_1|clk~inputclkctrl                                                                             ; outclk           ;
++--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                ;
++------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                      ; Output Port Name                                                                                    ; Output Port Type ;
++------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                       ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                       ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4 ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |lab_1|block_name:inst79|y[9]                                                                  ; |lab_1|block_name:inst79|y[9]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[8]                                                                  ; |lab_1|block_name:inst79|y[8]                                                                       ; q                ;
+; |lab_1|block_name:inst79|y[7]                                                                  ; |lab_1|block_name:inst79|y[7]                                                                       ; q                ;
+; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~0                                     ; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~0                                          ; combout          ;
+; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~1                                     ; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~1                                          ; combout          ;
+; |lab_1|block_name:inst79|Selector1~0                                                           ; |lab_1|block_name:inst79|Selector1~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|y[5]~4                                                                ; |lab_1|block_name:inst79|y[5]~4                                                                     ; combout          ;
+; |lab_1|block_name:inst79|Selector2~1                                                           ; |lab_1|block_name:inst79|Selector2~1                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector2~2                                                           ; |lab_1|block_name:inst79|Selector2~2                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector3~0                                                           ; |lab_1|block_name:inst79|Selector3~0                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector3~1                                                           ; |lab_1|block_name:inst79|Selector3~1                                                                ; combout          ;
+; |lab_1|block_name:inst79|y[5]~11                                                               ; |lab_1|block_name:inst79|y[5]~11                                                                    ; combout          ;
+; |lab_1|block_name:inst79|Equal0~7                                                              ; |lab_1|block_name:inst79|Equal0~7                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector10~2                                                          ; |lab_1|block_name:inst79|Selector10~2                                                               ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|_~0                                      ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|_~0                                           ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~0                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~0                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~1                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~1                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~2                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~3                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~4                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~6                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~7                                            ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~8                                            ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~1                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~1                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~2                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~2                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~3                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~3                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~5                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~5                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~6                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~6                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~7                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~7                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                       ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~8                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~8                                     ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                 ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                      ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~9                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~9                                     ; combout          ;
+; |lab_1|block_name:inst79|Selector10~3                                                          ; |lab_1|block_name:inst79|Selector10~3                                                               ; combout          ;
+; |lab_1|~GND                                                                                    ; |lab_1|~GND                                                                                         ; combout          ;
+; |lab_1|y[10]~output                                                                            ; |lab_1|y[10]~output                                                                                 ; o                ;
+; |lab_1|y[10]                                                                                   ; |lab_1|y[10]                                                                                        ; padout           ;
+; |lab_1|y[9]~output                                                                             ; |lab_1|y[9]~output                                                                                  ; o                ;
+; |lab_1|y[9]                                                                                    ; |lab_1|y[9]                                                                                         ; padout           ;
+; |lab_1|y[8]~output                                                                             ; |lab_1|y[8]~output                                                                                  ; o                ;
+; |lab_1|y[8]                                                                                    ; |lab_1|y[8]                                                                                         ; padout           ;
+; |lab_1|y[7]~output                                                                             ; |lab_1|y[7]~output                                                                                  ; o                ;
+; |lab_1|y[7]                                                                                    ; |lab_1|y[7]                                                                                         ; padout           ;
+; |lab_1|p[6]~output                                                                             ; |lab_1|p[6]~output                                                                                  ; o                ;
+; |lab_1|p[6]                                                                                    ; |lab_1|p[6]                                                                                         ; padout           ;
+; |lab_1|p[3]~output                                                                             ; |lab_1|p[3]~output                                                                                  ; o                ;
+; |lab_1|p[3]                                                                                    ; |lab_1|p[3]                                                                                         ; padout           ;
+; |lab_1|PMR~output                                                                              ; |lab_1|PMR~output                                                                                   ; o                ;
+; |lab_1|PMR                                                                                     ; |lab_1|PMR                                                                                          ; padout           ;
+; |lab_1|result[14]~output                                                                       ; |lab_1|result[14]~output                                                                            ; o                ;
+; |lab_1|result[14]                                                                              ; |lab_1|result[14]                                                                                   ; padout           ;
+; |lab_1|result[9]~output                                                                        ; |lab_1|result[9]~output                                                                             ; o                ;
+; |lab_1|result[9]                                                                               ; |lab_1|result[9]                                                                                    ; padout           ;
+; |lab_1|result[8]~output                                                                        ; |lab_1|result[8]~output                                                                             ; o                ;
+; |lab_1|result[8]                                                                               ; |lab_1|result[8]                                                                                    ; padout           ;
+; |lab_1|result[7]~output                                                                        ; |lab_1|result[7]~output                                                                             ; o                ;
+; |lab_1|result[7]                                                                               ; |lab_1|result[7]                                                                                    ; padout           ;
+; |lab_1|result[6]~output                                                                        ; |lab_1|result[6]~output                                                                             ; o                ;
+; |lab_1|result[6]                                                                               ; |lab_1|result[6]                                                                                    ; padout           ;
+; |lab_1|result[5]~output                                                                        ; |lab_1|result[5]~output                                                                             ; o                ;
+; |lab_1|result[5]                                                                               ; |lab_1|result[5]                                                                                    ; padout           ;
+; |lab_1|result[4]~output                                                                        ; |lab_1|result[4]~output                                                                             ; o                ;
+; |lab_1|result[4]                                                                               ; |lab_1|result[4]                                                                                    ; padout           ;
+; |lab_1|result[3]~output                                                                        ; |lab_1|result[3]~output                                                                             ; o                ;
+; |lab_1|result[3]                                                                               ; |lab_1|result[3]                                                                                    ; padout           ;
+; |lab_1|result[2]~output                                                                        ; |lab_1|result[2]~output                                                                             ; o                ;
+; |lab_1|result[2]                                                                               ; |lab_1|result[2]                                                                                    ; padout           ;
+; |lab_1|result[1]~output                                                                        ; |lab_1|result[1]~output                                                                             ; o                ;
+; |lab_1|result[1]                                                                               ; |lab_1|result[1]                                                                                    ; padout           ;
+; |lab_1|x[9]~input                                                                              ; |lab_1|x[9]~input                                                                                   ; o                ;
+; |lab_1|x[9]                                                                                    ; |lab_1|x[9]                                                                                         ; padout           ;
+; |lab_1|x[13]~input                                                                             ; |lab_1|x[13]~input                                                                                  ; o                ;
+; |lab_1|x[13]                                                                                   ; |lab_1|x[13]                                                                                        ; padout           ;
+; |lab_1|x[12]~input                                                                             ; |lab_1|x[12]~input                                                                                  ; o                ;
+; |lab_1|x[12]                                                                                   ; |lab_1|x[12]                                                                                        ; padout           ;
+; |lab_1|x[11]~input                                                                             ; |lab_1|x[11]~input                                                                                  ; o                ;
+; |lab_1|x[11]                                                                                   ; |lab_1|x[11]                                                                                        ; padout           ;
+; |lab_1|x[1]~input                                                                              ; |lab_1|x[1]~input                                                                                   ; o                ;
+; |lab_1|x[1]                                                                                    ; |lab_1|x[1]                                                                                         ; padout           ;
+; |lab_1|x[8]~input                                                                              ; |lab_1|x[8]~input                                                                                   ; o                ;
+; |lab_1|x[8]                                                                                    ; |lab_1|x[8]                                                                                         ; padout           ;
+; |lab_1|x[7]~input                                                                              ; |lab_1|x[7]~input                                                                                   ; o                ;
+; |lab_1|x[7]                                                                                    ; |lab_1|x[7]                                                                                         ; padout           ;
+; |lab_1|x[6]~input                                                                              ; |lab_1|x[6]~input                                                                                   ; o                ;
+; |lab_1|x[6]                                                                                    ; |lab_1|x[6]                                                                                         ; padout           ;
+; |lab_1|x[5]~input                                                                              ; |lab_1|x[5]~input                                                                                   ; o                ;
+; |lab_1|x[5]                                                                                    ; |lab_1|x[5]                                                                                         ; padout           ;
+; |lab_1|x[4]~input                                                                              ; |lab_1|x[4]~input                                                                                   ; o                ;
+; |lab_1|x[4]                                                                                    ; |lab_1|x[4]                                                                                         ; padout           ;
+; |lab_1|x[3]~input                                                                              ; |lab_1|x[3]~input                                                                                   ; o                ;
+; |lab_1|x[3]                                                                                    ; |lab_1|x[3]                                                                                         ; padout           ;
+; |lab_1|x[2]~input                                                                              ; |lab_1|x[2]~input                                                                                   ; o                ;
+; |lab_1|x[2]                                                                                    ; |lab_1|x[2]                                                                                         ; padout           ;
++------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                      ; Output Port Name                                                                               ; Output Port Type ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5] ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[5] ; q                ;
+; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4] ; |lab_1|CT2:inst12|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated|counter_reg_bit[4] ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                  ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                  ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                   ; q                ;
+; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[4] ; |lab_1|CT1:inst11|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated|counter_reg_bit[4] ; q                ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[4]~8  ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[4]~9  ; cout             ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[5]~10 ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|result_int[5]~10 ; combout          ;
+; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[0]~1  ; |lab_1|SM1:inst8|lpm_add_sub:lpm_add_sub_component|add_sub_p3i:auto_generated|result_int[0]~1  ; cout             ;
+; |lab_1|inst70                                                                                  ; |lab_1|inst70                                                                                  ; q                ;
+; |lab_1|block_name:inst79|y[9]                                                                  ; |lab_1|block_name:inst79|y[9]                                                                  ; q                ;
+; |lab_1|block_name:inst79|y[8]                                                                  ; |lab_1|block_name:inst79|y[8]                                                                  ; q                ;
+; |lab_1|block_name:inst79|y[7]                                                                  ; |lab_1|block_name:inst79|y[7]                                                                  ; q                ;
+; |lab_1|block_name:inst79|y[4]                                                                  ; |lab_1|block_name:inst79|y[4]                                                                  ; q                ;
+; |lab_1|inst67                                                                                  ; |lab_1|inst67                                                                                  ; combout          ;
+; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~0                                     ; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~0                                     ; combout          ;
+; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~1                                     ; |lab_1|OR_9:inst53|lpm_or:lpm_or_component|or_node[0][8]~1                                     ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|dffs[0]                                   ; q                ;
+; |lab_1|inst59~0                                                                                ; |lab_1|inst59~0                                                                                ; combout          ;
+; |lab_1|inst59~1                                                                                ; |lab_1|inst59~1                                                                                ; combout          ;
+; |lab_1|inst59~2                                                                                ; |lab_1|inst59~2                                                                                ; combout          ;
+; |lab_1|inst59~3                                                                                ; |lab_1|inst59~3                                                                                ; combout          ;
+; |lab_1|inst68                                                                                  ; |lab_1|inst68                                                                                  ; combout          ;
+; |lab_1|block_name:inst79|Z                                                                     ; |lab_1|block_name:inst79|Z                                                                     ; q                ;
+; |lab_1|inst70~0                                                                                ; |lab_1|inst70~0                                                                                ; combout          ;
+; |lab_1|block_name:inst79|Selector1~0                                                           ; |lab_1|block_name:inst79|Selector1~0                                                           ; combout          ;
+; |lab_1|block_name:inst79|y[5]~4                                                                ; |lab_1|block_name:inst79|y[5]~4                                                                ; combout          ;
+; |lab_1|block_name:inst79|Equal0~1                                                              ; |lab_1|block_name:inst79|Equal0~1                                                              ; combout          ;
+; |lab_1|block_name:inst79|Selector2~2                                                           ; |lab_1|block_name:inst79|Selector2~2                                                           ; combout          ;
+; |lab_1|block_name:inst79|Selector3~0                                                           ; |lab_1|block_name:inst79|Selector3~0                                                           ; combout          ;
+; |lab_1|block_name:inst79|y~6                                                                   ; |lab_1|block_name:inst79|y~6                                                                   ; combout          ;
+; |lab_1|block_name:inst79|Selector3~1                                                           ; |lab_1|block_name:inst79|Selector3~1                                                           ; combout          ;
+; |lab_1|block_name:inst79|y[5]~11                                                               ; |lab_1|block_name:inst79|y[5]~11                                                               ; combout          ;
+; |lab_1|block_name:inst79|Selector6~1                                                           ; |lab_1|block_name:inst79|Selector6~1                                                           ; combout          ;
+; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[4]                                               ; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[4]                                               ; q                ;
+; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[0]                                               ; |lab_1|RG4:inst6|lpm_ff:lpm_ff_component|dffs[0]                                               ; q                ;
+; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~0           ; |lab_1|SM2:inst9|lpm_add_sub:lpm_add_sub_component|add_sub_6ki:auto_generated|op_1~0           ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|_~0                                      ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|_~0                                      ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]                                   ; q                ;
+; |lab_1|inst64                                                                                  ; |lab_1|inst64                                                                                  ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]                                   ; q                ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                   ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                   ; q                ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~0                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~0                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~1                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~1                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~2                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~3                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~4                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~6                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~7                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~8                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~9                                       ; combout          ;
+; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~14                                      ; |lab_1|RG3:inst7|lpm_shiftreg:lpm_shiftreg_component|_~14                                      ; combout          ;
+; |lab_1|block_name:inst79|Z~0                                                                   ; |lab_1|block_name:inst79|Z~0                                                                   ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~1                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~1                                ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~0                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~0                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~1                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~1                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~2                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~2                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~3                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~3                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~4                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~4                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~5                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~5                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~6                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~6                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~7                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~7                                        ; combout          ;
+; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~8                                        ; |lab_1|RG1:inst|lpm_shiftreg:lpm_shiftreg_component|_~8                                        ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~2                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~2                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~3                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~3                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~4                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~5                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~5                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~6                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~6                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~7                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~7                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                  ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]                                  ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~8                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~8                                ; combout          ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                 ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[10]                                 ; q                ;
+; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~9                                ; |lab_1|RG2:inst20|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~9                                ; combout          ;
+; |lab_1|block_name:inst79|Selector10~3                                                          ; |lab_1|block_name:inst79|Selector10~3                                                          ; combout          ;
+; |lab_1|~GND                                                                                    ; |lab_1|~GND                                                                                    ; combout          ;
+; |lab_1|PRS~output                                                                              ; |lab_1|PRS~output                                                                              ; o                ;
+; |lab_1|PRS                                                                                     ; |lab_1|PRS                                                                                     ; padout           ;
+; |lab_1|y[10]~output                                                                            ; |lab_1|y[10]~output                                                                            ; o                ;
+; |lab_1|y[10]                                                                                   ; |lab_1|y[10]                                                                                   ; padout           ;
+; |lab_1|y[9]~output                                                                             ; |lab_1|y[9]~output                                                                             ; o                ;
+; |lab_1|y[9]                                                                                    ; |lab_1|y[9]                                                                                    ; padout           ;
+; |lab_1|y[8]~output                                                                             ; |lab_1|y[8]~output                                                                             ; o                ;
+; |lab_1|y[8]                                                                                    ; |lab_1|y[8]                                                                                    ; padout           ;
+; |lab_1|y[7]~output                                                                             ; |lab_1|y[7]~output                                                                             ; o                ;
+; |lab_1|y[7]                                                                                    ; |lab_1|y[7]                                                                                    ; padout           ;
+; |lab_1|y[4]~output                                                                             ; |lab_1|y[4]~output                                                                             ; o                ;
+; |lab_1|y[4]                                                                                    ; |lab_1|y[4]                                                                                    ; padout           ;
+; |lab_1|p[8]~output                                                                             ; |lab_1|p[8]~output                                                                             ; o                ;
+; |lab_1|p[8]                                                                                    ; |lab_1|p[8]                                                                                    ; padout           ;
+; |lab_1|p[6]~output                                                                             ; |lab_1|p[6]~output                                                                             ; o                ;
+; |lab_1|p[6]                                                                                    ; |lab_1|p[6]                                                                                    ; padout           ;
+; |lab_1|p[5]~output                                                                             ; |lab_1|p[5]~output                                                                             ; o                ;
+; |lab_1|p[5]                                                                                    ; |lab_1|p[5]                                                                                    ; padout           ;
+; |lab_1|Z~output                                                                                ; |lab_1|Z~output                                                                                ; o                ;
+; |lab_1|Z                                                                                       ; |lab_1|Z                                                                                       ; padout           ;
+; |lab_1|result[9]~output                                                                        ; |lab_1|result[9]~output                                                                        ; o                ;
+; |lab_1|result[9]                                                                               ; |lab_1|result[9]                                                                               ; padout           ;
+; |lab_1|result[8]~output                                                                        ; |lab_1|result[8]~output                                                                        ; o                ;
+; |lab_1|result[8]                                                                               ; |lab_1|result[8]                                                                               ; padout           ;
+; |lab_1|result[7]~output                                                                        ; |lab_1|result[7]~output                                                                        ; o                ;
+; |lab_1|result[7]                                                                               ; |lab_1|result[7]                                                                               ; padout           ;
+; |lab_1|result[6]~output                                                                        ; |lab_1|result[6]~output                                                                        ; o                ;
+; |lab_1|result[6]                                                                               ; |lab_1|result[6]                                                                               ; padout           ;
+; |lab_1|result[5]~output                                                                        ; |lab_1|result[5]~output                                                                        ; o                ;
+; |lab_1|result[5]                                                                               ; |lab_1|result[5]                                                                               ; padout           ;
+; |lab_1|result[4]~output                                                                        ; |lab_1|result[4]~output                                                                        ; o                ;
+; |lab_1|result[4]                                                                               ; |lab_1|result[4]                                                                               ; padout           ;
+; |lab_1|result[3]~output                                                                        ; |lab_1|result[3]~output                                                                        ; o                ;
+; |lab_1|result[3]                                                                               ; |lab_1|result[3]                                                                               ; padout           ;
+; |lab_1|result[2]~output                                                                        ; |lab_1|result[2]~output                                                                        ; o                ;
+; |lab_1|result[2]                                                                               ; |lab_1|result[2]                                                                               ; padout           ;
+; |lab_1|result[1]~output                                                                        ; |lab_1|result[1]~output                                                                        ; o                ;
+; |lab_1|result[1]                                                                               ; |lab_1|result[1]                                                                               ; padout           ;
++------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Apr 29 15:19:11 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab_1 -c lab_1
+Info: Using vector source file "C:/Users/student/Desktop/quartus/projects/lab1/lab_1.tbl"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of lab_1.tbl called lab_1.sim_ori.tbl has been created in the db folder
+Info: Inverted registers were found during simulation
+    Info: Register: |lab_1|block_name:inst79|pc[0]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      60.31 %
+Info: Number of transitions in simulation is 2889
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Fri Apr 29 15:19:11 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

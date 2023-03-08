@@ -1,0 +1,3 @@
+﻿  Assembling ..\..\..\..\OneDrive\Рабочий стол\ww.asm...
+MASM : fatal error A1000: cannot open file : ..\..\..\..\OneDrive\
+F:\Visual Studio\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: выход из команды "ml.exe /c /nologo /Zi /Fo"Debug\ww.obj" /Fl"3-я лабораторная.lst" /W3 /errorReport:prompt  /Ta"..\..\..\..\OneDrive\Рабочий стол\ww.asm"" с кодом "1".

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="kursovoi">
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|CT1:inst19|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|CT2:inst30|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6ii.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|MS2:inst28|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_q7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|SM1:inst5|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_kii.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|SM2:inst17|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_d6i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|kursovoi|MS1:inst6|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_p7e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

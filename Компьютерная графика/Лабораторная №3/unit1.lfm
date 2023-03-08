@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 464
+  Height = 801
+  Top = 99
+  Width = 1000
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Лабораторная работа №3'
+  ClientHeight = 801
+  ClientWidth = 1000
+  Color = clWhite
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object ToggleBox1: TToggleBox
+    Left = 728
+    Height = 31
+    Top = 696
+    Width = 94
+    Caption = 'График'
+    OnChange = ToggleBox1Change
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 728
+    Height = 31
+    Top = 744
+    Width = 94
+    Caption = 'Поворот'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 848
+    Height = 31
+    Top = 744
+    Width = 129
+    Caption = 'Отражение по X'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 848
+    Height = 31
+    Top = 696
+    Width = 129
+    Caption = 'Отражение по Y'
+    OnClick = Button3Click
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 16
+    Height = 31
+    Top = 744
+    Width = 94
+    Caption = 'Выход'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 256
+    Height = 40
+    Top = 687
+    Width = 48
+    Caption = 'Up'
+    OnClick = Button5Click
+    TabOrder = 5
+  end
+  object Button6: TButton
+    Left = 256
+    Height = 40
+    Top = 736
+    Width = 48
+    Caption = 'Down'
+    OnClick = Button6Click
+    TabOrder = 6
+  end
+  object Button7: TButton
+    Left = 312
+    Height = 40
+    Top = 736
+    Width = 64
+    Caption = 'Right'
+    OnClick = Button7Click
+    TabOrder = 7
+  end
+  object Button8: TButton
+    Left = 184
+    Height = 40
+    Top = 736
+    Width = 64
+    Caption = 'Left'
+    OnClick = Button8Click
+    TabOrder = 8
+  end
+end

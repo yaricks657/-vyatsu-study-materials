@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="delenie">
+		<CBX_INST_ENTRY INSTANCE_NAME="|delenie|CT1:inst9|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|delenie|SM1:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_nsh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|delenie|SM2:inst19|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_4ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|delenie|st2:inst22|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_fqj.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

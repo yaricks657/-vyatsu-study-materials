@@ -1,0 +1,105 @@
+17	
+Isaac Bonga 	
+SF	
+6-8	
+180	
+11/8/1999 (20)	
+1	
+6	
+Troy Brown Jr. 	
+SF	
+6-6	
+215	
+7/28/1999 (21)	
+1	
+13	
+Thomas Bryant 	
+C	
+6-10	
+248	
+7/31/1997 (23)	
+2	
+22	
+Jerian Grant	
+PG	
+6-4	
+204	
+10/9/1992 (27)	
+4	
+8	
+Rui Hachimura 	
+PF	
+6-8	
+230	
+2/8/1998 (22)	
+R	
+28	
+Ian Mahinmi	
+C	
+6-11	
+262	
+11/5/1986 (33)	
+11	
+24	
+Garrison Mathews 	
+SG	
+6-5	
+215	
+10/24/1996 (23)	
+R	
+5	
+Shabazz Napier	
+PG	
+6-0	
+175	
+7/14/1991 (29)	
+5	
+18	
+Anzejs Pasecniks	
+C	
+7-1	
+220	
+12/20/1995 (24)	
+R	
+12	
+Jerome Robinson 	
+SG	
+6-4	
+190	
+2/22/1997 (23)	
+1	
+1	
+Admiral Schofield	
+SG	
+6-5
+241	
+3/30/1997 (23)	
+R	
+14	
+Ish Smith 
+PG	
+6-0	
+175	
+7/5/1988 (32)	
+9	
+7	
+Jarrod Uthoff  	
+SF	
+6-9	
+221	
+5/19/1993 (27)	
+1	
+21	
+Moe Wagner 	
+SF	
+6-11	
+245	
+4/26/1997 (23)	
+1	
+19	
+Johnathan Williams	
+PF	
+6-9	
+228	
+5/22/1995 (25)	
+1	

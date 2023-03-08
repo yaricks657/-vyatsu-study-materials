@@ -1,0 +1,112 @@
+5	
+Malik Beasley 	
+SG	
+6-4	
+187	
+11/26/1996 (23)	
+3	
+23	
+Jarrett Culver	
+SG	
+6-6	
+195	
+2/20/1999 (21)	
+R	
+12	
+Jacob Evans	
+SG	
+6-4	
+210	
+6/18/1997 (23)	
+1	
+41	
+Juancho Hernangomez 	
+PF	
+6-9	
+214	
+9/28/1995 (24)	
+3	
+16	
+James Johnson 	
+PF	
+6-7	
+240	
+2/20/1987 (33)	
+10	
+10	
+Jake Layman	
+SF	
+6-8	
+209	
+3/7/1994 (26)	
+3	
+30	
+Kelan Martin 	
+SF	
+6-5	
+230	
+8/3/1995 (24)	
+R	
+6	
+Jordan McLaughlin
+PG	
+5-11	
+185	
+4/9/1996 (24)	
+R	
+4	
+Jaylen Nowell	
+SG	
+6-4	
+201	
+7/9/1999 (21)	
+R	
+20	
+Josh Okogie	
+SG	
+6-4	
+213	
+9/1/1998 (21)	
+1	
+11	
+Naz Reid	
+C	
+6-9	
+264	
+8/26/1999 (20)	
+R	
+0	
+D'Angelo Russell 	
+SG	
+6-4	
+193	
+2/23/1996 (24)	
+4	
+14	
+Omari Spellman 	
+PF	
+6-8	
+245	
+7/21/1997 (23)	
+1	
+32	
+Karl-Anthony Towns  	
+C	
+6-11	
+248	
+11/15/1995 (24)	
+4	
+1	
+Evan Turner	
+SG	
+6-6	
+220	
+10/27/1988 (31)	
+9	
+3	
+Jarred Vanderbilt 	
+PF	
+6-9	
+214	
+4/3/1999 (21)	
+1	

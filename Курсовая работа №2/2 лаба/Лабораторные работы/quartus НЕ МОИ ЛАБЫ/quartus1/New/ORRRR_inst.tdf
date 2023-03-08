@@ -1,0 +1,8 @@
+(
+	result_sig
+) = ORRRR	(
+	.data[][] = data_sig[][]
+)
+RETURNS (
+	.result
+);

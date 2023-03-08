@@ -1,0 +1,98 @@
+5	
+Bruno Caboclo  	
+SF	
+6-9	
+218	
+9/21/1995 (24)	
+5	
+9	
+DeMarre Carroll	
+SF	
+6-6	
+215	
+7/27/1986 (34)	
+10	
+19	
+Tyson Chandler	
+C	
+7-0	
+235	
+10/2/1982 (37)	
+18	
+3	
+Chris Clemons	
+PG	
+5-9	
+180	
+7/23/1997 (23)	
+R	
+33	
+Robert Covington	
+PF	
+6-7	
+209	
+12/14/1990 (29)	
+6	
+21	
+Michael Frazier	
+SG	
+6-3	
+200	
+3/8/1994 (26)	
+R	
+10	
+Eric Gordon  	
+SG	
+6-3	
+215	
+12/25/1988 (31)	
+11	
+32	
+Jeff Green	
+PF	
+6-8	
+235	
+8/28/1986 (33)	
+11	
+13	
+James Harden 	
+SG	
+6-5	
+220	
+8/26/1989 (30)	
+10	
+4	
+Danuel House Jr. 	
+SF	
+6-6	
+220	
+6/7/1993 (27)	
+3	
+16	
+Ben McLemore	
+SF	
+6-3	
+195	
+2/11/1993 (27)	
+6	
+25	
+Austin Rivers	
+PG	
+6-3	
+200	
+8/1/1992 (28)	
+7	
+17	
+P.J. Tucker	
+PF	
+6-5	
+245	
+5/5/1985 (35)	
+8	
+0	
+Russell Westbrook
+PG
+6-3	
+200	
+11/12/1988 (31)	
+11	

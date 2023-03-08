@@ -1,0 +1,161 @@
+object Form1: TForm1
+  Left = 540
+  Height = 768
+  Top = 99
+  Width = 1031
+  Caption = 'Form1'
+  ClientHeight = 768
+  ClientWidth = 1031
+  Color = clWhite
+  DesignTimePPI = 120
+  LCLVersion = '2.0.8.0'
+  object GroupBox1: TGroupBox
+    Left = 220
+    Height = 130
+    Top = 630
+    Width = 579
+    Caption = 'Панелька'
+    ClientHeight = 105
+    ClientWidth = 575
+    ParentFont = False
+    TabOrder = 0
+    object Button1: TButton
+      Left = 30
+      Height = 31
+      Top = 10
+      Width = 94
+      Caption = 'Нарисовать'
+      OnClick = Button1Click
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 30
+      Height = 31
+      Top = 40
+      Width = 94
+      Caption = 'Сместить'
+      OnClick = Button2Click
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 140
+      Height = 31
+      Top = 10
+      Width = 94
+      Caption = 'ox'
+      OnClick = Button3Click
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Button4: TButton
+      Left = 140
+      Height = 31
+      Top = 40
+      Width = 94
+      Caption = 'oy'
+      OnClick = Button4Click
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Button5: TButton
+      Left = 140
+      Height = 31
+      Top = 70
+      Width = 94
+      Caption = 'oz'
+      OnClick = Button5Click
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Button6: TButton
+      Left = 350
+      Height = 31
+      Top = 10
+      Width = 94
+      Caption = 'Увеличить'
+      OnClick = Button6Click
+      ParentFont = False
+      TabOrder = 5
+    end
+    object Button7: TButton
+      Left = 350
+      Height = 31
+      Top = 40
+      Width = 94
+      Caption = 'Уменьшить'
+      OnClick = Button7Click
+      ParentFont = False
+      TabOrder = 6
+    end
+    object Button8: TButton
+      Left = 240
+      Height = 31
+      Top = 10
+      Width = 94
+      Caption = 'ox'
+      OnClick = Button8Click
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Button9: TButton
+      Left = 240
+      Height = 31
+      Top = 40
+      Width = 94
+      Caption = 'oy'
+      OnClick = Button9Click
+      ParentFont = False
+      TabOrder = 8
+    end
+    object Label1: TLabel
+      Left = 140
+      Height = 20
+      Top = -10
+      Width = 86
+      Caption = 'Отразить по'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 240
+      Height = 20
+      Top = -10
+      Width = 82
+      Caption = 'Вращать по'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Button10: TButton
+      Left = 240
+      Height = 31
+      Top = 70
+      Width = 94
+      Caption = 'oz'
+      OnClick = Button10Click
+      ParentFont = False
+      TabOrder = 9
+    end
+    object Button11: TButton
+      Left = 460
+      Height = 31
+      Top = 10
+      Width = 94
+      Caption = 'по часов'
+      OnClick = Button11Click
+      ParentFont = False
+      TabOrder = 10
+    end
+    object Button12: TButton
+      Left = 460
+      Height = 31
+      Top = 40
+      Width = 94
+      Caption = 'против час'
+      OnClick = Button12Click
+      ParentFont = False
+      TabOrder = 11
+    end
+  end
+end

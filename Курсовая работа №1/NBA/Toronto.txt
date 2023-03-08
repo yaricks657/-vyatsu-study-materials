@@ -1,0 +1,119 @@
+3	
+OG Anunoby 	
+SF	
+6-7	
+232	
+7/17/1997 (23)	
+2	
+25	
+Chris Boucher	
+PF	
+6-9	
+200	
+1/11/1993 (27)	
+2	
+12	
+Oshae Brissett  	
+SF	
+6-7	
+210	
+6/20/1998 (22)	
+R	
+0	
+Terence Davis	
+SG	
+6-4	
+201	
+5/16/1997 (23)	
+R	
+33	
+Marc Gasol 	
+C	
+6-11	
+255	
+1/29/1985 (35)	
+11	
+20	
+Dewan Hernandez	
+C	
+6-10	
+235	
+12/9/1996 (23)	
+R	
+4	
+Rondae Hollis-Jefferson 	
+SF	
+6-6	
+217	
+1/3/1995 (25)	
+4	
+9	
+Serge Ibaka 	
+PF	
+7-0	
+235	
+9/18/1989 (30)	
+10	
+5	
+Stanley Johnson	
+SF	
+6-6	
+242	
+5/29/1996 (24)	
+4	
+7	
+Kyle Lowry 	
+PG	
+6-0	
+196	
+3/25/1986 (34)	
+13	
+22	
+Patrick McCaw  	
+SF	
+6-7	
+181	
+10/25/1995 (24)	
+3	
+13	
+Malcolm Miller	
+SG	
+6-7	
+210	
+3/6/1993 (27)	
+2	
+24	
+Norman Powell	
+SG	
+6-3	
+215	
+5/25/1993 (27)	
+4	
+43	
+Pascal Siakam	
+PF	
+6-9	
+230	
+4/2/1994 (26)	
+3	
+21	
+Matt Thomas	
+SG	
+6-4	
+190	
+8/4/1994 (25)	
+R	
+23	
+Fred VanVleet	
+SG	
+6-1	
+197	
+2/25/1994 (26)	
+3	
+1	
+Paul Watson	
+SF	
+6-6	
+210	
+12/30/1994 (25)	
+R	
