@@ -1,6 +1,0 @@
-C:\Users\user\source\repos\OC2\OC2\Debug\OC2.vcxproj.AssemblyReference.cache
-C:\Users\user\source\repos\OC2\OC2\Debug\OC2.MyForm.resources
-C:\Users\user\source\repos\OC2\OC2\Debug\OC2.vcxproj.GenerateResource.cache
-C:\Users\user\OneDrive\Рабочий стол\Учёба\4-й курс\Операционные системы\2-я лаба\OC2\OC2\Debug\OC2.vcxproj.AssemblyReference.cache
-C:\Users\user\OneDrive\Рабочий стол\Учёба\4-й курс\Операционные системы\2-я лаба\OC2\OC2\Debug\OC2.MyForm.resources
-C:\Users\user\OneDrive\Рабочий стол\Учёба\4-й курс\Операционные системы\2-я лаба\OC2\OC2\Debug\OC2.vcxproj.GenerateResource.cache
