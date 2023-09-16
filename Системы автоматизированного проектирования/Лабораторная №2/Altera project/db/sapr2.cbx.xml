@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sapr2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sapr2|block_name:inst40|comp:b2v_inst3|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sapr2|block_name:inst40|comp:b2v_inst4|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sapr2|comp:inst32|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sapr2|comp:inst|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_hig.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
